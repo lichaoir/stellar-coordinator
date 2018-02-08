@@ -4,9 +4,9 @@ FROM apache/nifi:${NIFI_VERSION}
 
 LABEL maintainer="CSIRO Data61"
 
-ARG BRANCH=SERENE-709
+ARG BRANCH=master
 
-RUN curl -Lo src.zip https://github.com/seanli3/stellar-coordinator/archive/$BRANCH.zip \
+RUN curl -Lo src.zip https://github.com/data61/stellar-coordinator/archive/$BRANCH.zip \
   && unzip src.zip -d src \
   && cp ./src/stellar-coordinator-$BRANCH/nifi/conf/stellar.properties ${NIFI_HOME}/conf \
   && cp ./src/stellar-coordinator-$BRANCH/nifi/conf/flow.xml.gz ${NIFI_HOME}/conf \
