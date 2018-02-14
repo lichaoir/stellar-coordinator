@@ -26,7 +26,7 @@
       <yieldPeriod>1 sec</yieldPeriod>
       <bulletinLevel>WARN</bulletinLevel>
       <lossTolerant>false</lossTolerant>
-      <scheduledState>STOPPED</scheduledState>
+      <scheduledState>RUNNING</scheduledState>
       <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
       <executionNode>ALL</executionNode>
       <runDurationNanos>0</runDurationNanos>
@@ -59,7 +59,7 @@
       <yieldPeriod>1 sec</yieldPeriod>
       <bulletinLevel>WARN</bulletinLevel>
       <lossTolerant>false</lossTolerant>
-      <scheduledState>STOPPED</scheduledState>
+      <scheduledState>RUNNING</scheduledState>
       <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
       <executionNode>ALL</executionNode>
       <runDurationNanos>0</runDurationNanos>
@@ -96,7 +96,7 @@
       <yieldPeriod>1 sec</yieldPeriod>
       <bulletinLevel>WARN</bulletinLevel>
       <lossTolerant>false</lossTolerant>
-      <scheduledState>STOPPED</scheduledState>
+      <scheduledState>RUNNING</scheduledState>
       <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
       <executionNode>ALL</executionNode>
       <runDurationNanos>0</runDurationNanos>
@@ -144,7 +144,7 @@
       <yieldPeriod>1 sec</yieldPeriod>
       <bulletinLevel>WARN</bulletinLevel>
       <lossTolerant>false</lossTolerant>
-      <scheduledState>STOPPED</scheduledState>
+      <scheduledState>RUNNING</scheduledState>
       <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
       <executionNode>ALL</executionNode>
       <runDurationNanos>0</runDurationNanos>
@@ -223,7 +223,7 @@
       <yieldPeriod>1 sec</yieldPeriod>
       <bulletinLevel>WARN</bulletinLevel>
       <lossTolerant>false</lossTolerant>
-      <scheduledState>STOPPED</scheduledState>
+      <scheduledState>RUNNING</scheduledState>
       <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
       <executionNode>ALL</executionNode>
       <runDurationNanos>0</runDurationNanos>
@@ -264,7 +264,7 @@
       <yieldPeriod>1 sec</yieldPeriod>
       <bulletinLevel>WARN</bulletinLevel>
       <lossTolerant>false</lossTolerant>
-      <scheduledState>STOPPED</scheduledState>
+      <scheduledState>RUNNING</scheduledState>
       <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
       <executionNode>ALL</executionNode>
       <runDurationNanos>0</runDurationNanos>
@@ -294,19 +294,19 @@
       </property>
     </processor>
     <inputPort>
-      <id>4f5f77d0-0161-1000-f563-c1d3d42eea11</id>
-      <name>Update Session</name>
-      <position x="-39.41568008219656" y="2215.6997273080415"/>
-      <comments/>
-      <scheduledState>STOPPED</scheduledState>
-      <maxConcurrentTasks>1</maxConcurrentTasks>
-    </inputPort>
-    <inputPort>
       <id>4f5ee875-0161-1000-8630-510e3f846aef</id>
       <name>Init Session</name>
       <position x="-39.41568008219656" y="1968.3931114662705"/>
       <comments/>
-      <scheduledState>STOPPED</scheduledState>
+      <scheduledState>RUNNING</scheduledState>
+      <maxConcurrentTasks>1</maxConcurrentTasks>
+    </inputPort>
+    <inputPort>
+      <id>4f5f77d0-0161-1000-f563-c1d3d42eea11</id>
+      <name>Update Session</name>
+      <position x="-39.41568008219656" y="2215.6997273080415"/>
+      <comments/>
+      <scheduledState>RUNNING</scheduledState>
       <maxConcurrentTasks>1</maxConcurrentTasks>
     </inputPort>
     <inputPort>
@@ -314,7 +314,7 @@
       <name>Get Session</name>
       <position x="-39.41568008219656" y="2088.8003784248695"/>
       <comments/>
-      <scheduledState>STOPPED</scheduledState>
+      <scheduledState>RUNNING</scheduledState>
       <maxConcurrentTasks>1</maxConcurrentTasks>
     </inputPort>
     <processGroup>
@@ -340,7 +340,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -383,7 +383,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -431,7 +431,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -455,14 +455,14 @@
         <name>HTTP Request</name>
         <position x="54.77168573631968" y="372.1999517124915"/>
         <comments/>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <outputPort>
         <id>01611014-9454-148d-d59a-7a0f8a6099a3</id>
         <name>HTTP Response</name>
         <position x="54.77168573631968" y="1133.4149129065638"/>
         <comments/>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
       </outputPort>
       <processGroup>
         <id>c04b3c75-05cc-19cc-4e28-ac911293a3f5</id>
@@ -474,14 +474,14 @@
           <name>HTTP Request</name>
           <position x="1249.8029549777254" y="-78.79767112157364"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
           <id>c04b3c77-05cc-19cc-dbd7-50c3e453230f</id>
           <name>HTTP Response</name>
           <position x="1917.684077554417" y="734.7917940877022"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <processGroup>
           <id>c04b3c9d-05cc-19cc-90d9-e0d8aec16670</id>
@@ -506,7 +506,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -543,7 +543,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -591,7 +591,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -701,7 +701,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -754,7 +754,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -791,7 +791,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -828,7 +828,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -863,21 +863,21 @@
             <name>HTTP Request</name>
             <position x="673.4197281374986" y="222.80498976214437"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
-          <outputPort>
-            <id>c04b3ca0-05cc-19cc-46e7-51f9d20e43c3</id>
-            <name>Success</name>
-            <position x="1956.1631561909153" y="616.1589687143169"/>
-            <comments/>
-            <scheduledState>STOPPED</scheduledState>
-          </outputPort>
           <outputPort>
             <id>c04b3c9f-05cc-19cc-86d9-772a045c1594</id>
             <name>Failure</name>
             <position x="1331.977878299878" y="1327.992499267772"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
+          <outputPort>
+            <id>c04b3ca0-05cc-19cc-46e7-51f9d20e43c3</id>
+            <name>Success</name>
+            <position x="1956.1631561909153" y="616.1589687143169"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <connection>
             <id>c04b3cb1-05cc-19cc-a8c1-76fe44c5e6b1</id>
@@ -1075,7 +1075,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1123,7 +1123,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1160,7 +1160,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1197,7 +1197,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1234,7 +1234,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1265,7 +1265,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1325,7 +1325,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1360,14 +1360,14 @@
             <name>HTTP Request</name>
             <position x="1625.6845362791353" y="-259.21423801944775"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>c04b3c7a-05cc-19cc-e64e-9c95e59605c3</id>
             <name>HTTP Response</name>
             <position x="2276.194768356205" y="834.5947620280349"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>c04b3c82-05cc-19cc-a8ef-c438b52c7845</id>
@@ -1378,7 +1378,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -1387,7 +1387,7 @@
               <name>Update Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -1608,7 +1608,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1655,7 +1655,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1692,7 +1692,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1727,21 +1727,21 @@
             <name>HTTP Request</name>
             <position x="1284.8893127525628" y="208.99999965471278"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
-          <outputPort>
-            <id>c04b3c94-05cc-19cc-7863-d41d549fb2a0</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
-            <comments/>
-            <scheduledState>STOPPED</scheduledState>
-          </outputPort>
           <outputPort>
             <id>c04b3c93-05cc-19cc-ccae-97b08d083f18</id>
             <name>Failure</name>
             <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
+          <outputPort>
+            <id>c04b3c94-05cc-19cc-7863-d41d549fb2a0</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <connection>
             <id>c04b3c9a-05cc-19cc-df37-83a55e2a7cdd</id>
@@ -1853,7 +1853,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1901,7 +1901,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1938,7 +1938,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -1969,7 +1969,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -2000,7 +2000,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -2060,7 +2060,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -2095,21 +2095,21 @@
             <name>HTTP Request</name>
             <position x="1212.9742870700884" y="6.162047065884849"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
-          <outputPort>
-            <id>c04b3cbb-05cc-19cc-deb5-57f79654ae3c</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
-            <comments/>
-            <scheduledState>STOPPED</scheduledState>
-          </outputPort>
           <outputPort>
             <id>c04b3cbc-05cc-19cc-0dff-d558e569a6de</id>
             <name>Success</name>
             <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
+          <outputPort>
+            <id>c04b3cbb-05cc-19cc-deb5-57f79654ae3c</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>c04b3cc3-05cc-19cc-cfd1-3c2f4203a242</id>
@@ -2120,7 +2120,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -2129,7 +2129,7 @@
               <name>Get Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -2474,14 +2474,14 @@
           <name>HTTP Request</name>
           <position x="740.0179093415263" y="180.09409828760604"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
           <id>c04b3c25-05cc-19cc-02cb-122a755506ae</id>
           <name>HTTP Response</name>
           <position x="1440.1763964829504" y="692.2471468710974"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <processGroup>
           <id>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</id>
@@ -2506,7 +2506,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -2543,7 +2543,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -2587,7 +2587,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -2635,7 +2635,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -2683,7 +2683,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -2720,7 +2720,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -2780,7 +2780,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -2798,14 +2798,14 @@
             <name>HTTP Request</name>
             <position x="1350.6312875072322" y="-415.6582393343615"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>c04b3c34-05cc-19cc-23f6-bdb7a7b7477e</id>
             <name>HTTP Response</name>
             <position x="1350.6312875072322" y="649.8791248210036"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>c04b3c3c-05cc-19cc-903a-8c29cc16a84e</id>
@@ -2816,7 +2816,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -2825,7 +2825,7 @@
               <name>Update Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -3046,7 +3046,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3094,7 +3094,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3139,7 +3139,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3253,7 +3253,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3272,7 +3272,7 @@
             <name>HTTP Response</name>
             <position x="1422.3515569292026" y="805.5934161565335"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <connection>
             <id>c04b3c54-05cc-19cc-7f75-936fbb52bf7b</id>
@@ -3366,7 +3366,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3417,7 +3417,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3454,7 +3454,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3489,21 +3489,21 @@
             <name>HTTP Request</name>
             <position x="1284.8893127525628" y="208.99999965471278"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>c04b3c29-05cc-19cc-1cc4-3a6473b64b61</id>
             <name>Failure</name>
             <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
             <id>c04b3c28-05cc-19cc-6525-c98555ecf47c</id>
             <name>Success</name>
             <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <connection>
             <id>c04b3c2d-05cc-19cc-ac4a-f2ef899e23c5</id>
@@ -3615,7 +3615,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3663,7 +3663,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3694,7 +3694,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3754,7 +3754,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3802,7 +3802,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3833,7 +3833,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -3857,21 +3857,21 @@
             <name>HTTP Request</name>
             <position x="1212.9742870700884" y="6.162047065884849"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>c04b3c57-05cc-19cc-bb00-fda84e93d02c</id>
             <name>Failure</name>
             <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
             <id>c04b3c58-05cc-19cc-663a-e56f52025871</id>
             <name>Success</name>
             <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>c04b3c5f-05cc-19cc-2737-2d87eb72ebeb</id>
@@ -3882,7 +3882,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -3891,7 +3891,7 @@
               <name>Get Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -4369,7 +4369,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -4417,7 +4417,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -4465,7 +4465,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -4509,7 +4509,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -4569,7 +4569,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -4606,7 +4606,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -4643,7 +4643,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -4674,7 +4674,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -4698,21 +4698,20 @@
           <name>stellar.session.auto</name>
           <value>$.auto</value>
         </property>
-        <autoTerminatedRelationship>failure</autoTerminatedRelationship>
       </processor>
       <inputPort>
         <id>ce931fed-35c8-11a3-c42c-ad5307007c21</id>
         <name>HTTP Request</name>
         <position x="1244.4657801142366" y="-132.23640986522935"/>
         <comments/>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <outputPort>
         <id>ce931fef-35c8-11a3-2c72-bc102bfca210</id>
         <name>HTTP Response</name>
         <position x="1244.4657801142366" y="1349.0758382015604"/>
         <comments/>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
       </outputPort>
       <funnel>
         <id>ee1f3871-5b17-1abc-4593-db06aa4b2f70</id>
@@ -4727,7 +4726,7 @@
         <urls>http://localhost:8080/nifi</urls>
         <timeout>30 sec</timeout>
         <yieldPeriod>10 sec</yieldPeriod>
-        <transmitting>false</transmitting>
+        <transmitting>true</transmitting>
         <transportProtocol>HTTP</transportProtocol>
         <proxyHost/>
         <proxyUser/>
@@ -4736,7 +4735,7 @@
           <name>Init Session</name>
           <position x="0.0" y="0.0"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
           <targetId>4f5ee875-0161-1000-8630-510e3f846aef</targetId>
           <maxConcurrentTasks>1</maxConcurrentTasks>
           <useCompression>false</useCompression>
@@ -4928,6 +4927,7 @@
         <destinationId>ee1f3871-5b17-1abc-4593-db06aa4b2f70</destinationId>
         <destinationGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</destinationGroupId>
         <destinationType>FUNNEL</destinationType>
+        <relationship>failure</relationship>
         <relationship>matched</relationship>
         <relationship>unmatched</relationship>
         <maxWorkQueueSize>10000</maxWorkQueueSize>
@@ -4992,7 +4992,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -5051,7 +5051,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -5099,7 +5099,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -5123,14 +5123,14 @@
         <name>HTTP Request</name>
         <position x="35.64231291095058" y="224.6259325632941"/>
         <comments/>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <outputPort>
         <id>36353400-e638-19ce-6294-5adba35e1553</id>
         <name>HTTP Response</name>
         <position x="35.64231291095058" y="1370.4948689612513"/>
         <comments/>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
       </outputPort>
       <processGroup>
         <id>41a335de-ce93-1fe3-7b03-0ddbc4ac2657</id>
@@ -5142,14 +5142,14 @@
           <name>HTTP Request</name>
           <position x="1246.178462320042" y="160.5559513149498"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
           <id>41a335e0-ce93-1fe3-8586-48cf8c0686fe</id>
           <name>HTTP Response</name>
           <position x="1999.529528551289" y="685.8275606894567"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <processGroup>
           <id>41a33611-ce93-1fe3-fcb2-886dfc11e24f</id>
@@ -5174,7 +5174,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -5222,7 +5222,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -5259,7 +5259,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -5293,21 +5293,21 @@
             <name>HTTP Request</name>
             <position x="1284.8893127525628" y="208.99999965471278"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
-          <outputPort>
-            <id>41a33613-ce93-1fe3-8742-5870b57deeca</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
-            <comments/>
-            <scheduledState>STOPPED</scheduledState>
-          </outputPort>
           <outputPort>
             <id>41a33614-ce93-1fe3-c88b-32c356e92235</id>
             <name>Failure</name>
             <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
+          <outputPort>
+            <id>41a33613-ce93-1fe3-8742-5870b57deeca</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <connection>
             <id>41a33619-ce93-1fe3-aef8-e1ca3beee2b3</id>
@@ -5419,7 +5419,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -5450,7 +5450,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -5487,7 +5487,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -5524,7 +5524,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -5584,7 +5584,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -5632,7 +5632,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -5680,7 +5680,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -5704,14 +5704,14 @@
             <name>HTTP Request</name>
             <position x="1350.6312875072322" y="-415.6582393343615"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>41a335e3-ce93-1fe3-e691-972301a1af27</id>
             <name>HTTP Response</name>
             <position x="1350.6312875072322" y="649.8791248210036"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>01611036-95f7-1f61-5d74-3011ef51aa00</id>
@@ -5722,7 +5722,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -5731,7 +5731,7 @@
               <name>Update Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -5952,7 +5952,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -5989,7 +5989,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -6037,7 +6037,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -6068,7 +6068,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -6116,7 +6116,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -6147,7 +6147,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -6194,21 +6194,21 @@
             <name>HTTP Request</name>
             <position x="1212.9742870700884" y="6.162047065884849"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
-          <outputPort>
-            <id>41a335fe-ce93-1fe3-f443-ede8b8b20e9a</id>
-            <name>Success</name>
-            <position x="568.3572942412702" y="482.3974879052903"/>
-            <comments/>
-            <scheduledState>STOPPED</scheduledState>
-          </outputPort>
           <outputPort>
             <id>41a335ff-ce93-1fe3-e62f-946f29718e76</id>
             <name>Failure</name>
             <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
+          <outputPort>
+            <id>41a335fe-ce93-1fe3-f443-ede8b8b20e9a</id>
+            <name>Success</name>
+            <position x="568.3572942412702" y="482.3974879052903"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>01611024-95f7-1f61-0ba5-5f559ca96c79</id>
@@ -6219,7 +6219,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -6228,7 +6228,7 @@
               <name>Get Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -6552,7 +6552,7 @@
           <yieldPeriod>1 sec</yieldPeriod>
           <bulletinLevel>WARN</bulletinLevel>
           <lossTolerant>false</lossTolerant>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
           <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
           <executionNode>ALL</executionNode>
           <runDurationNanos>0</runDurationNanos>
@@ -6590,7 +6590,7 @@
           <yieldPeriod>1 sec</yieldPeriod>
           <bulletinLevel>WARN</bulletinLevel>
           <lossTolerant>false</lossTolerant>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
           <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
           <executionNode>ALL</executionNode>
           <runDurationNanos>0</runDurationNanos>
@@ -6687,14 +6687,14 @@
           <name>HTTP Request</name>
           <position x="79.90158210588811" y="171.32836579243474"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
           <id>41a33625-ce93-1fe3-e89c-32e551ba351e</id>
           <name>Success</name>
           <position x="79.90158210588811" y="828.1072811977082"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <connection>
           <id>41a3362a-ce93-1fe3-81c8-bf8c3a660ab7</id>
@@ -6761,14 +6761,14 @@
           <name>HTTP Request</name>
           <position x="1249.8029549777254" y="-78.79767112157364"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
           <id>41a3357a-ce93-1fe3-c755-75751f0b6dd0</id>
           <name>HTTP Response</name>
           <position x="1917.684077554417" y="734.7917940877022"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <processGroup>
           <id>41a335c1-ce93-1fe3-edfe-eab5f96ef676</id>
@@ -6793,7 +6793,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -6841,7 +6841,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -6878,7 +6878,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -6926,7 +6926,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -6957,7 +6957,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -6994,7 +6994,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7054,7 +7054,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7078,14 +7078,14 @@
             <name>HTTP Request</name>
             <position x="1625.6845362791353" y="-259.21423801944775"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>41a335c3-ce93-1fe3-ecb6-54a2b698ba88</id>
             <name>HTTP Response</name>
             <position x="2276.194768356205" y="834.5947620280349"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>01611000-95f7-1f61-3361-2139c80ceb68</id>
@@ -7096,7 +7096,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -7105,7 +7105,7 @@
               <name>Update Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -7326,7 +7326,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7363,7 +7363,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7411,7 +7411,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7453,21 +7453,21 @@
             <name>HTTP Request</name>
             <position x="1284.8893127525628" y="208.99999965471278"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>ee1f3890-5b17-1abc-5db0-c0e8ffee75c4</id>
             <name>Failure</name>
             <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
             <id>ee1f3891-5b17-1abc-21f3-3f4b3251457a</id>
             <name>Success</name>
             <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <connection>
             <id>ee1f3895-5b17-1abc-3920-80139a8be134</id>
@@ -7579,7 +7579,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7616,7 +7616,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7657,7 +7657,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7694,7 +7694,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7731,7 +7731,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7779,7 +7779,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7889,7 +7889,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7935,7 +7935,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -7983,7 +7983,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -8031,7 +8031,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -8068,21 +8068,21 @@
             <name>HTTP Request</name>
             <position x="674.7252043303891" y="384.4981812904647"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>41a3357d-ce93-1fe3-a4aa-ecfcf9fbf0b8</id>
             <name>Failure</name>
             <position x="1328.8711215076248" y="1327.992499267772"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
             <id>41a3357e-ce93-1fe3-4a51-122cd4596ea4</id>
             <name>Success</name>
             <position x="1956.1631561909153" y="612.2754850726196"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <connection>
             <id>ce931ffd-3581-11a3-b685-fbe57e0f23c3</id>
@@ -8348,7 +8348,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -8396,7 +8396,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -8427,7 +8427,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -8458,7 +8458,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -8495,7 +8495,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -8555,7 +8555,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -8590,21 +8590,21 @@
             <name>HTTP Request</name>
             <position x="1212.9742870700884" y="6.162047065884849"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
-          <outputPort>
-            <id>ee1f3877-5b17-1abc-cd99-fea76385aee5</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
-            <comments/>
-            <scheduledState>STOPPED</scheduledState>
-          </outputPort>
           <outputPort>
             <id>ee1f3878-5b17-1abc-e403-2e1d930659ee</id>
             <name>Success</name>
             <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
+          <outputPort>
+            <id>ee1f3877-5b17-1abc-cd99-fea76385aee5</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>ee1f387f-5b17-1abc-e524-f038d4ba5057</id>
@@ -8615,7 +8615,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -8624,7 +8624,7 @@
               <name>Get Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -8969,14 +8969,14 @@
           <name>HTTP Request</name>
           <position x="740.0179093415263" y="180.09409828760604"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
           <id>fb493111-b6ea-1f4a-ecd7-b8534406cb71</id>
           <name>HTTP Response</name>
           <position x="1426.1763964829504" y="692.2471468710974"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <processGroup>
           <id>0161106e-95f7-1f61-b471-0339f96f1578</id>
@@ -9001,7 +9001,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9044,7 +9044,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9092,7 +9092,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9116,21 +9116,21 @@
             <name>HTTP Request</name>
             <position x="1284.8893127525628" y="208.99999965471278"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
-          <outputPort>
-            <id>01611071-95f7-1f61-60a2-d73a11a0ea77</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
-            <comments/>
-            <scheduledState>STOPPED</scheduledState>
-          </outputPort>
           <outputPort>
             <id>01611070-95f7-1f61-c6aa-8373db3ce4bc</id>
             <name>Failure</name>
             <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
+          <outputPort>
+            <id>01611071-95f7-1f61-60a2-d73a11a0ea77</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <connection>
             <id>01611076-95f7-1f61-f895-cd2c823e7c0c</id>
@@ -9242,7 +9242,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9279,7 +9279,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9339,7 +9339,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9370,7 +9370,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9418,7 +9418,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9455,7 +9455,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9503,7 +9503,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9527,14 +9527,14 @@
             <name>HTTP Request</name>
             <position x="1350.6312875072322" y="-415.6582393343615"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>01611044-95f7-1f61-b758-9c2e7bfdeae0</id>
             <name>HTTP Response</name>
             <position x="1350.6312875072322" y="649.8791248210036"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>0161104c-95f7-1f61-e752-4b61a9787b9b</id>
@@ -9545,7 +9545,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -9554,7 +9554,7 @@
               <name>Update Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -9775,7 +9775,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9820,7 +9820,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9934,7 +9934,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -9966,7 +9966,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -10001,7 +10001,7 @@
             <name>HTTP Response</name>
             <position x="1422.3515569292026" y="805.5934161565335"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <connection>
             <id>541e75de-0161-1000-2d23-80933e1511ad</id>
@@ -10095,7 +10095,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -10132,7 +10132,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -10180,7 +10180,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -10228,7 +10228,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -10259,7 +10259,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -10290,7 +10290,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -10337,21 +10337,21 @@
             <name>HTTP Request</name>
             <position x="1212.9742870700884" y="6.162047065884849"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>0161105a-95f7-1f61-023a-6ce17fd0ecf5</id>
             <name>Failure</name>
             <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
             <id>0161105b-95f7-1f61-a289-07f61e2ad53a</id>
             <name>Success</name>
             <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>01611062-95f7-1f61-4fe0-2850e9e82931</id>
@@ -10362,7 +10362,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -10371,7 +10371,7 @@
               <name>Get Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -10917,7 +10917,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -10965,7 +10965,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -11002,7 +11002,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -11024,14 +11024,14 @@
         <name>HTTP Request</name>
         <position x="-1315.0841624376676" y="-226.44685018183196"/>
         <comments/>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <outputPort>
         <id>73a255e6-6f91-349f-c854-d993df5b8494</id>
         <name>HTTP Response</name>
         <position x="-1315.0841624376676" y="566.3136617372744"/>
         <comments/>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
       </outputPort>
       <processGroup>
         <id>fb55069f-54c9-3f47-a006-2f85bb60b85c</id>
@@ -11056,7 +11056,7 @@
           <yieldPeriod>1 sec</yieldPeriod>
           <bulletinLevel>WARN</bulletinLevel>
           <lossTolerant>false</lossTolerant>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
           <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
           <executionNode>ALL</executionNode>
           <runDurationNanos>0</runDurationNanos>
@@ -11094,7 +11094,7 @@
           <yieldPeriod>1 sec</yieldPeriod>
           <bulletinLevel>WARN</bulletinLevel>
           <lossTolerant>false</lossTolerant>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
           <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
           <executionNode>ALL</executionNode>
           <runDurationNanos>0</runDurationNanos>
@@ -11131,7 +11131,7 @@
           <yieldPeriod>1 sec</yieldPeriod>
           <bulletinLevel>WARN</bulletinLevel>
           <lossTolerant>false</lossTolerant>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
           <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
           <executionNode>ALL</executionNode>
           <runDurationNanos>0</runDurationNanos>
@@ -11228,14 +11228,14 @@
           <name>HTTP Request</name>
           <position x="45.56905494524358" y="206.22889507499667"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
           <id>c99aeb80-6826-3af6-76de-ff6c5c008e4f</id>
           <name>HTTP Response</name>
           <position x="45.56905494524358" y="1059.9999216863248"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <connection>
           <id>2f7f1798-ef83-3c1c-e60d-4debd31d428f</id>
@@ -11319,14 +11319,14 @@
           <name>HTTP Request</name>
           <position x="-908.8395359686394" y="-72.35359728473315"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
           <id>c47530eb-6ce1-1581-1b27-5cedec82a553</id>
           <name>HTTP Response</name>
           <position x="-1513.381894367077" y="396.0679323935583"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <processGroup>
           <id>01611005-9454-148d-4408-151828aff8b7</id>
@@ -11351,7 +11351,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -11465,7 +11465,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -11519,7 +11519,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -11555,7 +11555,7 @@
             <name>Auto</name>
             <position x="1524.8986293512837" y="2046.0637386976978"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <connection>
             <id>01611000-9454-148d-b2c2-5a07b27bb790</id>
@@ -11632,7 +11632,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -11649,159 +11649,6 @@
             <property>
               <name>stellar.session.status</name>
               <value>nai completed</value>
-            </property>
-          </processor>
-          <processor>
-            <id>8c5aad00-0161-1000-e8cc-8b335f4299b6</id>
-            <name>Auto?</name>
-            <position x="1444.7506641053806" y="1852.9602033375827"/>
-            <styles/>
-            <comment/>
-            <class>org.apache.nifi.processors.standard.RouteOnAttribute</class>
-            <bundle>
-              <group>org.apache.nifi</group>
-              <artifact>nifi-standard-nar</artifact>
-              <version>1.5.0</version>
-            </bundle>
-            <maxConcurrentTasks>1</maxConcurrentTasks>
-            <schedulingPeriod>0 sec</schedulingPeriod>
-            <penalizationPeriod>30 sec</penalizationPeriod>
-            <yieldPeriod>1 sec</yieldPeriod>
-            <bulletinLevel>WARN</bulletinLevel>
-            <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
-            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-            <executionNode>ALL</executionNode>
-            <runDurationNanos>0</runDurationNanos>
-            <property>
-              <name>Routing Strategy</name>
-              <value>Route to 'match' if all match</value>
-            </property>
-            <property>
-              <name>success</name>
-              <value>${stellar.session.status:equals("nai completed")}</value>
-            </property>
-            <property>
-              <name>auto</name>
-              <value>${stellar.session.auto:equals("true")}</value>
-            </property>
-            <autoTerminatedRelationship>unmatched</autoTerminatedRelationship>
-          </processor>
-          <processor>
-            <id>c4753134-6ce1-1581-6a8c-0136f8c90f19</id>
-            <name>Set Session Status To Failed</name>
-            <position x="214.16841376345292" y="1063.4475942149834"/>
-            <styles/>
-            <comment/>
-            <class>org.apache.nifi.processors.attributes.UpdateAttribute</class>
-            <bundle>
-              <group>org.apache.nifi</group>
-              <artifact>nifi-update-attribute-nar</artifact>
-              <version>1.5.0</version>
-            </bundle>
-            <maxConcurrentTasks>1</maxConcurrentTasks>
-            <schedulingPeriod>0 sec</schedulingPeriod>
-            <penalizationPeriod>30 sec</penalizationPeriod>
-            <yieldPeriod>1 sec</yieldPeriod>
-            <bulletinLevel>WARN</bulletinLevel>
-            <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
-            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-            <executionNode>ALL</executionNode>
-            <runDurationNanos>0</runDurationNanos>
-            <property>
-              <name>Delete Attributes Expression</name>
-            </property>
-            <property>
-              <name>Store State</name>
-              <value>Do not store state</value>
-            </property>
-            <property>
-              <name>Stateful Variables Initial Value</name>
-            </property>
-            <property>
-              <name>stellar.session.status</name>
-              <value>nai failed</value>
-            </property>
-          </processor>
-          <processor>
-            <id>c475312c-6ce1-1581-4e8b-385b5cf9c77d</id>
-            <name>Get Task State</name>
-            <position x="832.4506826097859" y="554.7194258842397"/>
-            <styles/>
-            <comment/>
-            <class>org.apache.nifi.processors.standard.EvaluateJsonPath</class>
-            <bundle>
-              <group>org.apache.nifi</group>
-              <artifact>nifi-standard-nar</artifact>
-              <version>1.5.0</version>
-            </bundle>
-            <maxConcurrentTasks>1</maxConcurrentTasks>
-            <schedulingPeriod>0 sec</schedulingPeriod>
-            <penalizationPeriod>30 sec</penalizationPeriod>
-            <yieldPeriod>1 sec</yieldPeriod>
-            <bulletinLevel>WARN</bulletinLevel>
-            <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
-            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-            <executionNode>ALL</executionNode>
-            <runDurationNanos>0</runDurationNanos>
-            <property>
-              <name>Destination</name>
-              <value>flowfile-attribute</value>
-            </property>
-            <property>
-              <name>Return Type</name>
-              <value>auto-detect</value>
-            </property>
-            <property>
-              <name>Path Not Found Behavior</name>
-              <value>ignore</value>
-            </property>
-            <property>
-              <name>Null Value Representation</name>
-              <value>empty string</value>
-            </property>
-            <property>
-              <name>stellar.session.nai.taskState</name>
-              <value>$.state</value>
-            </property>
-          </processor>
-          <processor>
-            <id>c4753137-6ce1-1581-2d5a-aabe0f39ec21</id>
-            <name>Set Session Status To Cancelled</name>
-            <position x="1444.7506641053806" y="1063.4475942149834"/>
-            <styles/>
-            <comment/>
-            <class>org.apache.nifi.processors.attributes.UpdateAttribute</class>
-            <bundle>
-              <group>org.apache.nifi</group>
-              <artifact>nifi-update-attribute-nar</artifact>
-              <version>1.5.0</version>
-            </bundle>
-            <maxConcurrentTasks>1</maxConcurrentTasks>
-            <schedulingPeriod>0 sec</schedulingPeriod>
-            <penalizationPeriod>30 sec</penalizationPeriod>
-            <yieldPeriod>1 sec</yieldPeriod>
-            <bulletinLevel>WARN</bulletinLevel>
-            <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
-            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-            <executionNode>ALL</executionNode>
-            <runDurationNanos>0</runDurationNanos>
-            <property>
-              <name>Delete Attributes Expression</name>
-            </property>
-            <property>
-              <name>Store State</name>
-              <value>Do not store state</value>
-            </property>
-            <property>
-              <name>Stateful Variables Initial Value</name>
-            </property>
-            <property>
-              <name>stellar.session.status</name>
-              <value>nai cancelled</value>
             </property>
           </processor>
           <processor>
@@ -11822,7 +11669,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -11865,6 +11712,42 @@
             <autoTerminatedRelationship>wait</autoTerminatedRelationship>
           </processor>
           <processor>
+            <id>8c5aad00-0161-1000-e8cc-8b335f4299b6</id>
+            <name>Auto?</name>
+            <position x="1444.7506641053806" y="1852.9602033375827"/>
+            <styles/>
+            <comment/>
+            <class>org.apache.nifi.processors.standard.RouteOnAttribute</class>
+            <bundle>
+              <group>org.apache.nifi</group>
+              <artifact>nifi-standard-nar</artifact>
+              <version>1.5.0</version>
+            </bundle>
+            <maxConcurrentTasks>1</maxConcurrentTasks>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <penalizationPeriod>30 sec</penalizationPeriod>
+            <yieldPeriod>1 sec</yieldPeriod>
+            <bulletinLevel>WARN</bulletinLevel>
+            <lossTolerant>false</lossTolerant>
+            <scheduledState>RUNNING</scheduledState>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <executionNode>ALL</executionNode>
+            <runDurationNanos>0</runDurationNanos>
+            <property>
+              <name>Routing Strategy</name>
+              <value>Route to 'match' if all match</value>
+            </property>
+            <property>
+              <name>success</name>
+              <value>${stellar.session.status:equals("nai completed")}</value>
+            </property>
+            <property>
+              <name>auto</name>
+              <value>${stellar.session.auto:equals("true")}</value>
+            </property>
+            <autoTerminatedRelationship>unmatched</autoTerminatedRelationship>
+          </processor>
+          <processor>
             <id>c475312e-6ce1-1581-676b-1ba40089f087</id>
             <name>Check Task State</name>
             <position x="832.4506826097859" y="766.4656180312269"/>
@@ -11882,7 +11765,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -11904,6 +11787,43 @@
             </property>
           </processor>
           <processor>
+            <id>c4753134-6ce1-1581-6a8c-0136f8c90f19</id>
+            <name>Set Session Status To Failed</name>
+            <position x="214.16841376345292" y="1063.4475942149834"/>
+            <styles/>
+            <comment/>
+            <class>org.apache.nifi.processors.attributes.UpdateAttribute</class>
+            <bundle>
+              <group>org.apache.nifi</group>
+              <artifact>nifi-update-attribute-nar</artifact>
+              <version>1.5.0</version>
+            </bundle>
+            <maxConcurrentTasks>1</maxConcurrentTasks>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <penalizationPeriod>30 sec</penalizationPeriod>
+            <yieldPeriod>1 sec</yieldPeriod>
+            <bulletinLevel>WARN</bulletinLevel>
+            <lossTolerant>false</lossTolerant>
+            <scheduledState>RUNNING</scheduledState>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <executionNode>ALL</executionNode>
+            <runDurationNanos>0</runDurationNanos>
+            <property>
+              <name>Delete Attributes Expression</name>
+            </property>
+            <property>
+              <name>Store State</name>
+              <value>Do not store state</value>
+            </property>
+            <property>
+              <name>Stateful Variables Initial Value</name>
+            </property>
+            <property>
+              <name>stellar.session.status</name>
+              <value>nai failed</value>
+            </property>
+          </processor>
+          <processor>
             <id>c475311d-6ce1-1581-b00b-97e57b86bc44</id>
             <name>Session OK?</name>
             <position x="1444.7506641053806" y="1630.4288213632171"/>
@@ -11921,7 +11841,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -11934,6 +11854,49 @@
               <value>${stellar.session.error:isEmpty()}</value>
             </property>
             <autoTerminatedRelationship>unmatched</autoTerminatedRelationship>
+          </processor>
+          <processor>
+            <id>c475312c-6ce1-1581-4e8b-385b5cf9c77d</id>
+            <name>Get Task State</name>
+            <position x="832.4506826097859" y="554.7194258842397"/>
+            <styles/>
+            <comment/>
+            <class>org.apache.nifi.processors.standard.EvaluateJsonPath</class>
+            <bundle>
+              <group>org.apache.nifi</group>
+              <artifact>nifi-standard-nar</artifact>
+              <version>1.5.0</version>
+            </bundle>
+            <maxConcurrentTasks>1</maxConcurrentTasks>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <penalizationPeriod>30 sec</penalizationPeriod>
+            <yieldPeriod>1 sec</yieldPeriod>
+            <bulletinLevel>WARN</bulletinLevel>
+            <lossTolerant>false</lossTolerant>
+            <scheduledState>RUNNING</scheduledState>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <executionNode>ALL</executionNode>
+            <runDurationNanos>0</runDurationNanos>
+            <property>
+              <name>Destination</name>
+              <value>flowfile-attribute</value>
+            </property>
+            <property>
+              <name>Return Type</name>
+              <value>auto-detect</value>
+            </property>
+            <property>
+              <name>Path Not Found Behavior</name>
+              <value>ignore</value>
+            </property>
+            <property>
+              <name>Null Value Representation</name>
+              <value>empty string</value>
+            </property>
+            <property>
+              <name>stellar.session.nai.taskState</name>
+              <value>$.state</value>
+            </property>
           </processor>
           <processor>
             <id>c4753148-6ce1-1581-256b-409f6850c623</id>
@@ -11953,7 +11916,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -11996,6 +11959,43 @@
             <autoTerminatedRelationship>wait</autoTerminatedRelationship>
           </processor>
           <processor>
+            <id>c4753137-6ce1-1581-2d5a-aabe0f39ec21</id>
+            <name>Set Session Status To Cancelled</name>
+            <position x="1444.7506641053806" y="1063.4475942149834"/>
+            <styles/>
+            <comment/>
+            <class>org.apache.nifi.processors.attributes.UpdateAttribute</class>
+            <bundle>
+              <group>org.apache.nifi</group>
+              <artifact>nifi-update-attribute-nar</artifact>
+              <version>1.5.0</version>
+            </bundle>
+            <maxConcurrentTasks>1</maxConcurrentTasks>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <penalizationPeriod>30 sec</penalizationPeriod>
+            <yieldPeriod>1 sec</yieldPeriod>
+            <bulletinLevel>WARN</bulletinLevel>
+            <lossTolerant>false</lossTolerant>
+            <scheduledState>RUNNING</scheduledState>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <executionNode>ALL</executionNode>
+            <runDurationNanos>0</runDurationNanos>
+            <property>
+              <name>Delete Attributes Expression</name>
+            </property>
+            <property>
+              <name>Store State</name>
+              <value>Do not store state</value>
+            </property>
+            <property>
+              <name>Stateful Variables Initial Value</name>
+            </property>
+            <property>
+              <name>stellar.session.status</name>
+              <value>nai cancelled</value>
+            </property>
+          </processor>
+          <processor>
             <id>c4753119-6ce1-1581-8a14-8a79f8174c7a</id>
             <name>InvokeHTTP</name>
             <position x="832.4506826097859" y="312.952306052199"/>
@@ -12013,7 +12013,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -12110,14 +12110,14 @@
             <name>HTTP Request</name>
             <position x="887.4506826097859" y="182.05939223383956"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>01611001-9454-148d-87cb-c78f3e5c0d01</id>
             <name>Auto</name>
             <position x="1499.7506641053806" y="2067.7837028255663"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <funnel>
             <id>c4753139-6ce1-1581-6b65-0eb3f98b2dc1</id>
@@ -12136,7 +12136,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -12145,7 +12145,7 @@
               <name>Update Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -12543,7 +12543,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -12580,7 +12580,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -12628,7 +12628,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -12658,21 +12658,21 @@
             <name>HTTP Request</name>
             <position x="1284.8893127525628" y="208.99999965471278"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>ee1f38c1-5b17-1abc-8ecb-d7ab93dfa2b7</id>
             <name>Success</name>
             <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
             <id>ee1f38c2-5b17-1abc-4083-214f4af17309</id>
             <name>Failure</name>
             <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <connection>
             <id>ee1f38c9-5b17-1abc-7fa9-51a88f71a050</id>
@@ -12784,7 +12784,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -12815,7 +12815,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -12846,7 +12846,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -12894,7 +12894,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -12954,7 +12954,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -13002,7 +13002,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -13026,21 +13026,21 @@
             <name>HTTP Request</name>
             <position x="1212.9742870700884" y="6.162047065884849"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
-          <outputPort>
-            <id>ee1f38a8-5b17-1abc-06e7-b202b913bd87</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
-            <comments/>
-            <scheduledState>STOPPED</scheduledState>
-          </outputPort>
           <outputPort>
             <id>ee1f38a9-5b17-1abc-1058-97f230f6d70a</id>
             <name>Success</name>
             <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
+          <outputPort>
+            <id>ee1f38a8-5b17-1abc-06e7-b202b913bd87</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>ee1f38b0-5b17-1abc-a589-f3a25b07ac73</id>
@@ -13051,7 +13051,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -13060,7 +13060,7 @@
               <name>Get Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -13264,311 +13264,6 @@
           <position x="-978.8395359686394" y="609.373016621882"/>
           <comment/>
           <processor>
-            <id>ee1f38d4-5b17-1abc-4363-96a4d5917dfb</id>
-            <name>Set HTTP Status Code</name>
-            <position x="1573.2000535069" y="591.5021350474751"/>
-            <styles/>
-            <comment/>
-            <class>org.apache.nifi.processors.attributes.UpdateAttribute</class>
-            <bundle>
-              <group>org.apache.nifi</group>
-              <artifact>nifi-update-attribute-nar</artifact>
-              <version>1.5.0</version>
-            </bundle>
-            <maxConcurrentTasks>1</maxConcurrentTasks>
-            <schedulingPeriod>0 sec</schedulingPeriod>
-            <penalizationPeriod>30 sec</penalizationPeriod>
-            <yieldPeriod>1 sec</yieldPeriod>
-            <bulletinLevel>WARN</bulletinLevel>
-            <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
-            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-            <executionNode>ALL</executionNode>
-            <runDurationNanos>0</runDurationNanos>
-            <property>
-              <name>Delete Attributes Expression</name>
-            </property>
-            <property>
-              <name>Store State</name>
-              <value>Do not store state</value>
-            </property>
-            <property>
-              <name>Stateful Variables Initial Value</name>
-            </property>
-            <property>
-              <name>http.statusCode</name>
-              <value>200</value>
-            </property>
-          </processor>
-          <processor>
-            <id>ee1f38d3-5b17-1abc-86f3-d12b39f3163f</id>
-            <name>Wait</name>
-            <position x="1573.2000535069" y="155.41684676128222"/>
-            <styles/>
-            <comment/>
-            <class>org.apache.nifi.processors.standard.Wait</class>
-            <bundle>
-              <group>org.apache.nifi</group>
-              <artifact>nifi-standard-nar</artifact>
-              <version>1.5.0</version>
-            </bundle>
-            <maxConcurrentTasks>1</maxConcurrentTasks>
-            <schedulingPeriod>0 sec</schedulingPeriod>
-            <penalizationPeriod>30 sec</penalizationPeriod>
-            <yieldPeriod>1 sec</yieldPeriod>
-            <bulletinLevel>WARN</bulletinLevel>
-            <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
-            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-            <executionNode>ALL</executionNode>
-            <runDurationNanos>0</runDurationNanos>
-            <property>
-              <name>release-signal-id</name>
-              <value>${stellar.store.sessionLockKey}</value>
-            </property>
-            <property>
-              <name>target-signal-count</name>
-              <value>1</value>
-            </property>
-            <property>
-              <name>signal-counter-name</name>
-              <value>origin/${http.context.identifier}</value>
-            </property>
-            <property>
-              <name>wait-buffer-count</name>
-              <value>1</value>
-            </property>
-            <property>
-              <name>releasable-flowfile-count</name>
-              <value>1</value>
-            </property>
-            <property>
-              <name>expiration-duration</name>
-              <value>10 min</value>
-            </property>
-            <property>
-              <name>distributed-cache-service</name>
-              <value>dc79510e-43c5-3f31-2abc-978e3974ef1d</value>
-            </property>
-            <property>
-              <name>attribute-copy-mode</name>
-              <value>replace</value>
-            </property>
-            <property>
-              <name>wait-mode</name>
-              <value>keep</value>
-            </property>
-            <autoTerminatedRelationship>wait</autoTerminatedRelationship>
-          </processor>
-          <processor>
-            <id>c47530fd-6ce1-1581-6ddc-dc7e52d514e4</id>
-            <name>Create Task-Error Response</name>
-            <position x="3121.740666793705" y="-314.064690197088"/>
-            <styles/>
-            <comment/>
-            <class>org.apache.nifi.processors.standard.ReplaceText</class>
-            <bundle>
-              <group>org.apache.nifi</group>
-              <artifact>nifi-standard-nar</artifact>
-              <version>1.5.0</version>
-            </bundle>
-            <maxConcurrentTasks>1</maxConcurrentTasks>
-            <schedulingPeriod>0 sec</schedulingPeriod>
-            <penalizationPeriod>30 sec</penalizationPeriod>
-            <yieldPeriod>1 sec</yieldPeriod>
-            <bulletinLevel>WARN</bulletinLevel>
-            <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
-            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-            <executionNode>ALL</executionNode>
-            <runDurationNanos>0</runDurationNanos>
-            <property>
-              <name>Regular Expression</name>
-              <value/>
-            </property>
-            <property>
-              <name>Replacement Value</name>
-              <value>{"reason":"Failed to start NAI task."}</value>
-            </property>
-            <property>
-              <name>Character Set</name>
-              <value>UTF-8</value>
-            </property>
-            <property>
-              <name>Maximum Buffer Size</name>
-              <value>1 MB</value>
-            </property>
-            <property>
-              <name>Replacement Strategy</name>
-              <value>Always Replace</value>
-            </property>
-            <property>
-              <name>Evaluation Mode</name>
-              <value>Entire text</value>
-            </property>
-            <autoTerminatedRelationship>failure</autoTerminatedRelationship>
-          </processor>
-          <processor>
-            <id>ee1f38d1-5b17-1abc-61e9-4537c5c7a449</id>
-            <name>Session OK?</name>
-            <position x="2219.73065702808" y="155.41684676128222"/>
-            <styles/>
-            <comment/>
-            <class>org.apache.nifi.processors.standard.RouteOnAttribute</class>
-            <bundle>
-              <group>org.apache.nifi</group>
-              <artifact>nifi-standard-nar</artifact>
-              <version>1.5.0</version>
-            </bundle>
-            <maxConcurrentTasks>1</maxConcurrentTasks>
-            <schedulingPeriod>0 sec</schedulingPeriod>
-            <penalizationPeriod>30 sec</penalizationPeriod>
-            <yieldPeriod>1 sec</yieldPeriod>
-            <bulletinLevel>WARN</bulletinLevel>
-            <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
-            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-            <executionNode>ALL</executionNode>
-            <runDurationNanos>0</runDurationNanos>
-            <property>
-              <name>Routing Strategy</name>
-              <value>Route to Property name</value>
-            </property>
-            <property>
-              <name>ok</name>
-              <value>${stellar.session.error:isEmpty()}</value>
-            </property>
-          </processor>
-          <processor>
-            <id>c47530f3-6ce1-1581-4939-69d059b3d292</id>
-            <name>Update Payload</name>
-            <position x="241.30160523303152" y="-314.064690197088"/>
-            <styles/>
-            <comment/>
-            <class>org.apache.nifi.processors.standard.JoltTransformJSON</class>
-            <bundle>
-              <group>org.apache.nifi</group>
-              <artifact>nifi-standard-nar</artifact>
-              <version>1.5.0</version>
-            </bundle>
-            <maxConcurrentTasks>1</maxConcurrentTasks>
-            <schedulingPeriod>0 sec</schedulingPeriod>
-            <penalizationPeriod>30 sec</penalizationPeriod>
-            <yieldPeriod>1 sec</yieldPeriod>
-            <bulletinLevel>WARN</bulletinLevel>
-            <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
-            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-            <executionNode>ALL</executionNode>
-            <runDurationNanos>0</runDurationNanos>
-            <property>
-              <name>jolt-transform</name>
-              <value>jolt-transform-chain</value>
-            </property>
-            <property>
-              <name>jolt-custom-class</name>
-            </property>
-            <property>
-              <name>jolt-custom-modules</name>
-            </property>
-            <property>
-              <name>jolt-spec</name>
-              <value>[{
-	"operation": "shift",
-	"spec": {
-		"inputs": {
-			"in_data": {
-				"dataset_name": "inputs.in_data.dataset_name"
-			}
-		},
-		"parameters": {
-			"convert_epgm": "parameters.convert_epgm",
-			"target_attribute": "parameters.target_attribute",
-			"node_type": "parameters.node_type",
-			"attributes_to_ignore": "parameters.attributes_to_ignore"
-		},
-		"input": "inputs.in_data.epgm_directory"
-	}
-}, {
-	"operation": "default",
-	"spec": {
-		"inputs": {
-			"in_data": {
-				"dataset_name": "${stellar.session.ingest.label}"
-			}
-		},
-		"parameters": {
-			"convert_epgm": "True",
-			"target_attribute": "${stellar.session.nai.targetAttribute}",
-			"node_type": "${stellar.session.nai.nodeType}"
-		}
-	}
-}, {
-	"operation": "modify-overwrite-beta",
-	"spec": {
-		"inputs": {
-			"in_data": {
-				"pipeline_filename": "${stellar.store.fsRoot}/${stellar.session.id}/config/pipeline.json"
-			}
-		},
-		"output": "${stellar.store.fsRoot}/${stellar.session.id}/nai"
-	}
-}]</value>
-            </property>
-            <property>
-              <name>Transform Cache Size</name>
-              <value>1</value>
-            </property>
-          </processor>
-          <processor>
-            <id>c04b3d19-05cc-19cc-7ef5-6e6f91e9629d</id>
-            <name>Create Invalid-Payload Response</name>
-            <position x="241.30160523303152" y="155.41684676128222"/>
-            <styles/>
-            <comment/>
-            <class>org.apache.nifi.processors.standard.ReplaceText</class>
-            <bundle>
-              <group>org.apache.nifi</group>
-              <artifact>nifi-standard-nar</artifact>
-              <version>1.5.0</version>
-            </bundle>
-            <maxConcurrentTasks>1</maxConcurrentTasks>
-            <schedulingPeriod>0 sec</schedulingPeriod>
-            <penalizationPeriod>30 sec</penalizationPeriod>
-            <yieldPeriod>1 sec</yieldPeriod>
-            <bulletinLevel>WARN</bulletinLevel>
-            <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
-            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-            <executionNode>ALL</executionNode>
-            <runDurationNanos>0</runDurationNanos>
-            <property>
-              <name>Regular Expression</name>
-              <value/>
-            </property>
-            <property>
-              <name>Replacement Value</name>
-              <value>{"reason":"Payload is invalid."}</value>
-            </property>
-            <property>
-              <name>Character Set</name>
-              <value>UTF-8</value>
-            </property>
-            <property>
-              <name>Maximum Buffer Size</name>
-              <value>1 MB</value>
-            </property>
-            <property>
-              <name>Replacement Strategy</name>
-              <value>Always Replace</value>
-            </property>
-            <property>
-              <name>Evaluation Mode</name>
-              <value>Entire text</value>
-            </property>
-            <autoTerminatedRelationship>failure</autoTerminatedRelationship>
-          </processor>
-          <processor>
             <id>c04b3d17-05cc-19cc-2799-16975bee5882</id>
             <name>Set HTTP Status Code</name>
             <position x="241.30160523303152" y="591.5021350474751"/>
@@ -13586,7 +13281,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -13603,6 +13298,43 @@
             <property>
               <name>http.statusCode</name>
               <value>400</value>
+            </property>
+          </processor>
+          <processor>
+            <id>ee1f38d4-5b17-1abc-4363-96a4d5917dfb</id>
+            <name>Set HTTP Status Code</name>
+            <position x="1573.2000535069" y="591.5021350474751"/>
+            <styles/>
+            <comment/>
+            <class>org.apache.nifi.processors.attributes.UpdateAttribute</class>
+            <bundle>
+              <group>org.apache.nifi</group>
+              <artifact>nifi-update-attribute-nar</artifact>
+              <version>1.5.0</version>
+            </bundle>
+            <maxConcurrentTasks>1</maxConcurrentTasks>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <penalizationPeriod>30 sec</penalizationPeriod>
+            <yieldPeriod>1 sec</yieldPeriod>
+            <bulletinLevel>WARN</bulletinLevel>
+            <lossTolerant>false</lossTolerant>
+            <scheduledState>RUNNING</scheduledState>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <executionNode>ALL</executionNode>
+            <runDurationNanos>0</runDurationNanos>
+            <property>
+              <name>Delete Attributes Expression</name>
+            </property>
+            <property>
+              <name>Store State</name>
+              <value>Do not store state</value>
+            </property>
+            <property>
+              <name>Stateful Variables Initial Value</name>
+            </property>
+            <property>
+              <name>http.statusCode</name>
+              <value>200</value>
             </property>
           </processor>
           <processor>
@@ -13623,7 +13355,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -13716,6 +13448,114 @@
             <autoTerminatedRelationship>Original</autoTerminatedRelationship>
           </processor>
           <processor>
+            <id>ee1f38d3-5b17-1abc-86f3-d12b39f3163f</id>
+            <name>Wait</name>
+            <position x="1573.2000535069" y="155.41684676128222"/>
+            <styles/>
+            <comment/>
+            <class>org.apache.nifi.processors.standard.Wait</class>
+            <bundle>
+              <group>org.apache.nifi</group>
+              <artifact>nifi-standard-nar</artifact>
+              <version>1.5.0</version>
+            </bundle>
+            <maxConcurrentTasks>1</maxConcurrentTasks>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <penalizationPeriod>30 sec</penalizationPeriod>
+            <yieldPeriod>1 sec</yieldPeriod>
+            <bulletinLevel>WARN</bulletinLevel>
+            <lossTolerant>false</lossTolerant>
+            <scheduledState>RUNNING</scheduledState>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <executionNode>ALL</executionNode>
+            <runDurationNanos>0</runDurationNanos>
+            <property>
+              <name>release-signal-id</name>
+              <value>${stellar.store.sessionLockKey}</value>
+            </property>
+            <property>
+              <name>target-signal-count</name>
+              <value>1</value>
+            </property>
+            <property>
+              <name>signal-counter-name</name>
+              <value>origin/${http.context.identifier}</value>
+            </property>
+            <property>
+              <name>wait-buffer-count</name>
+              <value>1</value>
+            </property>
+            <property>
+              <name>releasable-flowfile-count</name>
+              <value>1</value>
+            </property>
+            <property>
+              <name>expiration-duration</name>
+              <value>10 min</value>
+            </property>
+            <property>
+              <name>distributed-cache-service</name>
+              <value>dc79510e-43c5-3f31-2abc-978e3974ef1d</value>
+            </property>
+            <property>
+              <name>attribute-copy-mode</name>
+              <value>replace</value>
+            </property>
+            <property>
+              <name>wait-mode</name>
+              <value>keep</value>
+            </property>
+            <autoTerminatedRelationship>wait</autoTerminatedRelationship>
+          </processor>
+          <processor>
+            <id>c47530fd-6ce1-1581-6ddc-dc7e52d514e4</id>
+            <name>Create Task-Error Response</name>
+            <position x="3121.740666793705" y="-314.064690197088"/>
+            <styles/>
+            <comment/>
+            <class>org.apache.nifi.processors.standard.ReplaceText</class>
+            <bundle>
+              <group>org.apache.nifi</group>
+              <artifact>nifi-standard-nar</artifact>
+              <version>1.5.0</version>
+            </bundle>
+            <maxConcurrentTasks>1</maxConcurrentTasks>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <penalizationPeriod>30 sec</penalizationPeriod>
+            <yieldPeriod>1 sec</yieldPeriod>
+            <bulletinLevel>WARN</bulletinLevel>
+            <lossTolerant>false</lossTolerant>
+            <scheduledState>RUNNING</scheduledState>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <executionNode>ALL</executionNode>
+            <runDurationNanos>0</runDurationNanos>
+            <property>
+              <name>Regular Expression</name>
+              <value/>
+            </property>
+            <property>
+              <name>Replacement Value</name>
+              <value>{"reason":"Failed to start NAI task."}</value>
+            </property>
+            <property>
+              <name>Character Set</name>
+              <value>UTF-8</value>
+            </property>
+            <property>
+              <name>Maximum Buffer Size</name>
+              <value>1 MB</value>
+            </property>
+            <property>
+              <name>Replacement Strategy</name>
+              <value>Always Replace</value>
+            </property>
+            <property>
+              <name>Evaluation Mode</name>
+              <value>Entire text</value>
+            </property>
+            <autoTerminatedRelationship>failure</autoTerminatedRelationship>
+          </processor>
+          <processor>
             <id>ee1f38d0-5b17-1abc-51b7-3bbceaecd6b6</id>
             <name>Create Session-Error Response</name>
             <position x="2219.73065702808" y="376.12493487922"/>
@@ -13733,7 +13573,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -13781,7 +13621,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -13801,6 +13641,166 @@
             </property>
           </processor>
           <processor>
+            <id>ee1f38d1-5b17-1abc-61e9-4537c5c7a449</id>
+            <name>Session OK?</name>
+            <position x="2219.73065702808" y="155.41684676128222"/>
+            <styles/>
+            <comment/>
+            <class>org.apache.nifi.processors.standard.RouteOnAttribute</class>
+            <bundle>
+              <group>org.apache.nifi</group>
+              <artifact>nifi-standard-nar</artifact>
+              <version>1.5.0</version>
+            </bundle>
+            <maxConcurrentTasks>1</maxConcurrentTasks>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <penalizationPeriod>30 sec</penalizationPeriod>
+            <yieldPeriod>1 sec</yieldPeriod>
+            <bulletinLevel>WARN</bulletinLevel>
+            <lossTolerant>false</lossTolerant>
+            <scheduledState>RUNNING</scheduledState>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <executionNode>ALL</executionNode>
+            <runDurationNanos>0</runDurationNanos>
+            <property>
+              <name>Routing Strategy</name>
+              <value>Route to Property name</value>
+            </property>
+            <property>
+              <name>ok</name>
+              <value>${stellar.session.error:isEmpty()}</value>
+            </property>
+          </processor>
+          <processor>
+            <id>c47530f3-6ce1-1581-4939-69d059b3d292</id>
+            <name>Update Payload</name>
+            <position x="241.30160523303152" y="-314.064690197088"/>
+            <styles/>
+            <comment/>
+            <class>org.apache.nifi.processors.standard.JoltTransformJSON</class>
+            <bundle>
+              <group>org.apache.nifi</group>
+              <artifact>nifi-standard-nar</artifact>
+              <version>1.5.0</version>
+            </bundle>
+            <maxConcurrentTasks>1</maxConcurrentTasks>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <penalizationPeriod>30 sec</penalizationPeriod>
+            <yieldPeriod>1 sec</yieldPeriod>
+            <bulletinLevel>WARN</bulletinLevel>
+            <lossTolerant>false</lossTolerant>
+            <scheduledState>RUNNING</scheduledState>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <executionNode>ALL</executionNode>
+            <runDurationNanos>0</runDurationNanos>
+            <property>
+              <name>jolt-transform</name>
+              <value>jolt-transform-chain</value>
+            </property>
+            <property>
+              <name>jolt-custom-class</name>
+            </property>
+            <property>
+              <name>jolt-custom-modules</name>
+            </property>
+            <property>
+              <name>jolt-spec</name>
+              <value>[{
+	"operation": "shift",
+	"spec": {
+		"inputs": {
+			"in_data": {
+				"dataset_name": "inputs.in_data.dataset_name"
+			}
+		},
+		"parameters": {
+			"convert_epgm": "parameters.convert_epgm",
+			"target_attribute": "parameters.target_attribute",
+			"node_type": "parameters.node_type",
+			"attributes_to_ignore": "parameters.attributes_to_ignore"
+		},
+		"input": "inputs.in_data.epgm_directory"
+	}
+}, {
+	"operation": "default",
+	"spec": {
+		"inputs": {
+			"in_data": {
+				"dataset_name": "${stellar.session.ingest.label}"
+			}
+		},
+		"parameters": {
+			"convert_epgm": "True",
+			"target_attribute": "${stellar.session.nai.targetAttribute}",
+			"node_type": "${stellar.session.nai.nodeType}"
+		}
+	}
+}, {
+	"operation": "modify-overwrite-beta",
+	"spec": {
+		"inputs": {
+			"in_data": {
+				"pipeline_filename": "${stellar.store.fsRoot}/${stellar.session.id}/config/pipeline.json"
+			}
+		},
+		"output": "${stellar.store.fsRoot}/${stellar.session.id}/nai"
+	}
+}]</value>
+            </property>
+            <property>
+              <name>Transform Cache Size</name>
+              <value>1</value>
+            </property>
+          </processor>
+          <processor>
+            <id>c04b3d19-05cc-19cc-7ef5-6e6f91e9629d</id>
+            <name>Create Invalid-Payload Response</name>
+            <position x="241.30160523303152" y="155.41684676128222"/>
+            <styles/>
+            <comment/>
+            <class>org.apache.nifi.processors.standard.ReplaceText</class>
+            <bundle>
+              <group>org.apache.nifi</group>
+              <artifact>nifi-standard-nar</artifact>
+              <version>1.5.0</version>
+            </bundle>
+            <maxConcurrentTasks>1</maxConcurrentTasks>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <penalizationPeriod>30 sec</penalizationPeriod>
+            <yieldPeriod>1 sec</yieldPeriod>
+            <bulletinLevel>WARN</bulletinLevel>
+            <lossTolerant>false</lossTolerant>
+            <scheduledState>RUNNING</scheduledState>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <executionNode>ALL</executionNode>
+            <runDurationNanos>0</runDurationNanos>
+            <property>
+              <name>Regular Expression</name>
+              <value/>
+            </property>
+            <property>
+              <name>Replacement Value</name>
+              <value>{"reason":"Payload is invalid."}</value>
+            </property>
+            <property>
+              <name>Character Set</name>
+              <value>UTF-8</value>
+            </property>
+            <property>
+              <name>Maximum Buffer Size</name>
+              <value>1 MB</value>
+            </property>
+            <property>
+              <name>Replacement Strategy</name>
+              <value>Always Replace</value>
+            </property>
+            <property>
+              <name>Evaluation Mode</name>
+              <value>Entire text</value>
+            </property>
+            <autoTerminatedRelationship>failure</autoTerminatedRelationship>
+          </processor>
+          <processor>
             <id>ee1f38cf-5b17-1abc-18f1-d8daf607569d</id>
             <name>Update Session</name>
             <position x="1573.2000535069" y="-83.38823647349327"/>
@@ -13818,7 +13818,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -13859,7 +13859,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -13894,21 +13894,21 @@
             <name>HTTP Request</name>
             <position x="296.3016052330315" y="-474.63823399112744"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>ee1f38cd-5b17-1abc-1ac8-e88057ac618d</id>
             <name>HTTP Response</name>
             <position x="966.6221169986866" y="918.9817859538161"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
             <id>c4753114-6ce1-1581-2f9f-ae83c0a8384f</id>
             <name>HTTP Request</name>
             <position x="2894.7751570039545" y="195.41684676128222"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <funnel>
             <id>c4753102-6ce1-1581-bceb-de8f5856d856</id>
@@ -13937,7 +13937,7 @@
               <yieldPeriod>1 sec</yieldPeriod>
               <bulletinLevel>WARN</bulletinLevel>
               <lossTolerant>false</lossTolerant>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
               <executionNode>ALL</executionNode>
               <runDurationNanos>0</runDurationNanos>
@@ -13985,7 +13985,7 @@
               <yieldPeriod>1 sec</yieldPeriod>
               <bulletinLevel>WARN</bulletinLevel>
               <lossTolerant>false</lossTolerant>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
               <executionNode>ALL</executionNode>
               <runDurationNanos>0</runDurationNanos>
@@ -14031,7 +14031,7 @@
               <yieldPeriod>1 sec</yieldPeriod>
               <bulletinLevel>WARN</bulletinLevel>
               <lossTolerant>false</lossTolerant>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
               <executionNode>ALL</executionNode>
               <runDurationNanos>0</runDurationNanos>
@@ -14068,7 +14068,7 @@
               <yieldPeriod>1 sec</yieldPeriod>
               <bulletinLevel>WARN</bulletinLevel>
               <lossTolerant>false</lossTolerant>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
               <executionNode>ALL</executionNode>
               <runDurationNanos>0</runDurationNanos>
@@ -14105,7 +14105,7 @@
               <yieldPeriod>1 sec</yieldPeriod>
               <bulletinLevel>WARN</bulletinLevel>
               <lossTolerant>false</lossTolerant>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
               <executionNode>ALL</executionNode>
               <runDurationNanos>0</runDurationNanos>
@@ -14151,7 +14151,7 @@
               <yieldPeriod>1 sec</yieldPeriod>
               <bulletinLevel>WARN</bulletinLevel>
               <lossTolerant>false</lossTolerant>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
               <executionNode>ALL</executionNode>
               <runDurationNanos>0</runDurationNanos>
@@ -14201,7 +14201,7 @@
               <yieldPeriod>1 sec</yieldPeriod>
               <bulletinLevel>WARN</bulletinLevel>
               <lossTolerant>false</lossTolerant>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
               <executionNode>ALL</executionNode>
               <runDurationNanos>0</runDurationNanos>
@@ -14238,7 +14238,7 @@
               <yieldPeriod>1 sec</yieldPeriod>
               <bulletinLevel>WARN</bulletinLevel>
               <lossTolerant>false</lossTolerant>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
               <executionNode>ALL</executionNode>
               <runDurationNanos>0</runDurationNanos>
@@ -14275,21 +14275,21 @@
               <name>HTTP Request</name>
               <position x="1748.2219837678676" y="-824.1528425760287"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
             </inputPort>
             <outputPort>
               <id>c04b3cfb-05cc-19cc-ba6b-b5274afe8df1</id>
               <name>HTTP Response</name>
               <position x="1052.7752126921423" y="618.8471574239713"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
             </outputPort>
             <outputPort>
               <id>c04b3d10-05cc-19cc-2911-17e4a6ec8aca</id>
               <name>HTTP Request</name>
               <position x="1748.2219837678676" y="618.8471574239713"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
             </outputPort>
             <connection>
               <id>c04b3cfa-05cc-19cc-7bcd-822ad6a32058</id>
@@ -14526,7 +14526,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -14535,7 +14535,7 @@
               <name>Update Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -15008,23 +15008,6 @@
           <flowFileExpiration>0 sec</flowFileExpiration>
         </connection>
         <connection>
-          <id>c47530f2-6ce1-1581-c18c-b17526f6e359</id>
-          <name/>
-          <bendPoints/>
-          <labelIndex>1</labelIndex>
-          <zIndex>0</zIndex>
-          <sourceId>ee1f38a9-5b17-1abc-1058-97f230f6d70a</sourceId>
-          <sourceGroupId>ee1f38a6-5b17-1abc-8ed8-34af0314a683</sourceGroupId>
-          <sourceType>OUTPUT_PORT</sourceType>
-          <destinationId>ee1f38cc-5b17-1abc-9e8d-8823adc224c7</destinationId>
-          <destinationGroupId>ee1f38cb-5b17-1abc-0772-759c70ae8604</destinationGroupId>
-          <destinationType>INPUT_PORT</destinationType>
-          <relationship/>
-          <maxWorkQueueSize>10000</maxWorkQueueSize>
-          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-          <flowFileExpiration>0 sec</flowFileExpiration>
-        </connection>
-        <connection>
           <id>c47530ed-6ce1-1581-922d-144aa7f526a1</id>
           <name/>
           <bendPoints/>
@@ -15036,6 +15019,23 @@
           <destinationId>c47530eb-6ce1-1581-1b27-5cedec82a553</destinationId>
           <destinationGroupId>7b54ea1f-982d-3d4c-a82a-ed8c3c481348</destinationGroupId>
           <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
+          <id>c47530f2-6ce1-1581-c18c-b17526f6e359</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>ee1f38a9-5b17-1abc-1058-97f230f6d70a</sourceId>
+          <sourceGroupId>ee1f38a6-5b17-1abc-8ed8-34af0314a683</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>ee1f38cc-5b17-1abc-9e8d-8823adc224c7</destinationId>
+          <destinationGroupId>ee1f38cb-5b17-1abc-0772-759c70ae8604</destinationGroupId>
+          <destinationType>INPUT_PORT</destinationType>
           <relationship/>
           <maxWorkQueueSize>10000</maxWorkQueueSize>
           <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
@@ -15219,7 +15219,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15250,7 +15250,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15297,7 +15297,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15345,7 +15345,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15382,7 +15382,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15419,7 +15419,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15479,7 +15479,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15518,7 +15518,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15555,7 +15555,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15651,7 +15651,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15693,7 +15693,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15734,7 +15734,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15771,7 +15771,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -15791,39 +15791,39 @@
         </property>
       </processor>
       <inputPort>
-        <id>41a33641-ce93-1fe3-0319-13b9dfc7b7dc</id>
-        <name>Init Session</name>
-        <position x="894.1766815294452" y="518.8819234963241"/>
-        <comments/>
-        <scheduledState>STOPPED</scheduledState>
-      </inputPort>
-      <inputPort>
-        <id>41a336b0-ce93-1fe3-9a9c-2f777ea1130c</id>
-        <name>Lock Session</name>
-        <position x="343.1086481902239" y="1323.053472198275"/>
-        <comments/>
-        <scheduledState>STOPPED</scheduledState>
-      </inputPort>
-      <inputPort>
-        <id>41a336ab-ce93-1fe3-20aa-17fc26c0abb3</id>
-        <name>Update Session</name>
-        <position x="1520.5851345146389" y="1090.4640202844814"/>
-        <comments/>
-        <scheduledState>STOPPED</scheduledState>
-      </inputPort>
-      <inputPort>
         <id>41a336a5-ce93-1fe3-52cf-7245d7df2f46</id>
         <name>Get Session</name>
         <position x="-315.5928929712751" y="518.8819234963241"/>
         <comments/>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <inputPort>
         <id>41a336d5-ce93-1fe3-10f4-479576626bbc</id>
         <name>Unlock Session</name>
         <position x="1520.5851345146389" y="2118.1729329655464"/>
         <comments/>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
+      </inputPort>
+      <inputPort>
+        <id>41a33641-ce93-1fe3-0319-13b9dfc7b7dc</id>
+        <name>Init Session</name>
+        <position x="894.1766815294452" y="518.8819234963241"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </inputPort>
+      <inputPort>
+        <id>41a336b0-ce93-1fe3-9a9c-2f777ea1130c</id>
+        <name>Lock Session</name>
+        <position x="343.1086481902239" y="1323.053472198275"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </inputPort>
+      <inputPort>
+        <id>41a336ab-ce93-1fe3-20aa-17fc26c0abb3</id>
+        <name>Update Session</name>
+        <position x="1520.5851345146389" y="1090.4640202844814"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <processGroup>
         <id>41a33691-ce93-1fe3-2a9b-3b9bfaddf67e</id>
@@ -15848,7 +15848,7 @@
           <yieldPeriod>1 sec</yieldPeriod>
           <bulletinLevel>WARN</bulletinLevel>
           <lossTolerant>false</lossTolerant>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
           <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
           <executionNode>ALL</executionNode>
           <runDurationNanos>0</runDurationNanos>
@@ -15913,7 +15913,7 @@
           <yieldPeriod>1 sec</yieldPeriod>
           <bulletinLevel>WARN</bulletinLevel>
           <lossTolerant>false</lossTolerant>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
           <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
           <executionNode>ALL</executionNode>
           <runDurationNanos>0</runDurationNanos>
@@ -15948,14 +15948,14 @@
           <name>Session Attributes</name>
           <position x="999.7815841498666" y="846.0000252631244"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
           <id>41a33698-ce93-1fe3-9582-9f4294e017d7</id>
           <name>Serialized Session</name>
           <position x="999.7815841498666" y="1393.0000252631241"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <connection>
           <id>41a33699-ce93-1fe3-768e-24a71747efae</id>
@@ -16032,7 +16032,7 @@
           <yieldPeriod>1 sec</yieldPeriod>
           <bulletinLevel>WARN</bulletinLevel>
           <lossTolerant>false</lossTolerant>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
           <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
           <executionNode>ALL</executionNode>
           <runDurationNanos>0</runDurationNanos>
@@ -16072,7 +16072,7 @@
           <yieldPeriod>1 sec</yieldPeriod>
           <bulletinLevel>WARN</bulletinLevel>
           <lossTolerant>false</lossTolerant>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
           <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
           <executionNode>ALL</executionNode>
           <runDurationNanos>0</runDurationNanos>
@@ -16637,7 +16637,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -16685,7 +16685,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -16722,7 +16722,7 @@
         <yieldPeriod>1 sec</yieldPeriod>
         <bulletinLevel>WARN</bulletinLevel>
         <lossTolerant>false</lossTolerant>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
         <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
         <executionNode>ALL</executionNode>
         <runDurationNanos>0</runDurationNanos>
@@ -16752,14 +16752,14 @@
         <name>HTTP Request</name>
         <position x="92.88459863160858" y="239.0000005406165"/>
         <comments/>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <outputPort>
         <id>01611019-9454-148d-574e-6f6085ec7d82</id>
         <name>HTTP Response</name>
         <position x="92.88459863160858" y="1045.4947757615084"/>
         <comments/>
-        <scheduledState>STOPPED</scheduledState>
+        <scheduledState>RUNNING</scheduledState>
       </outputPort>
       <processGroup>
         <id>c04b3bec-05cc-19cc-2c52-f3ea14edc538</id>
@@ -16784,7 +16784,7 @@
           <yieldPeriod>1 sec</yieldPeriod>
           <bulletinLevel>WARN</bulletinLevel>
           <lossTolerant>false</lossTolerant>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
           <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
           <executionNode>ALL</executionNode>
           <runDurationNanos>0</runDurationNanos>
@@ -16894,7 +16894,7 @@
           <yieldPeriod>1 sec</yieldPeriod>
           <bulletinLevel>WARN</bulletinLevel>
           <lossTolerant>false</lossTolerant>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
           <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
           <executionNode>ALL</executionNode>
           <runDurationNanos>0</runDurationNanos>
@@ -16919,14 +16919,14 @@
           <name>HTTP Request</name>
           <position x="79.90158210588811" y="171.32836579243474"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
           <id>c04b3bee-05cc-19cc-053c-ba59a00fb1e3</id>
           <name>Success</name>
           <position x="79.90158210588811" y="828.1072811977082"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <connection>
           <id>c04b3bf1-05cc-19cc-e1ca-fdea9d13eb8f</id>
@@ -16993,14 +16993,14 @@
           <name>HTTP Request</name>
           <position x="1249.8029549777254" y="-78.79767112157364"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
           <id>56ba3196-a6ea-18f4-9035-49051e2e0361</id>
           <name>HTTP Response</name>
           <position x="1917.684077554417" y="734.7917940877022"/>
           <comments/>
-          <scheduledState>STOPPED</scheduledState>
+          <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <processGroup>
           <id>56ba31bc-a6ea-18f4-0553-b4d5f11ba6ef</id>
@@ -17025,7 +17025,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17062,7 +17062,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17110,7 +17110,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17220,7 +17220,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17274,7 +17274,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17322,7 +17322,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17346,21 +17346,21 @@
             <name>HTTP Request</name>
             <position x="674.7252043303891" y="431.2406491707137"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>56ba31bf-a6ea-18f4-f999-6573b01e1aa0</id>
             <name>Success</name>
             <position x="1879.1454559956028" y="623.0868852853786"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
             <id>56ba31be-a6ea-18f4-ab47-4718c7293554</id>
             <name>Failure</name>
             <position x="674.7252043303891" y="1347.3578557130845"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <connection>
             <id>c04b3c13-05cc-19cc-eb1f-873e87a640ea</id>
@@ -17541,7 +17541,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17578,7 +17578,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17638,7 +17638,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17675,7 +17675,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17706,7 +17706,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17754,7 +17754,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17802,7 +17802,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -17826,14 +17826,14 @@
             <name>HTTP Request</name>
             <position x="1625.6845362791353" y="-259.21423801944775"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>56ba3199-a6ea-18f4-a269-208e56e255f4</id>
             <name>HTTP Response</name>
             <position x="2276.194768356205" y="834.5947620280349"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>56ba31a1-a6ea-18f4-ace8-87d20f1e65e6</id>
@@ -17844,7 +17844,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -17853,7 +17853,7 @@
               <name>Update Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -18074,7 +18074,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -18105,7 +18105,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -18153,7 +18153,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -18190,7 +18190,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -18221,7 +18221,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -18281,7 +18281,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -18316,21 +18316,21 @@
             <name>HTTP Request</name>
             <position x="1212.9742870700884" y="6.162047065884849"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>56ba31da-a6ea-18f4-c9fd-252de1963067</id>
             <name>Failure</name>
             <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
             <id>56ba31db-a6ea-18f4-57f7-8bf683263338</id>
             <name>Success</name>
             <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <remoteProcessGroup>
             <id>56ba31e2-a6ea-18f4-731d-34263324ab1b</id>
@@ -18341,7 +18341,7 @@
             <urls>http://localhost:8080/nifi</urls>
             <timeout>30 sec</timeout>
             <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>false</transmitting>
+            <transmitting>true</transmitting>
             <transportProtocol>HTTP</transportProtocol>
             <proxyHost/>
             <proxyUser/>
@@ -18350,7 +18350,7 @@
               <name>Get Session</name>
               <position x="0.0" y="0.0"/>
               <comments/>
-              <scheduledState>STOPPED</scheduledState>
+              <scheduledState>RUNNING</scheduledState>
               <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
               <maxConcurrentTasks>1</maxConcurrentTasks>
               <useCompression>false</useCompression>
@@ -18571,7 +18571,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -18619,7 +18619,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -18666,7 +18666,7 @@
             <yieldPeriod>1 sec</yieldPeriod>
             <bulletinLevel>WARN</bulletinLevel>
             <lossTolerant>false</lossTolerant>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
             <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
             <executionNode>ALL</executionNode>
             <runDurationNanos>0</runDurationNanos>
@@ -18690,21 +18690,21 @@
             <name>HTTP Request</name>
             <position x="1284.8893127525628" y="208.99999965471278"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
             <id>56ba31b3-a6ea-18f4-4afe-58ae00db5b89</id>
             <name>Success</name>
             <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
             <id>56ba31b2-a6ea-18f4-30b3-1cc65915cc68</id>
             <name>Failure</name>
             <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
-            <scheduledState>STOPPED</scheduledState>
+            <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <connection>
             <id>56ba31b8-a6ea-18f4-cdd1-5c3d6d54e0bc</id>
@@ -19033,23 +19033,6 @@
         <flowFileExpiration>0 sec</flowFileExpiration>
       </connection>
       <connection>
-        <id>0161101a-9454-148d-cc7c-23f7383db41b</id>
-        <name/>
-        <bendPoints/>
-        <labelIndex>1</labelIndex>
-        <zIndex>0</zIndex>
-        <sourceId>01611018-9454-148d-377b-6e70821e8f01</sourceId>
-        <sourceGroupId>01611017-9454-148d-332e-beb28e2723f3</sourceGroupId>
-        <sourceType>INPUT_PORT</sourceType>
-        <destinationId>0161102f-9454-148d-487f-452b4f162fef</destinationId>
-        <destinationGroupId>01611017-9454-148d-332e-beb28e2723f3</destinationGroupId>
-        <destinationType>PROCESSOR</destinationType>
-        <relationship/>
-        <maxWorkQueueSize>10000</maxWorkQueueSize>
-        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-        <flowFileExpiration>0 sec</flowFileExpiration>
-      </connection>
-      <connection>
         <id>c04b3bf4-05cc-19cc-72c2-45b93d5aaff9</id>
         <name/>
         <bendPoints/>
@@ -19062,6 +19045,23 @@
         <destinationGroupId>01611017-9454-148d-332e-beb28e2723f3</destinationGroupId>
         <destinationType>PROCESSOR</destinationType>
         <relationship>success</relationship>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>0161101a-9454-148d-cc7c-23f7383db41b</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>01611018-9454-148d-377b-6e70821e8f01</sourceId>
+        <sourceGroupId>01611017-9454-148d-332e-beb28e2723f3</sourceGroupId>
+        <sourceType>INPUT_PORT</sourceType>
+        <destinationId>0161102f-9454-148d-487f-452b4f162fef</destinationId>
+        <destinationGroupId>01611017-9454-148d-332e-beb28e2723f3</destinationGroupId>
+        <destinationType>PROCESSOR</destinationType>
+        <relationship/>
         <maxWorkQueueSize>10000</maxWorkQueueSize>
         <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
         <flowFileExpiration>0 sec</flowFileExpiration>
