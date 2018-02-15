@@ -278,7 +278,7 @@
       </property>
       <property>
         <name>nai</name>
-        <value>${http.request.uri:equals(${stellar.api.nai.root})}</value>
+        <value>${http.request.uri:startsWith(${stellar.api.nai.root})}</value>
       </property>
       <property>
         <name>ingest</name>
@@ -718,7 +718,7 @@
             <property>
               <name>jolt-spec</name>
               <value>{
-	"prefix": "datasets/ACM_DBLP",
+	"prefix": "",
 	"dataformat": "epgm",
 	"fileSources": "${stellar.session.params.input}",
 	"outputFile": "${stellar.session.er.output}",
@@ -1213,7 +1213,7 @@
             </property>
             <property>
               <name>stellar.session.status</name>
-              <value>er running</value>
+              <value>er-running</value>
             </property>
           </processor>
           <processor>
@@ -1730,16 +1730,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>c04b3c93-05cc-19cc-ccae-97b08d083f18</id>
-            <name>Failure</name>
-            <position x="1284.8893127525628" y="1192.9999996547128"/>
+            <id>c04b3c94-05cc-19cc-7863-d41d549fb2a0</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>c04b3c94-05cc-19cc-7863-d41d549fb2a0</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
+            <id>c04b3c93-05cc-19cc-ccae-97b08d083f18</id>
+            <name>Failure</name>
+            <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -2098,16 +2098,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>c04b3cbc-05cc-19cc-0dff-d558e569a6de</id>
-            <name>Success</name>
-            <position x="568.3572942412702" y="482.3974879052903"/>
+            <id>c04b3cbb-05cc-19cc-deb5-57f79654ae3c</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>c04b3cbb-05cc-19cc-deb5-57f79654ae3c</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
+            <id>c04b3cbc-05cc-19cc-0dff-d558e569a6de</id>
+            <name>Success</name>
+            <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -2564,8 +2564,8 @@
             <property>
               <name>stellar.session.status</name>
               <value>${stellar.session.params.result:equals("success"):ifElse(
-	"er completed",
-	"er failed"
+	"er-completed",
+	"er-failed"
 )}</value>
             </property>
           </processor>
@@ -3492,16 +3492,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>c04b3c29-05cc-19cc-1cc4-3a6473b64b61</id>
-            <name>Failure</name>
-            <position x="1284.8893127525628" y="1192.9999996547128"/>
+            <id>c04b3c28-05cc-19cc-6525-c98555ecf47c</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>c04b3c28-05cc-19cc-6525-c98555ecf47c</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
+            <id>c04b3c29-05cc-19cc-1cc4-3a6473b64b61</id>
+            <name>Failure</name>
+            <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -3812,7 +3812,7 @@
             </property>
             <property>
               <name>running</name>
-              <value>${stellar.session.status:equals('er running')}</value>
+              <value>${stellar.session.status:equals("er-running")}</value>
             </property>
           </processor>
           <processor>
@@ -5466,7 +5466,7 @@
             </property>
             <property>
               <name>stellar.session.status</name>
-              <value>ingest aborted</value>
+              <value>ingest-aborted</value>
             </property>
           </processor>
           <processor>
@@ -6197,16 +6197,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>41a335ff-ce93-1fe3-e62f-946f29718e76</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
+            <id>41a335fe-ce93-1fe3-f443-ede8b8b20e9a</id>
+            <name>Success</name>
+            <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>41a335fe-ce93-1fe3-f443-ede8b8b20e9a</id>
-            <name>Success</name>
-            <position x="568.3572942412702" y="482.3974879052903"/>
+            <id>41a335ff-ce93-1fe3-e62f-946f29718e76</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -6857,7 +6857,7 @@
             </property>
             <property>
               <name>stellar.session.status</name>
-              <value>ingest running</value>
+              <value>ingest-running</value>
             </property>
           </processor>
           <processor>
@@ -7895,7 +7895,7 @@
             <runDurationNanos>0</runDurationNanos>
             <property>
               <name>jolt-transform</name>
-              <value>jolt-transform-modify-overwrite</value>
+              <value>jolt-transform-chain</value>
             </property>
             <property>
               <name>jolt-custom-class</name>
@@ -7905,12 +7905,23 @@
             </property>
             <property>
               <name>jolt-spec</name>
-              <value>{
-	"sessionId": "${stellar.session.id}",
-	"output": "${stellar.session.ingest.output}",
-	"completeUrl": "http://${stellar.http.server}:${stellar.http.port}${stellar.api.ingest.root}${stellar.api.ingest.complete}",
-	"abortUrl": "http://${stellar.http.server}:${stellar.http.port}${stellar.api.ingest.root}${stellar.api.ingest.abort}"
-}</value>
+              <value>[{
+	"operation": "shift",
+	"spec": {
+		"label": "label",
+		"graphSchema": "graphSchema",
+		"sources": "sources",
+		"mapping": "mapping"
+	}
+}, {
+	"operation": "modify-overwrite-beta",
+	"spec": {
+		"sessionId": "${stellar.session.id}",
+		"output": "${stellar.session.ingest.output}",
+		"completeUrl": "http://${stellar.http.server}:${stellar.http.port}${stellar.api.ingest.root}${stellar.api.ingest.complete}",
+		"abortUrl": "http://${stellar.http.server}:${stellar.http.port}${stellar.api.ingest.root}${stellar.api.ingest.abort}"
+	}
+}]</value>
             </property>
             <property>
               <name>Transform Cache Size</name>
@@ -8041,7 +8052,7 @@
             </property>
             <property>
               <name>Conflict Resolution Strategy</name>
-              <value>fail</value>
+              <value>replace</value>
             </property>
             <property>
               <name>Create Missing Directories</name>
@@ -8406,7 +8417,7 @@
             </property>
             <property>
               <name>init</name>
-              <value>${stellar.session.status:equals('init completed')}</value>
+              <value>${stellar.session.status:equals('init-completed')}</value>
             </property>
           </processor>
           <processor>
@@ -8593,16 +8604,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>ee1f3878-5b17-1abc-e403-2e1d930659ee</id>
-            <name>Success</name>
-            <position x="568.3572942412702" y="482.3974879052903"/>
+            <id>ee1f3877-5b17-1abc-cd99-fea76385aee5</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>ee1f3877-5b17-1abc-cd99-fea76385aee5</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
+            <id>ee1f3878-5b17-1abc-e403-2e1d930659ee</id>
+            <name>Success</name>
+            <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -9119,16 +9130,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>01611070-95f7-1f61-c6aa-8373db3ce4bc</id>
-            <name>Failure</name>
-            <position x="1284.8893127525628" y="1192.9999996547128"/>
+            <id>01611071-95f7-1f61-60a2-d73a11a0ea77</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>01611071-95f7-1f61-60a2-d73a11a0ea77</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
+            <id>01611070-95f7-1f61-c6aa-8373db3ce4bc</id>
+            <name>Failure</name>
+            <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -9519,7 +9530,7 @@
             </property>
             <property>
               <name>stellar.session.status</name>
-              <value>ingest completed</value>
+              <value>ingest-completed</value>
             </property>
           </processor>
           <inputPort>
@@ -10269,7 +10280,7 @@
             </property>
             <property>
               <name>running</name>
-              <value>${stellar.session.status:equals('ingest running')}</value>
+              <value>${stellar.session.status:equals("ingest-running")}</value>
             </property>
           </processor>
           <processor>
@@ -11648,7 +11659,7 @@
             </property>
             <property>
               <name>stellar.session.status</name>
-              <value>nai completed</value>
+              <value>nai-completed</value>
             </property>
           </processor>
           <processor>
@@ -11739,7 +11750,7 @@
             </property>
             <property>
               <name>success</name>
-              <value>${stellar.session.status:equals("nai completed")}</value>
+              <value>${stellar.session.status:equals("nai-completed")}</value>
             </property>
             <property>
               <name>auto</name>
@@ -11820,7 +11831,7 @@
             </property>
             <property>
               <name>stellar.session.status</name>
-              <value>nai failed</value>
+              <value>nai-failed</value>
             </property>
           </processor>
           <processor>
@@ -12661,16 +12672,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>ee1f38c1-5b17-1abc-8ecb-d7ab93dfa2b7</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
+            <id>ee1f38c2-5b17-1abc-4083-214f4af17309</id>
+            <name>Failure</name>
+            <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>ee1f38c2-5b17-1abc-4083-214f4af17309</id>
-            <name>Failure</name>
-            <position x="1284.8893127525628" y="1192.9999996547128"/>
+            <id>ee1f38c1-5b17-1abc-8ecb-d7ab93dfa2b7</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -13029,16 +13040,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>ee1f38a9-5b17-1abc-1058-97f230f6d70a</id>
-            <name>Success</name>
-            <position x="568.3572942412702" y="482.3974879052903"/>
+            <id>ee1f38a8-5b17-1abc-06e7-b202b913bd87</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>ee1f38a8-5b17-1abc-06e7-b202b913bd87</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
+            <id>ee1f38a9-5b17-1abc-1058-97f230f6d70a</id>
+            <name>Success</name>
+            <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -13838,7 +13849,7 @@
             </property>
             <property>
               <name>stellar.session.status</name>
-              <value>nai running</value>
+              <value>nai-running</value>
             </property>
           </processor>
           <processor>
@@ -13897,16 +13908,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>ee1f38cd-5b17-1abc-1ac8-e88057ac618d</id>
-            <name>HTTP Response</name>
-            <position x="966.6221169986866" y="918.9817859538161"/>
+            <id>c4753114-6ce1-1581-2f9f-ae83c0a8384f</id>
+            <name>HTTP Request</name>
+            <position x="2894.7751570039545" y="195.41684676128222"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>c4753114-6ce1-1581-2f9f-ae83c0a8384f</id>
-            <name>HTTP Request</name>
-            <position x="2894.7751570039545" y="195.41684676128222"/>
+            <id>ee1f38cd-5b17-1abc-1ac8-e88057ac618d</id>
+            <name>HTTP Response</name>
+            <position x="966.6221169986866" y="918.9817859538161"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -14278,16 +14289,16 @@
               <scheduledState>RUNNING</scheduledState>
             </inputPort>
             <outputPort>
-              <id>c04b3cfb-05cc-19cc-ba6b-b5274afe8df1</id>
-              <name>HTTP Response</name>
-              <position x="1052.7752126921423" y="618.8471574239713"/>
+              <id>c04b3d10-05cc-19cc-2911-17e4a6ec8aca</id>
+              <name>HTTP Request</name>
+              <position x="1748.2219837678676" y="618.8471574239713"/>
               <comments/>
               <scheduledState>RUNNING</scheduledState>
             </outputPort>
             <outputPort>
-              <id>c04b3d10-05cc-19cc-2911-17e4a6ec8aca</id>
-              <name>HTTP Request</name>
-              <position x="1748.2219837678676" y="618.8471574239713"/>
+              <id>c04b3cfb-05cc-19cc-ba6b-b5274afe8df1</id>
+              <name>HTTP Response</name>
+              <position x="1052.7752126921423" y="618.8471574239713"/>
               <comments/>
               <scheduledState>RUNNING</scheduledState>
             </outputPort>
@@ -15713,7 +15724,7 @@
         </property>
         <property>
           <name>stellar.session.status</name>
-          <value>init completed</value>
+          <value>init-completed</value>
         </property>
       </processor>
       <processor>
@@ -15791,20 +15802,6 @@
         </property>
       </processor>
       <inputPort>
-        <id>41a336a5-ce93-1fe3-52cf-7245d7df2f46</id>
-        <name>Get Session</name>
-        <position x="-315.5928929712751" y="518.8819234963241"/>
-        <comments/>
-        <scheduledState>RUNNING</scheduledState>
-      </inputPort>
-      <inputPort>
-        <id>41a336d5-ce93-1fe3-10f4-479576626bbc</id>
-        <name>Unlock Session</name>
-        <position x="1520.5851345146389" y="2118.1729329655464"/>
-        <comments/>
-        <scheduledState>RUNNING</scheduledState>
-      </inputPort>
-      <inputPort>
         <id>41a33641-ce93-1fe3-0319-13b9dfc7b7dc</id>
         <name>Init Session</name>
         <position x="894.1766815294452" y="518.8819234963241"/>
@@ -15812,9 +15809,23 @@
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <inputPort>
+        <id>41a336a5-ce93-1fe3-52cf-7245d7df2f46</id>
+        <name>Get Session</name>
+        <position x="-315.5928929712751" y="518.8819234963241"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </inputPort>
+      <inputPort>
         <id>41a336b0-ce93-1fe3-9a9c-2f777ea1130c</id>
         <name>Lock Session</name>
         <position x="343.1086481902239" y="1323.053472198275"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </inputPort>
+      <inputPort>
+        <id>41a336d5-ce93-1fe3-10f4-479576626bbc</id>
+        <name>Unlock Session</name>
+        <position x="1520.5851345146389" y="2118.1729329655464"/>
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
@@ -17525,7 +17536,7 @@
           <comment/>
           <processor>
             <id>56ba319b-a6ea-18f4-b331-a5596ed32baa</id>
-            <name>Set Session Status To Running</name>
+            <name>Set Session Status To Completed</name>
             <position x="1570.6845362791353" y="-98.02904457896202"/>
             <styles/>
             <comment/>
@@ -17557,7 +17568,7 @@
             </property>
             <property>
               <name>stellar.session.status</name>
-              <value>search completed</value>
+              <value>search-completed</value>
             </property>
           </processor>
           <processor>
