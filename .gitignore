@@ -5,3 +5,7 @@ target/
 .ensime_cache/
 .ensime
 /getzknode/nifi-getzknode-processors/libs/
+node_modules/
+.project
+.settings/
+.classpath
