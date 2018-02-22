@@ -7,18 +7,17 @@ describe('GET /init', () => {
     request
       .get('/init')
       .end((err, res1) => {
-        if (!err) {
-          done(err);
-        }
+        expect(err).to.be.null;
 
         request
           .get('/init')
-          .expect((res2) => {
-            expect(res1).to.have.property('sessionId');
-            expect(res2).to.have.property('sessionId');
-            expect(res1.sessionId).to.not.equal(res2.sessionId);
-          })
-          .end(done);
+          .end((err, res2) => {
+            expect(err).to.be.null;
+            expect(res1.body).to.have.property('sessionId');
+            expect(res2.body).to.have.property('sessionId');
+            expect(res1.body.sessionId).to.not.equal(res2.body.sessionId);
+            done();
+          });
       });
   });
 });
