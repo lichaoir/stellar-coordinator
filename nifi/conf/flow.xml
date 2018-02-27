@@ -12785,6 +12785,10 @@
               <value>empty string</value>
             </property>
             <property>
+              <name>stellar.session.nai.pipelineFilename</name>
+              <value>$.pipelineFilename</value>
+            </property>
+            <property>
               <name>stellar.session.id</name>
               <value>$.sessionId</value>
             </property>
@@ -14130,7 +14134,7 @@
               <runDurationNanos>0</runDurationNanos>
               <property>
                 <name>File to Fetch</name>
-                <value>${stellar.nai.pipelineFilePath}</value>
+                <value>${stellar.store.fsRoot}/${stellar.store.configDir}/${stellar.session.nai.pipelineFilename:isEmpty():ifElse(${stellar.nai.pipelineFilename}, ${stellar.session.nai.pipelineFilename})}</value>
               </property>
               <property>
                 <name>Completion Strategy</name>
@@ -15825,6 +15829,10 @@
           <value>$.ingest.output</value>
         </property>
         <property>
+          <name>stellar.session.nai.pipelineFilename</name>
+          <value>$.nai.pipelineFilename</value>
+        </property>
+        <property>
           <name>stellar.session.er.error</name>
           <value>$.er.error</value>
         </property>
@@ -16098,7 +16106,8 @@
 		"error": "${stellar.session.nai.error}",
 		"taskLocation": "${stellar.session.nai.taskLocation}",
 		"nodeType": "${stellar.session.nai.nodeType}",
-		"targetAttribute": "${stellar.session.nai.targetAttribute}"
+		"targetAttribute": "${stellar.session.nai.targetAttribute}",
+		"pipelineFilename": "${stellar.session.nai.pipelineFilename}"
 	},
 	"search": {
 		"output": "${stellar.session.search.output}",
