@@ -11,7 +11,7 @@
     <processor>
       <id>e4be9baa-9ac9-3882-9722-0204b8388afc</id>
       <name>Send Not-Found Response</name>
-      <position x="-683.6025358850989" y="939.2257988470202"/>
+      <position x="-697.735434642497" y="938.5058586614732"/>
       <styles/>
       <comment/>
       <class>org.apache.nifi.processors.standard.HandleHttpResponse</class>
@@ -81,7 +81,7 @@
     <processor>
       <id>ce931fe7-35c8-11a3-3e32-ea77b4be5341</id>
       <name>Create Empty Response</name>
-      <position x="-94.41568008219656" y="939.2257988470202"/>
+      <position x="-95.54838711083266" y="938.5058586614732"/>
       <styles/>
       <comment/>
       <class>org.apache.nifi.processors.standard.ReplaceText</class>
@@ -208,7 +208,7 @@
     <processor>
       <id>7257cdc0-ad02-3d0b-b135-381037f8fab3</id>
       <name>Send HTTP Response</name>
-      <position x="504.6715168350901" y="1668.7040470919712"/>
+      <position x="1610.72380121661" y="1770.2469727888981"/>
       <styles/>
       <comment/>
       <class>org.apache.nifi.processors.standard.HandleHttpResponse</class>
@@ -249,7 +249,7 @@
     <processor>
       <id>e49c6f61-8319-37c5-9662-023c6c13575f</id>
       <name>Match routes</name>
-      <position x="504.6715168350901" y="939.2257988470202"/>
+      <position x="504.6715168350901" y="938.5058586614732"/>
       <styles/>
       <comment/>
       <class>org.apache.nifi.processors.standard.RouteOnAttribute</class>
@@ -293,34 +293,10 @@
         <value>${http.request.uri:startsWith(${stellar.api.search.root})}</value>
       </property>
     </processor>
-    <inputPort>
-      <id>4f5f48b8-0161-1000-e517-527ff6173585</id>
-      <name>Get Session</name>
-      <position x="-39.41568008219656" y="2088.8003784248695"/>
-      <comments/>
-      <scheduledState>RUNNING</scheduledState>
-      <maxConcurrentTasks>1</maxConcurrentTasks>
-    </inputPort>
-    <inputPort>
-      <id>4f5f77d0-0161-1000-f563-c1d3d42eea11</id>
-      <name>Update Session</name>
-      <position x="-39.41568008219656" y="2215.6997273080415"/>
-      <comments/>
-      <scheduledState>RUNNING</scheduledState>
-      <maxConcurrentTasks>1</maxConcurrentTasks>
-    </inputPort>
-    <inputPort>
-      <id>4f5ee875-0161-1000-8630-510e3f846aef</id>
-      <name>Init Session</name>
-      <position x="-39.41568008219656" y="1968.3931114662705"/>
-      <comments/>
-      <scheduledState>RUNNING</scheduledState>
-      <maxConcurrentTasks>1</maxConcurrentTasks>
-    </inputPort>
     <processGroup>
       <id>01611012-9454-148d-edce-32bf83293542</id>
       <name>ER Coordination</name>
-      <position x="489.6715168350901" y="1283.1136416158174"/>
+      <position x="489.6715168350901" y="1282.5403078127092"/>
       <comment/>
       <processor>
         <id>c04b3c22-05cc-19cc-2cd5-4758f76ba2c7</id>
@@ -368,7 +344,7 @@
       <processor>
         <id>c04b3c20-05cc-19cc-5170-5a4eb9b0dfba</id>
         <name>Create Empty Response</name>
-        <position x="-608.8576084962554" y="825.4946825617656"/>
+        <position x="-608.8576084962554" y="821.9946825617656"/>
         <styles/>
         <comment/>
         <class>org.apache.nifi.processors.standard.ReplaceText</class>
@@ -464,10 +440,24 @@
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </outputPort>
+      <outputPort>
+        <id>d49a15b9-0161-1000-0e97-6facc80f4436</id>
+        <name>Update Session</name>
+        <position x="637.7241087773133" y="907.4149129065638"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </outputPort>
+      <outputPort>
+        <id>d49a15b8-0161-1000-8615-d698752d4690</id>
+        <name>Get Session</name>
+        <position x="637.7241087773133" y="807.4149129065638"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </outputPort>
       <processGroup>
         <id>c04b3c75-05cc-19cc-4e28-ac911293a3f5</id>
         <name>Start ER Route</name>
-        <position x="-15.228314263680318" y="804.4946825617656"/>
+        <position x="-15.228314263680318" y="800.9946825617656"/>
         <comment/>
         <inputPort>
           <id>c04b3c76-05cc-19cc-901c-c5649df0b537</id>
@@ -477,9 +467,23 @@
           <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
+          <id>d49b867d-0161-1000-37f7-f6686ff18e0c</id>
+          <name>Get Session</name>
+          <position x="1921.2241087773132" y="146.33181024731238"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
+          <id>d49b867e-0161-1000-4ee4-31e01428cad3</id>
+          <name>Update Session</name>
+          <position x="1921.2241087773132" y="1058.625961568171"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
           <id>c04b3c77-05cc-19cc-dbd7-50c3e453230f</id>
           <name>HTTP Response</name>
-          <position x="1917.684077554417" y="734.7917940877022"/>
+          <position x="1921.2241087773132" y="734.7917940877022"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -866,16 +870,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>c04b3c9f-05cc-19cc-86d9-772a045c1594</id>
-            <name>Failure</name>
-            <position x="1331.977878299878" y="1327.992499267772"/>
+            <id>c04b3ca0-05cc-19cc-46e7-51f9d20e43c3</id>
+            <name>Success</name>
+            <position x="1956.1631561909153" y="616.1589687143169"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>c04b3ca0-05cc-19cc-46e7-51f9d20e43c3</id>
-            <name>Success</name>
-            <position x="1956.1631561909153" y="616.1589687143169"/>
+            <id>c04b3c9f-05cc-19cc-86d9-772a045c1594</id>
+            <name>Failure</name>
+            <position x="1331.977878299878" y="1327.992499267772"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -1363,36 +1367,19 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
+            <id>d49c5c3d-0161-1000-0043-fb8061620f0d</id>
+            <name>Update Session</name>
+            <position x="2276.194768356205" y="-58.029044578962015"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
+          <outputPort>
             <id>c04b3c7a-05cc-19cc-e64e-9c95e59605c3</id>
             <name>HTTP Response</name>
             <position x="2276.194768356205" y="834.5947620280349"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>c04b3c82-05cc-19cc-a8ef-c438b52c7845</id>
-            <name>NiFi Flow</name>
-            <position x="2206.194768356205" y="-112.02904457896202"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>c04b3c83-05cc-19cc-755f-e122c9cd2c0e</id>
-              <name>Update Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
           <connection>
             <id>c04b3c88-05cc-19cc-0be0-8877e34ba633</id>
             <name/>
@@ -1517,23 +1504,6 @@
             <flowFileExpiration>0 sec</flowFileExpiration>
           </connection>
           <connection>
-            <id>c04b3c8c-05cc-19cc-f13e-c222f7f84d9f</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>c04b3c7c-05cc-19cc-9c29-064f2fd00267</sourceId>
-            <sourceGroupId>c04b3c78-05cc-19cc-8c6e-4b084e54983e</sourceGroupId>
-            <sourceType>PROCESSOR</sourceType>
-            <destinationId>c04b3c83-05cc-19cc-755f-e122c9cd2c0e</destinationId>
-            <destinationGroupId>c04b3c82-05cc-19cc-a8ef-c438b52c7845</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
-            <relationship>success</relationship>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
             <id>c04b3c8a-05cc-19cc-10bc-3f4d024851c5</id>
             <name/>
             <bendPoints/>
@@ -1579,6 +1549,23 @@
             <destinationId>c04b3c7e-05cc-19cc-8fb3-6d139e2e2ad3</destinationId>
             <destinationGroupId>c04b3c78-05cc-19cc-8c6e-4b084e54983e</destinationGroupId>
             <destinationType>PROCESSOR</destinationType>
+            <relationship>success</relationship>
+            <maxWorkQueueSize>10000</maxWorkQueueSize>
+            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+          </connection>
+          <connection>
+            <id>d49c827b-0161-1000-67f3-80d1ec4f5184</id>
+            <name/>
+            <bendPoints/>
+            <labelIndex>1</labelIndex>
+            <zIndex>0</zIndex>
+            <sourceId>c04b3c7c-05cc-19cc-9c29-064f2fd00267</sourceId>
+            <sourceGroupId>c04b3c78-05cc-19cc-8c6e-4b084e54983e</sourceGroupId>
+            <sourceType>PROCESSOR</sourceType>
+            <destinationId>d49c5c3d-0161-1000-0043-fb8061620f0d</destinationId>
+            <destinationGroupId>c04b3c78-05cc-19cc-8c6e-4b084e54983e</destinationGroupId>
+            <destinationType>OUTPUT_PORT</destinationType>
             <relationship>success</relationship>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
@@ -2111,30 +2098,6 @@
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>c04b3cc3-05cc-19cc-cfd1-3c2f4203a242</id>
-            <name>NiFi Flow</name>
-            <position x="1779.497138477061" y="-47.83795293411515"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>c04b3cc5-05cc-19cc-c785-d75cbbd5ae31</id>
-              <name>Get Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
           <connection>
             <id>c04b3ccc-05cc-19cc-0ac2-bc577614bf9e</id>
             <name/>
@@ -2203,23 +2166,6 @@
             <destinationType>PROCESSOR</destinationType>
             <relationship>expired</relationship>
             <relationship>failure</relationship>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
-            <id>c04b3cc7-05cc-19cc-ecbb-4f95fd57f2a8</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>c04b3cba-05cc-19cc-6fe1-e3789f0f4eb2</sourceId>
-            <sourceGroupId>c04b3cb9-05cc-19cc-9f63-31051ca4fb6e</sourceGroupId>
-            <sourceType>INPUT_PORT</sourceType>
-            <destinationId>c04b3cc5-05cc-19cc-c785-d75cbbd5ae31</destinationId>
-            <destinationGroupId>c04b3cc3-05cc-19cc-cfd1-3c2f4203a242</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
-            <relationship/>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -2447,6 +2393,40 @@
           <flowFileExpiration>0 sec</flowFileExpiration>
         </connection>
         <connection>
+          <id>d49bfd85-0161-1000-8b26-bcacb19dfcd0</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>c04b3c94-05cc-19cc-7863-d41d549fb2a0</sourceId>
+          <sourceGroupId>c04b3c91-05cc-19cc-e4e8-66ec2e0daeb1</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d49b867d-0161-1000-37f7-f6686ff18e0c</destinationId>
+          <destinationGroupId>c04b3c75-05cc-19cc-4e28-ac911293a3f5</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
+          <id>d49cd313-0161-1000-e3c6-7c0a08cba664</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>d49c5c3d-0161-1000-0043-fb8061620f0d</sourceId>
+          <sourceGroupId>c04b3c78-05cc-19cc-8c6e-4b084e54983e</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d49b867e-0161-1000-4ee4-31e01428cad3</destinationId>
+          <destinationGroupId>c04b3c75-05cc-19cc-4e28-ac911293a3f5</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
           <id>c04b3cd4-05cc-19cc-ea07-addd475378f4</id>
           <name/>
           <bendPoints/>
@@ -2467,7 +2447,7 @@
       <processGroup>
         <id>c04b3c23-05cc-19cc-0fac-a88de506bc54</id>
         <name>Finish ER Route</name>
-        <position x="603.0388147999261" y="804.4946825617656"/>
+        <position x="1134.0387537647698" y="800.9946825617656"/>
         <comment/>
         <inputPort>
           <id>c04b3c24-05cc-19cc-cd9c-5882bdf2e5e5</id>
@@ -2477,9 +2457,23 @@
           <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
+          <id>d49d55b0-0161-1000-e139-45ca89c643ec</id>
+          <name>Update Session</name>
+          <position x="740.0179093415263" y="1227.4149129065638"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
           <id>c04b3c25-05cc-19cc-02cb-122a755506ae</id>
           <name>HTTP Response</name>
           <position x="1440.1763964829504" y="692.2471468710974"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
+          <id>d49d55af-0161-1000-10a4-3073c2fe3be2</id>
+          <name>Get Session</name>
+          <position x="1440.1763964829504" y="395.3318102473124"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -2807,30 +2801,13 @@
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>c04b3c3c-05cc-19cc-903a-8c29cc16a84e</id>
-            <name>NiFi Flow</name>
-            <position x="1922.018479139012" y="-274.0253262028024"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>c04b3c3d-05cc-19cc-082f-4f025a3a92aa</id>
-              <name>Update Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
+          <outputPort>
+            <id>d49e147c-0161-1000-8adc-6465a8481046</id>
+            <name>Update Session</name>
+            <position x="1992.018479139012" y="-220.02532620280238"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
           <connection>
             <id>c04b3c47-05cc-19cc-4108-ee8315045a8b</id>
             <name/>
@@ -2895,6 +2872,23 @@
             <destinationGroupId>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</destinationGroupId>
             <destinationType>PROCESSOR</destinationType>
             <relationship/>
+            <maxWorkQueueSize>10000</maxWorkQueueSize>
+            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+          </connection>
+          <connection>
+            <id>d49e58e0-0161-1000-8e11-c14dab5ac793</id>
+            <name/>
+            <bendPoints/>
+            <labelIndex>1</labelIndex>
+            <zIndex>0</zIndex>
+            <sourceId>c04b3c3b-05cc-19cc-1028-6cf71eb4f72b</sourceId>
+            <sourceGroupId>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</sourceGroupId>
+            <sourceType>PROCESSOR</sourceType>
+            <destinationId>d49e147c-0161-1000-8adc-6465a8481046</destinationId>
+            <destinationGroupId>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</destinationGroupId>
+            <destinationType>OUTPUT_PORT</destinationType>
+            <relationship>success</relationship>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -3000,23 +2994,6 @@
             <destinationId>c04b3c34-05cc-19cc-23f6-bdb7a7b7477e</destinationId>
             <destinationGroupId>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</destinationGroupId>
             <destinationType>OUTPUT_PORT</destinationType>
-            <relationship>success</relationship>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
-            <id>c04b3c4a-05cc-19cc-edda-02c9dc2c9636</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>c04b3c3b-05cc-19cc-1028-6cf71eb4f72b</sourceId>
-            <sourceGroupId>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</sourceGroupId>
-            <sourceType>PROCESSOR</sourceType>
-            <destinationId>c04b3c3d-05cc-19cc-082f-4f025a3a92aa</destinationId>
-            <destinationGroupId>c04b3c3c-05cc-19cc-903a-8c29cc16a84e</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
             <relationship>success</relationship>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
@@ -3860,43 +3837,19 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>c04b3c57-05cc-19cc-bb00-fda84e93d02c</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
-            <comments/>
-            <scheduledState>RUNNING</scheduledState>
-          </outputPort>
-          <outputPort>
             <id>c04b3c58-05cc-19cc-663a-e56f52025871</id>
             <name>Success</name>
             <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>c04b3c5f-05cc-19cc-2737-2d87eb72ebeb</id>
-            <name>NiFi Flow</name>
-            <position x="1779.497138477061" y="-47.83795293411515"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>c04b3c61-05cc-19cc-0090-873afc3d0e7f</id>
-              <name>Get Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
+          <outputPort>
+            <id>c04b3c57-05cc-19cc-bb00-fda84e93d02c</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
           <connection>
             <id>c04b3c6b-05cc-19cc-d906-b6306f8709d8</id>
             <name/>
@@ -3910,23 +3863,6 @@
             <destinationGroupId>c04b3c55-05cc-19cc-1764-996f50775dea</destinationGroupId>
             <destinationType>PROCESSOR</destinationType>
             <relationship>success</relationship>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
-            <id>c04b3c68-05cc-19cc-e143-b5306470fff0</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>c04b3c56-05cc-19cc-711d-490a9b665fd3</sourceId>
-            <sourceGroupId>c04b3c55-05cc-19cc-1764-996f50775dea</sourceGroupId>
-            <sourceType>INPUT_PORT</sourceType>
-            <destinationId>c04b3c61-05cc-19cc-0090-873afc3d0e7f</destinationId>
-            <destinationGroupId>c04b3c5f-05cc-19cc-2737-2d87eb72ebeb</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
-            <relationship/>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -4090,6 +4026,23 @@
           </connection>
         </processGroup>
         <connection>
+          <id>d49dad66-0161-1000-d1ce-a19867f7a188</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>c04b3c28-05cc-19cc-6525-c98555ecf47c</sourceId>
+          <sourceGroupId>c04b3c26-05cc-19cc-5f60-842477e5d4de</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d49d55af-0161-1000-10a4-3073c2fe3be2</destinationId>
+          <destinationGroupId>c04b3c23-05cc-19cc-0fac-a88de506bc54</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
           <id>c04b3c72-05cc-19cc-8f73-b90c6b9e0d23</id>
           <name/>
           <bendPoints/>
@@ -4116,6 +4069,23 @@
           <sourceGroupId>c04b3c26-05cc-19cc-5f60-842477e5d4de</sourceGroupId>
           <sourceType>OUTPUT_PORT</sourceType>
           <destinationId>c04b3c25-05cc-19cc-02cb-122a755506ae</destinationId>
+          <destinationGroupId>c04b3c23-05cc-19cc-0fac-a88de506bc54</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
+          <id>d49e76e5-0161-1000-ae55-eadd05f0e898</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>d49e147c-0161-1000-8adc-6465a8481046</sourceId>
+          <sourceGroupId>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d49d55b0-0161-1000-e139-45ca89c643ec</destinationId>
           <destinationGroupId>c04b3c23-05cc-19cc-0fac-a88de506bc54</destinationGroupId>
           <destinationType>OUTPUT_PORT</destinationType>
           <relationship/>
@@ -4210,23 +4180,6 @@
         </connection>
       </processGroup>
       <connection>
-        <id>c04b3cdf-05cc-19cc-3be3-cb1e865a40bf</id>
-        <name/>
-        <bendPoints/>
-        <labelIndex>1</labelIndex>
-        <zIndex>0</zIndex>
-        <sourceId>c04b3c25-05cc-19cc-02cb-122a755506ae</sourceId>
-        <sourceGroupId>c04b3c23-05cc-19cc-0fac-a88de506bc54</sourceGroupId>
-        <sourceType>OUTPUT_PORT</sourceType>
-        <destinationId>01611014-9454-148d-d59a-7a0f8a6099a3</destinationId>
-        <destinationGroupId>01611012-9454-148d-edce-32bf83293542</destinationGroupId>
-        <destinationType>OUTPUT_PORT</destinationType>
-        <relationship/>
-        <maxWorkQueueSize>10000</maxWorkQueueSize>
-        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-        <flowFileExpiration>0 sec</flowFileExpiration>
-      </connection>
-      <connection>
         <id>01611015-9454-148d-45d8-a5b995061658</id>
         <name/>
         <bendPoints/>
@@ -4253,6 +4206,125 @@
         <sourceGroupId>c04b3c75-05cc-19cc-4e28-ac911293a3f5</sourceGroupId>
         <sourceType>OUTPUT_PORT</sourceType>
         <destinationId>01611014-9454-148d-d59a-7a0f8a6099a3</destinationId>
+        <destinationGroupId>01611012-9454-148d-edce-32bf83293542</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>c04b3cdc-05cc-19cc-f142-6a8bb238697b</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>c04b3c22-05cc-19cc-2cd5-4758f76ba2c7</sourceId>
+        <sourceGroupId>01611012-9454-148d-edce-32bf83293542</sourceGroupId>
+        <sourceType>PROCESSOR</sourceType>
+        <destinationId>c04b3c20-05cc-19cc-5170-5a4eb9b0dfba</destinationId>
+        <destinationGroupId>01611012-9454-148d-edce-32bf83293542</destinationGroupId>
+        <destinationType>PROCESSOR</destinationType>
+        <relationship>unmatched</relationship>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>d49eebea-0161-1000-3cc1-8ade9fc72cbc</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d49d55b0-0161-1000-e139-45ca89c643ec</sourceId>
+        <sourceGroupId>c04b3c23-05cc-19cc-0fac-a88de506bc54</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d49a15b9-0161-1000-0e97-6facc80f4436</destinationId>
+        <destinationGroupId>01611012-9454-148d-edce-32bf83293542</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>c04b3cdd-05cc-19cc-a528-f96e1166d0c9</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>c04b3c22-05cc-19cc-2cd5-4758f76ba2c7</sourceId>
+        <sourceGroupId>01611012-9454-148d-edce-32bf83293542</sourceGroupId>
+        <sourceType>PROCESSOR</sourceType>
+        <destinationId>c04b3c76-05cc-19cc-901c-c5649df0b537</destinationId>
+        <destinationGroupId>c04b3c75-05cc-19cc-4e28-ac911293a3f5</destinationGroupId>
+        <destinationType>INPUT_PORT</destinationType>
+        <relationship>er.start</relationship>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>c04b3cda-05cc-19cc-70a9-09959683d671</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>c04b3c20-05cc-19cc-5170-5a4eb9b0dfba</sourceId>
+        <sourceGroupId>01611012-9454-148d-edce-32bf83293542</sourceGroupId>
+        <sourceType>PROCESSOR</sourceType>
+        <destinationId>c04b3c21-05cc-19cc-26b1-4579f217bfa2</destinationId>
+        <destinationGroupId>01611012-9454-148d-edce-32bf83293542</destinationGroupId>
+        <destinationType>PROCESSOR</destinationType>
+        <relationship>success</relationship>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>d49d03f2-0161-1000-19c7-c53f991d7745</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d49b867e-0161-1000-4ee4-31e01428cad3</sourceId>
+        <sourceGroupId>c04b3c75-05cc-19cc-4e28-ac911293a3f5</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d49a15b9-0161-1000-0e97-6facc80f4436</destinationId>
+        <destinationGroupId>01611012-9454-148d-edce-32bf83293542</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>c04b3cdf-05cc-19cc-3be3-cb1e865a40bf</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>c04b3c25-05cc-19cc-02cb-122a755506ae</sourceId>
+        <sourceGroupId>c04b3c23-05cc-19cc-0fac-a88de506bc54</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>01611014-9454-148d-d59a-7a0f8a6099a3</destinationId>
+        <destinationGroupId>01611012-9454-148d-edce-32bf83293542</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>d49ceeda-0161-1000-4a9d-ee61fb57b07f</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d49b867d-0161-1000-37f7-f6686ff18e0c</sourceId>
+        <sourceGroupId>c04b3c75-05cc-19cc-4e28-ac911293a3f5</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d49a15b8-0161-1000-8615-d698752d4690</destinationId>
         <destinationGroupId>01611012-9454-148d-edce-32bf83293542</destinationGroupId>
         <destinationType>OUTPUT_PORT</destinationType>
         <relationship/>
@@ -4295,52 +4367,18 @@
         <flowFileExpiration>0 sec</flowFileExpiration>
       </connection>
       <connection>
-        <id>c04b3cdc-05cc-19cc-f142-6a8bb238697b</id>
+        <id>d49ed743-0161-1000-0fe9-bb6f20d52b0c</id>
         <name/>
         <bendPoints/>
         <labelIndex>1</labelIndex>
         <zIndex>0</zIndex>
-        <sourceId>c04b3c22-05cc-19cc-2cd5-4758f76ba2c7</sourceId>
-        <sourceGroupId>01611012-9454-148d-edce-32bf83293542</sourceGroupId>
-        <sourceType>PROCESSOR</sourceType>
-        <destinationId>c04b3c20-05cc-19cc-5170-5a4eb9b0dfba</destinationId>
+        <sourceId>d49d55af-0161-1000-10a4-3073c2fe3be2</sourceId>
+        <sourceGroupId>c04b3c23-05cc-19cc-0fac-a88de506bc54</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d49a15b8-0161-1000-8615-d698752d4690</destinationId>
         <destinationGroupId>01611012-9454-148d-edce-32bf83293542</destinationGroupId>
-        <destinationType>PROCESSOR</destinationType>
-        <relationship>unmatched</relationship>
-        <maxWorkQueueSize>10000</maxWorkQueueSize>
-        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-        <flowFileExpiration>0 sec</flowFileExpiration>
-      </connection>
-      <connection>
-        <id>c04b3cdd-05cc-19cc-a528-f96e1166d0c9</id>
-        <name/>
-        <bendPoints/>
-        <labelIndex>1</labelIndex>
-        <zIndex>0</zIndex>
-        <sourceId>c04b3c22-05cc-19cc-2cd5-4758f76ba2c7</sourceId>
-        <sourceGroupId>01611012-9454-148d-edce-32bf83293542</sourceGroupId>
-        <sourceType>PROCESSOR</sourceType>
-        <destinationId>c04b3c76-05cc-19cc-901c-c5649df0b537</destinationId>
-        <destinationGroupId>c04b3c75-05cc-19cc-4e28-ac911293a3f5</destinationGroupId>
-        <destinationType>INPUT_PORT</destinationType>
-        <relationship>er.start</relationship>
-        <maxWorkQueueSize>10000</maxWorkQueueSize>
-        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-        <flowFileExpiration>0 sec</flowFileExpiration>
-      </connection>
-      <connection>
-        <id>c04b3cda-05cc-19cc-70a9-09959683d671</id>
-        <name/>
-        <bendPoints/>
-        <labelIndex>1</labelIndex>
-        <zIndex>0</zIndex>
-        <sourceId>c04b3c20-05cc-19cc-5170-5a4eb9b0dfba</sourceId>
-        <sourceGroupId>01611012-9454-148d-edce-32bf83293542</sourceGroupId>
-        <sourceType>PROCESSOR</sourceType>
-        <destinationId>c04b3c21-05cc-19cc-26b1-4579f217bfa2</destinationId>
-        <destinationGroupId>01611012-9454-148d-edce-32bf83293542</destinationGroupId>
-        <destinationType>PROCESSOR</destinationType>
-        <relationship>success</relationship>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
         <maxWorkQueueSize>10000</maxWorkQueueSize>
         <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
         <flowFileExpiration>0 sec</flowFileExpiration>
@@ -4349,7 +4387,7 @@
     <processGroup>
       <id>ce931fec-35c8-11a3-2740-a4823916c5fe</id>
       <name>Init Session</name>
-      <position x="-698.6025358850989" y="1283.1136416158174"/>
+      <position x="-712.735434642497" y="1282.5403078127092"/>
       <comment/>
       <processor>
         <id>ee1f3864-5b17-1abc-215e-04f9bc621c94</id>
@@ -4713,63 +4751,27 @@
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </outputPort>
-      <funnel>
-        <id>ee1f3871-5b17-1abc-4593-db06aa4b2f70</id>
-        <position x="1965.04590004194" y="44.20444386048865"/>
-      </funnel>
-      <remoteProcessGroup>
-        <id>01611000-95f7-1f61-c0a5-1fe9c05d6ebf</id>
-        <name>NiFi Flow</name>
-        <position x="1799.04590004194" y="235.04558048540753"/>
-        <comment/>
-        <url>http://localhost:8080/nifi</url>
-        <urls>http://localhost:8080/nifi</urls>
-        <timeout>30 sec</timeout>
-        <yieldPeriod>10 sec</yieldPeriod>
-        <transmitting>true</transmitting>
-        <transportProtocol>HTTP</transportProtocol>
-        <proxyHost/>
-        <proxyUser/>
-        <inputPort>
-          <id>ee1f3858-5b17-1abc-67c1-40e11ba12cea</id>
-          <name>Init Session</name>
-          <position x="0.0" y="0.0"/>
-          <comments/>
-          <scheduledState>RUNNING</scheduledState>
-          <targetId>4f5ee875-0161-1000-8630-510e3f846aef</targetId>
-          <maxConcurrentTasks>1</maxConcurrentTasks>
-          <useCompression>false</useCompression>
-        </inputPort>
-      </remoteProcessGroup>
+      <outputPort>
+        <id>d46c21bf-0161-1000-03f9-5f4e5a1d515e</id>
+        <name>Init Session</name>
+        <position x="1869.04590004194" y="43.20444386048865"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </outputPort>
       <connection>
-        <id>ee1f3873-5b17-1abc-840d-e55a4295018b</id>
+        <id>d46ce63c-0161-1000-366d-56437728726a</id>
         <name/>
         <bendPoints/>
         <labelIndex>1</labelIndex>
         <zIndex>0</zIndex>
-        <sourceId>ee1f3871-5b17-1abc-4593-db06aa4b2f70</sourceId>
-        <sourceGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</sourceGroupId>
-        <sourceType>FUNNEL</sourceType>
-        <destinationId>ee1f3858-5b17-1abc-67c1-40e11ba12cea</destinationId>
-        <destinationGroupId>01611000-95f7-1f61-c0a5-1fe9c05d6ebf</destinationGroupId>
-        <destinationType>REMOTE_INPUT_PORT</destinationType>
-        <relationship/>
-        <maxWorkQueueSize>10000</maxWorkQueueSize>
-        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-        <flowFileExpiration>0 sec</flowFileExpiration>
-      </connection>
-      <connection>
-        <id>ee1f385c-5b17-1abc-d9ae-9ae295db3eb1</id>
-        <name/>
-        <bendPoints/>
-        <labelIndex>1</labelIndex>
-        <zIndex>0</zIndex>
-        <sourceId>ce931ff2-35c8-11a3-617a-07dee874f1cd</sourceId>
+        <sourceId>ee1f386e-5b17-1abc-76bc-56003433f46f</sourceId>
         <sourceGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</sourceGroupId>
         <sourceType>PROCESSOR</sourceType>
-        <destinationId>ce931ff0-35c8-11a3-e8e9-8d97a8262d57</destinationId>
+        <destinationId>d46c21bf-0161-1000-03f9-5f4e5a1d515e</destinationId>
         <destinationGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</destinationGroupId>
-        <destinationType>PROCESSOR</destinationType>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship>failure</relationship>
+        <relationship>matched</relationship>
         <relationship>unmatched</relationship>
         <maxWorkQueueSize>10000</maxWorkQueueSize>
         <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
@@ -4788,6 +4790,23 @@
         <destinationGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</destinationGroupId>
         <destinationType>OUTPUT_PORT</destinationType>
         <relationship>success</relationship>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>ee1f385c-5b17-1abc-d9ae-9ae295db3eb1</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>ce931ff2-35c8-11a3-617a-07dee874f1cd</sourceId>
+        <sourceGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</sourceGroupId>
+        <sourceType>PROCESSOR</sourceType>
+        <destinationId>ce931ff0-35c8-11a3-e8e9-8d97a8262d57</destinationId>
+        <destinationGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</destinationGroupId>
+        <destinationType>PROCESSOR</destinationType>
+        <relationship>unmatched</relationship>
         <maxWorkQueueSize>10000</maxWorkQueueSize>
         <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
         <flowFileExpiration>0 sec</flowFileExpiration>
@@ -4839,23 +4858,6 @@
         <destinationGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</destinationGroupId>
         <destinationType>PROCESSOR</destinationType>
         <relationship>success</relationship>
-        <maxWorkQueueSize>10000</maxWorkQueueSize>
-        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-        <flowFileExpiration>0 sec</flowFileExpiration>
-      </connection>
-      <connection>
-        <id>ee1f3872-5b17-1abc-0e36-aa599e8da09c</id>
-        <name/>
-        <bendPoints/>
-        <labelIndex>1</labelIndex>
-        <zIndex>0</zIndex>
-        <sourceId>ee1f3871-5b17-1abc-4593-db06aa4b2f70</sourceId>
-        <sourceGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</sourceGroupId>
-        <sourceType>FUNNEL</sourceType>
-        <destinationId>ce931ff3-35c8-11a3-0f1c-37acad31c333</destinationId>
-        <destinationGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</destinationGroupId>
-        <destinationType>PROCESSOR</destinationType>
-        <relationship/>
         <maxWorkQueueSize>10000</maxWorkQueueSize>
         <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
         <flowFileExpiration>0 sec</flowFileExpiration>
@@ -4924,9 +4926,9 @@
         <sourceId>ee1f386e-5b17-1abc-76bc-56003433f46f</sourceId>
         <sourceGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</sourceGroupId>
         <sourceType>PROCESSOR</sourceType>
-        <destinationId>ee1f3871-5b17-1abc-4593-db06aa4b2f70</destinationId>
+        <destinationId>ce931ff3-35c8-11a3-0f1c-37acad31c333</destinationId>
         <destinationGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</destinationGroupId>
-        <destinationType>FUNNEL</destinationType>
+        <destinationType>PROCESSOR</destinationType>
         <relationship>failure</relationship>
         <relationship>matched</relationship>
         <relationship>unmatched</relationship>
@@ -4972,7 +4974,7 @@
     <processGroup>
       <id>363533fd-e638-19ce-efe0-ca0c502664d1</id>
       <name>Ingest Coordination</name>
-      <position x="-109.41568008219656" y="1283.1136416158174"/>
+      <position x="-110.54838711083266" y="1282.5403078127092"/>
       <comment/>
       <processor>
         <id>36353404-e638-19ce-55b3-8a856f13b706</id>
@@ -5036,7 +5038,7 @@
       <processor>
         <id>ce931fe3-35c6-11a3-7a1b-a09cda246a7f</id>
         <name>Create Empty Response</name>
-        <position x="-1213.4574620118804" y="804.8878710383281"/>
+        <position x="-1308.2974507203764" y="803.4478685969218"/>
         <styles/>
         <comment/>
         <class>org.apache.nifi.processors.standard.ReplaceText</class>
@@ -5084,7 +5086,7 @@
       <processor>
         <id>ce931fe3-35c8-11a3-b755-19f90c06a152</id>
         <name>Set HTTP Status Code</name>
-        <position x="-1213.4574620118804" y="1330.4948689612513"/>
+        <position x="-1308.2974507203764" y="1365.4949910315638"/>
         <styles/>
         <comment/>
         <class>org.apache.nifi.processors.attributes.UpdateAttribute</class>
@@ -5126,16 +5128,30 @@
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <outputPort>
+        <id>d4724043-0161-1000-3800-99b2ef775a5a</id>
+        <name>Update Session</name>
+        <position x="763.8059046436761" y="1405.4949910315638"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </outputPort>
+      <outputPort>
         <id>36353400-e638-19ce-6294-5adba35e1553</id>
         <name>HTTP Response</name>
-        <position x="35.64231291095058" y="1370.4948689612513"/>
+        <position x="-652.8731156477334" y="1405.4949910315638"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </outputPort>
+      <outputPort>
+        <id>d47229c3-0161-1000-2f03-29029901fed8</id>
+        <name>Get Session</name>
+        <position x="35.64231291095058" y="1405.4949910315638"/>
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </outputPort>
       <processGroup>
         <id>41a335de-ce93-1fe3-7b03-0ddbc4ac2657</id>
         <name>Abort Ingest Route</name>
-        <position x="212.87917734875407" y="783.8878710383281"/>
+        <position x="212.87917734875407" y="782.4478685969218"/>
         <comment/>
         <inputPort>
           <id>41a335df-ce93-1fe3-085a-3e6e633f17a7</id>
@@ -5145,9 +5161,23 @@
           <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
+          <id>d479da98-0161-1000-3155-492cbe6d300f</id>
+          <name>Update Session</name>
+          <position x="2005.1002727338441" y="997.1443771711097"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
+          <id>d479da97-0161-1000-f500-b9e516c95949</id>
+          <name>Get Session</name>
+          <position x="2005.1002727338441" y="384.1234362238749"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
           <id>41a335e0-ce93-1fe3-8586-48cf8c0686fe</id>
           <name>HTTP Response</name>
-          <position x="1999.529528551289" y="685.8275606894567"/>
+          <position x="2005.100272733844" y="685.8275606894567"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -5707,36 +5737,19 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
+            <id>d47acd31-0161-1000-437b-d865b97d1224</id>
+            <name>Update Session</name>
+            <position x="1992.018479139012" y="-220.02532620280238"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
+          <outputPort>
             <id>41a335e3-ce93-1fe3-e691-972301a1af27</id>
             <name>HTTP Response</name>
             <position x="1350.6312875072322" y="649.8791248210036"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>01611036-95f7-1f61-5d74-3011ef51aa00</id>
-            <name>NiFi Flow</name>
-            <position x="1922.018479139012" y="-274.0253262028024"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>4f5f77d0-0161-1000-f563-c1d3d42eea11</id>
-              <name>Update Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
           <connection>
             <id>01611038-95f7-1f61-6cfa-c318c2260665</id>
             <name/>
@@ -5772,23 +5785,6 @@
             <flowFileExpiration>0 sec</flowFileExpiration>
           </connection>
           <connection>
-            <id>0161103d-95f7-1f61-9693-9c8e6d20de15</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>0161102c-95f7-1f61-e3fe-88fd9b29775b</sourceId>
-            <sourceGroupId>41a335e1-ce93-1fe3-afea-712c72d90fb4</sourceGroupId>
-            <sourceType>PROCESSOR</sourceType>
-            <destinationId>4f5f77d0-0161-1000-f563-c1d3d42eea11</destinationId>
-            <destinationGroupId>01611036-95f7-1f61-5d74-3011ef51aa00</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
-            <relationship>success</relationship>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
             <id>0161103c-95f7-1f61-ca92-b17cfe890ab6</id>
             <name/>
             <bendPoints/>
@@ -5817,6 +5813,23 @@
             <destinationId>01611030-95f7-1f61-fcff-7c3263b68036</destinationId>
             <destinationGroupId>41a335e1-ce93-1fe3-afea-712c72d90fb4</destinationGroupId>
             <destinationType>PROCESSOR</destinationType>
+            <relationship>success</relationship>
+            <maxWorkQueueSize>10000</maxWorkQueueSize>
+            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+          </connection>
+          <connection>
+            <id>d47ae3be-0161-1000-3dad-9e7820decfdf</id>
+            <name/>
+            <bendPoints/>
+            <labelIndex>1</labelIndex>
+            <zIndex>0</zIndex>
+            <sourceId>0161102c-95f7-1f61-e3fe-88fd9b29775b</sourceId>
+            <sourceGroupId>41a335e1-ce93-1fe3-afea-712c72d90fb4</sourceGroupId>
+            <sourceType>PROCESSOR</sourceType>
+            <destinationId>d47acd31-0161-1000-437b-d865b97d1224</destinationId>
+            <destinationGroupId>41a335e1-ce93-1fe3-afea-712c72d90fb4</destinationGroupId>
+            <destinationType>OUTPUT_PORT</destinationType>
             <relationship>success</relationship>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
@@ -6210,30 +6223,6 @@
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>01611024-95f7-1f61-0ba5-5f559ca96c79</id>
-            <name>NiFi Flow</name>
-            <position x="1779.497138477061" y="-47.83795293411515"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>4f5f48b8-0161-1000-e517-527ff6173585</id>
-              <name>Get Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
           <connection>
             <id>01611027-95f7-1f61-840d-e568433feaa7</id>
             <name/>
@@ -6392,23 +6381,6 @@
             <flowFileExpiration>0 sec</flowFileExpiration>
           </connection>
           <connection>
-            <id>0161102b-95f7-1f61-51ef-1307ef656f68</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>41a335fd-ce93-1fe3-d0f0-45774bf98ef7</sourceId>
-            <sourceGroupId>41a335fc-ce93-1fe3-6afa-9cd59ac8b1a1</sourceGroupId>
-            <sourceType>INPUT_PORT</sourceType>
-            <destinationId>4f5f48b8-0161-1000-e517-527ff6173585</destinationId>
-            <destinationGroupId>01611024-95f7-1f61-0ba5-5f559ca96c79</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
-            <relationship/>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
             <id>41a3360c-ce93-1fe3-7b17-5d5957490faf</id>
             <name/>
             <bendPoints/>
@@ -6478,6 +6450,23 @@
           <flowFileExpiration>0 sec</flowFileExpiration>
         </connection>
         <connection>
+          <id>d47a7ed7-0161-1000-b240-fec7123779d4</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>41a33613-ce93-1fe3-8742-5870b57deeca</sourceId>
+          <sourceGroupId>41a33611-ce93-1fe3-fcb2-886dfc11e24f</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d479da97-0161-1000-f500-b9e516c95949</destinationId>
+          <destinationGroupId>41a335de-ce93-1fe3-7b03-0ddbc4ac2657</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
           <id>41a33621-ce93-1fe3-3e50-9db3c5c8223c</id>
           <name/>
           <bendPoints/>
@@ -6487,6 +6476,23 @@
           <sourceGroupId>41a335fc-ce93-1fe3-6afa-9cd59ac8b1a1</sourceGroupId>
           <sourceType>OUTPUT_PORT</sourceType>
           <destinationId>41a335e0-ce93-1fe3-8586-48cf8c0686fe</destinationId>
+          <destinationGroupId>41a335de-ce93-1fe3-7b03-0ddbc4ac2657</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
+          <id>d47b3e9e-0161-1000-d976-ac7f6a72e3bc</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>d47acd31-0161-1000-437b-d865b97d1224</sourceId>
+          <sourceGroupId>41a335e1-ce93-1fe3-afea-712c72d90fb4</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d479da98-0161-1000-3155-492cbe6d300f</destinationId>
           <destinationGroupId>41a335de-ce93-1fe3-7b03-0ddbc4ac2657</destinationGroupId>
           <destinationType>OUTPUT_PORT</destinationType>
           <relationship/>
@@ -6532,7 +6538,7 @@
       <processGroup>
         <id>41a33623-ce93-1fe3-ff97-2c67c889826d</id>
         <name>Sampling Route</name>
-        <position x="-722.8731156477334" y="783.8878710383281"/>
+        <position x="-722.8731156477334" y="782.4478685969218"/>
         <comment/>
         <processor>
           <id>41a33627-ce93-1fe3-9618-2446d4343b18</id>
@@ -6754,7 +6760,7 @@
       <processGroup>
         <id>41a33578-ce93-1fe3-6134-73b1cb55d609</id>
         <name>Start Ingest Route</name>
-        <position x="-261.98827825293813" y="783.8878710383281"/>
+        <position x="-261.98827825293813" y="782.4478685969218"/>
         <comment/>
         <inputPort>
           <id>41a33579-ce93-1fe3-d9f0-d4d23b1ef21d</id>
@@ -6764,9 +6770,23 @@
           <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
+          <id>d4718bf4-0161-1000-d8bf-9ad63c79aa52</id>
+          <name>Update Session</name>
+          <position x="1909.671016916399" y="1058.625961568171"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
+          <id>d46f02ca-0161-1000-f1e2-e51557b0229b</id>
+          <name>Get Session</name>
+          <position x="1909.671016916399" y="146.33181024731238"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
           <id>41a3357a-ce93-1fe3-c755-75751f0b6dd0</id>
           <name>HTTP Response</name>
-          <position x="1917.684077554417" y="734.7917940877022"/>
+          <position x="1909.671016916399" y="734.7917940877022"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -7099,30 +7119,13 @@
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>01611000-95f7-1f61-3361-2139c80ceb68</id>
-            <name>NiFi Flow</name>
-            <position x="2206.194768356205" y="-112.02904457896202"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>4f5f77d0-0161-1000-f563-c1d3d42eea11</id>
-              <name>Update Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
+          <outputPort>
+            <id>d4710cbc-0161-1000-fe09-c0c0689acd5f</id>
+            <name>Update Session</name>
+            <position x="2276.194768356205" y="-58.029044578962015"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
           <connection>
             <id>01611001-95f7-1f61-7bda-07e34941284b</id>
             <name/>
@@ -7156,6 +7159,23 @@
             <destinationId>ce932006-3581-11a3-f6a0-5d6abfb70c37</destinationId>
             <destinationGroupId>41a335c1-ce93-1fe3-edfe-eab5f96ef676</destinationGroupId>
             <destinationType>PROCESSOR</destinationType>
+            <relationship>success</relationship>
+            <maxWorkQueueSize>10000</maxWorkQueueSize>
+            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+          </connection>
+          <connection>
+            <id>d4711f31-0161-1000-e3c9-9944e98f391c</id>
+            <name/>
+            <bendPoints/>
+            <labelIndex>1</labelIndex>
+            <zIndex>0</zIndex>
+            <sourceId>ce931fff-3581-11a3-e09a-edde6e3aa8f0</sourceId>
+            <sourceGroupId>41a335c1-ce93-1fe3-edfe-eab5f96ef676</sourceGroupId>
+            <sourceType>PROCESSOR</sourceType>
+            <destinationId>d4710cbc-0161-1000-fe09-c0c0689acd5f</destinationId>
+            <destinationGroupId>41a335c1-ce93-1fe3-edfe-eab5f96ef676</destinationGroupId>
+            <destinationType>OUTPUT_PORT</destinationType>
             <relationship>success</relationship>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
@@ -7224,23 +7244,6 @@
             <destinationId>41a335c3-ce93-1fe3-ecb6-54a2b698ba88</destinationId>
             <destinationGroupId>41a335c1-ce93-1fe3-edfe-eab5f96ef676</destinationGroupId>
             <destinationType>OUTPUT_PORT</destinationType>
-            <relationship>success</relationship>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
-            <id>01611009-95f7-1f61-6ec4-2d9269f153c6</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>ce931fff-3581-11a3-e09a-edde6e3aa8f0</sourceId>
-            <sourceGroupId>41a335c1-ce93-1fe3-edfe-eab5f96ef676</sourceGroupId>
-            <sourceType>PROCESSOR</sourceType>
-            <destinationId>4f5f77d0-0161-1000-f563-c1d3d42eea11</destinationId>
-            <destinationGroupId>01611000-95f7-1f61-3361-2139c80ceb68</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
             <relationship>success</relationship>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
@@ -7468,16 +7471,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>ee1f3891-5b17-1abc-21f3-3f4b3251457a</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
+            <id>ee1f3890-5b17-1abc-5db0-c0e8ffee75c4</id>
+            <name>Failure</name>
+            <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>ee1f3890-5b17-1abc-5db0-c0e8ffee75c4</id>
-            <name>Failure</name>
-            <position x="1284.8893127525628" y="1192.9999996547128"/>
+            <id>ee1f3891-5b17-1abc-21f3-3f4b3251457a</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -8094,16 +8097,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>41a3357d-ce93-1fe3-a4aa-ecfcf9fbf0b8</id>
-            <name>Failure</name>
-            <position x="1328.8711215076248" y="1327.992499267772"/>
+            <id>41a3357e-ce93-1fe3-4a51-122cd4596ea4</id>
+            <name>Success</name>
+            <position x="1956.1631561909153" y="612.2754850726196"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>41a3357e-ce93-1fe3-4a51-122cd4596ea4</id>
-            <name>Success</name>
-            <position x="1956.1631561909153" y="612.2754850726196"/>
+            <id>41a3357d-ce93-1fe3-a4aa-ecfcf9fbf0b8</id>
+            <name>Failure</name>
+            <position x="1328.8711215076248" y="1327.992499267772"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -8629,47 +8632,6 @@
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>ee1f387f-5b17-1abc-e524-f038d4ba5057</id>
-            <name>NiFi Flow</name>
-            <position x="1779.497138477061" y="-47.83795293411515"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>ee1f3881-5b17-1abc-49a7-78a230a33a00</id>
-              <name>Get Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
-          <connection>
-            <id>ee1f3888-5b17-1abc-64b7-ddf6109e346e</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>ee1f3876-5b17-1abc-be03-68d9846eea71</sourceId>
-            <sourceGroupId>ee1f3875-5b17-1abc-6b51-ae5402b01d5c</sourceGroupId>
-            <sourceType>INPUT_PORT</sourceType>
-            <destinationId>ee1f3881-5b17-1abc-49a7-78a230a33a00</destinationId>
-            <destinationGroupId>ee1f387f-5b17-1abc-e524-f038d4ba5057</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
-            <relationship/>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
           <connection>
             <id>ee1f3886-5b17-1abc-f640-f1e8d04d9297</id>
             <name/>
@@ -8981,11 +8943,45 @@
           <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
           <flowFileExpiration>0 sec</flowFileExpiration>
         </connection>
+        <connection>
+          <id>d471ab8d-0161-1000-58ce-2a71c5f459da</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>d4710cbc-0161-1000-fe09-c0c0689acd5f</sourceId>
+          <sourceGroupId>41a335c1-ce93-1fe3-edfe-eab5f96ef676</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d4718bf4-0161-1000-d8bf-9ad63c79aa52</destinationId>
+          <destinationGroupId>41a33578-ce93-1fe3-6134-73b1cb55d609</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
+          <id>d46f2300-0161-1000-2bf8-6ebedc8b1e0c</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>ee1f3891-5b17-1abc-21f3-3f4b3251457a</sourceId>
+          <sourceGroupId>ee1f388e-5b17-1abc-5b25-7bcfe3e32283</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d46f02ca-0161-1000-f1e2-e51557b0229b</destinationId>
+          <destinationGroupId>41a33578-ce93-1fe3-6134-73b1cb55d609</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
       </processGroup>
       <processGroup>
         <id>fb49310f-b6ea-1f4a-1978-11febd1f8e26</id>
         <name>Complete Ingest Route</name>
-        <position x="693.8059046436761" y="783.8878710383281"/>
+        <position x="693.8059046436761" y="782.4478685969218"/>
         <comment/>
         <inputPort>
           <id>fb493110-b6ea-1f4a-82aa-6cc1cbb40e57</id>
@@ -8995,9 +8991,23 @@
           <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
+          <id>d47dc708-0161-1000-f864-c33675de38f2</id>
+          <name>Get Session</name>
+          <position x="1426.1763964829504" y="395.3318102473124"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
           <id>fb493111-b6ea-1f4a-ecd7-b8534406cb71</id>
           <name>HTTP Response</name>
           <position x="1426.1763964829504" y="692.2471468710974"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
+          <id>d47e25b2-0161-1000-332c-42194fdd419f</id>
+          <name>Update Session</name>
+          <position x="740.0179093415263" y="1226.0000226321145"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -9559,30 +9569,13 @@
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>0161104c-95f7-1f61-e752-4b61a9787b9b</id>
-            <name>NiFi Flow</name>
-            <position x="1922.018479139012" y="-274.0253262028024"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>4f5f77d0-0161-1000-f563-c1d3d42eea11</id>
-              <name>Update Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
+          <outputPort>
+            <id>d47f2765-0161-1000-af66-43c47ead989c</id>
+            <name>Update Session</name>
+            <position x="1992.0184791390118" y="-220.02532620280238"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
           <connection>
             <id>01611056-95f7-1f61-c97b-d22274796a94</id>
             <name/>
@@ -9758,7 +9751,7 @@
             <flowFileExpiration>0 sec</flowFileExpiration>
           </connection>
           <connection>
-            <id>0161104f-95f7-1f61-7cc9-7fb246b4826b</id>
+            <id>d47f511f-0161-1000-c69f-988ef7e0a9a0</id>
             <name/>
             <bendPoints/>
             <labelIndex>1</labelIndex>
@@ -9766,9 +9759,9 @@
             <sourceId>01611046-95f7-1f61-ef26-1565522bccf6</sourceId>
             <sourceGroupId>01611042-95f7-1f61-2e65-4cf4dc320f97</sourceGroupId>
             <sourceType>PROCESSOR</sourceType>
-            <destinationId>4f5f77d0-0161-1000-f563-c1d3d42eea11</destinationId>
-            <destinationGroupId>0161104c-95f7-1f61-e752-4b61a9787b9b</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
+            <destinationId>d47f2765-0161-1000-af66-43c47ead989c</destinationId>
+            <destinationGroupId>01611042-95f7-1f61-2e65-4cf4dc320f97</destinationGroupId>
+            <destinationType>OUTPUT_PORT</destinationType>
             <relationship>success</relationship>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
@@ -10363,43 +10356,19 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>0161105a-95f7-1f61-023a-6ce17fd0ecf5</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
-            <comments/>
-            <scheduledState>RUNNING</scheduledState>
-          </outputPort>
-          <outputPort>
             <id>0161105b-95f7-1f61-a289-07f61e2ad53a</id>
             <name>Success</name>
             <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>01611062-95f7-1f61-4fe0-2850e9e82931</id>
-            <name>NiFi Flow</name>
-            <position x="1779.497138477061" y="-47.83795293411515"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>4f5f48b8-0161-1000-e517-527ff6173585</id>
-              <name>Get Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
+          <outputPort>
+            <id>0161105a-95f7-1f61-023a-6ce17fd0ecf5</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
           <connection>
             <id>01611065-95f7-1f61-106f-7ce6b4b62d50</id>
             <name/>
@@ -10485,23 +10454,6 @@
             <destinationType>PROCESSOR</destinationType>
             <relationship>expired</relationship>
             <relationship>failure</relationship>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
-            <id>0161106c-95f7-1f61-9a74-3b6db04d8c1f</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>01611059-95f7-1f61-297e-25f0f0e8d03a</sourceId>
-            <sourceGroupId>01611058-95f7-1f61-5971-f85a46983d4b</sourceGroupId>
-            <sourceType>INPUT_PORT</sourceType>
-            <destinationId>4f5f48b8-0161-1000-e517-527ff6173585</destinationId>
-            <destinationGroupId>01611062-95f7-1f61-4fe0-2850e9e82931</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
-            <relationship/>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -10593,6 +10545,23 @@
           </connection>
         </processGroup>
         <connection>
+          <id>d47f967c-0161-1000-98ed-185faba0f15b</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>d47f2765-0161-1000-af66-43c47ead989c</sourceId>
+          <sourceGroupId>01611042-95f7-1f61-2e65-4cf4dc320f97</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d47e25b2-0161-1000-332c-42194fdd419f</destinationId>
+          <destinationGroupId>fb49310f-b6ea-1f4a-1978-11febd1f8e26</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
           <id>53c5cdcb-0161-1000-fa46-8655c1b6c0e4</id>
           <name/>
           <bendPoints/>
@@ -10655,6 +10624,23 @@
           <destinationId>0161106f-95f7-1f61-eb1c-05dde7775486</destinationId>
           <destinationGroupId>0161106e-95f7-1f61-b471-0339f96f1578</destinationGroupId>
           <destinationType>INPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
+          <id>d47e7180-0161-1000-81be-3b7eec84a92e</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>01611071-95f7-1f61-60a2-d73a11a0ea77</sourceId>
+          <sourceGroupId>0161106e-95f7-1f61-b471-0339f96f1578</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d47dc708-0161-1000-f864-c33675de38f2</destinationId>
+          <destinationGroupId>fb49310f-b6ea-1f4a-1978-11febd1f8e26</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
           <relationship/>
           <maxWorkQueueSize>10000</maxWorkQueueSize>
           <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
@@ -10730,6 +10716,23 @@
         <flowFileExpiration>0 sec</flowFileExpiration>
       </connection>
       <connection>
+        <id>d47fe418-0161-1000-7d9f-199cf7f381f9</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d47e25b2-0161-1000-332c-42194fdd419f</sourceId>
+        <sourceGroupId>fb49310f-b6ea-1f4a-1978-11febd1f8e26</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d4724043-0161-1000-3800-99b2ef775a5a</destinationId>
+        <destinationGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
         <id>01611011-95f7-1f61-afba-d3dd083db4af</id>
         <name/>
         <bendPoints/>
@@ -10749,13 +10752,89 @@
       <connection>
         <id>0161100f-95f7-1f61-f76a-94c4e9b4953c</id>
         <name/>
-        <bendPoints/>
-        <labelIndex>1</labelIndex>
+        <bendPoints>
+          <bendPoint x="-253.4014892578125" y="1236.9083251953125"/>
+        </bendPoints>
+        <labelIndex>0</labelIndex>
         <zIndex>0</zIndex>
         <sourceId>41a335e0-ce93-1fe3-8586-48cf8c0686fe</sourceId>
         <sourceGroupId>41a335de-ce93-1fe3-7b03-0ddbc4ac2657</sourceGroupId>
         <sourceType>OUTPUT_PORT</sourceType>
         <destinationId>36353400-e638-19ce-6294-5adba35e1553</destinationId>
+        <destinationGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>d47bb4f7-0161-1000-23f5-871a9b8e4353</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d479da98-0161-1000-3155-492cbe6d300f</sourceId>
+        <sourceGroupId>41a335de-ce93-1fe3-7b03-0ddbc4ac2657</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d4724043-0161-1000-3800-99b2ef775a5a</destinationId>
+        <destinationGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>d4737469-0161-1000-9ff6-f588ec8f21a9</id>
+        <name/>
+        <bendPoints>
+          <bendPoint x="596.4384765625" y="1257.42822265625"/>
+        </bendPoints>
+        <labelIndex>0</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d4718bf4-0161-1000-d8bf-9ad63c79aa52</sourceId>
+        <sourceGroupId>41a33578-ce93-1fe3-6134-73b1cb55d609</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d4724043-0161-1000-3800-99b2ef775a5a</destinationId>
+        <destinationGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>d4735584-0161-1000-9b6e-4d1d4abb7a86</id>
+        <name/>
+        <bendPoints>
+          <bendPoint x="67.4384765625" y="1342.42822265625"/>
+        </bendPoints>
+        <labelIndex>0</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d46f02ca-0161-1000-f1e2-e51557b0229b</sourceId>
+        <sourceGroupId>41a33578-ce93-1fe3-6134-73b1cb55d609</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d47229c3-0161-1000-2f03-29029901fed8</destinationId>
+        <destinationGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>d47ff2e8-0161-1000-5684-37546e8fea48</id>
+        <name/>
+        <bendPoints>
+          <bendPoint x="331.4384765625" y="1340.42822265625"/>
+        </bendPoints>
+        <labelIndex>0</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d47dc708-0161-1000-f864-c33675de38f2</sourceId>
+        <sourceGroupId>fb49310f-b6ea-1f4a-1978-11febd1f8e26</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d47229c3-0161-1000-2f03-29029901fed8</destinationId>
         <destinationGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</destinationGroupId>
         <destinationType>OUTPUT_PORT</destinationType>
         <relationship/>
@@ -10834,8 +10913,10 @@
       <connection>
         <id>0161100c-95f7-1f61-2b5a-aa4143455462</id>
         <name/>
-        <bendPoints/>
-        <labelIndex>1</labelIndex>
+        <bendPoints>
+          <bendPoint x="-190.4014892578125" y="1302.9083251953125"/>
+        </bendPoints>
+        <labelIndex>0</labelIndex>
         <zIndex>0</zIndex>
         <sourceId>fb493111-b6ea-1f4a-ecd7-b8534406cb71</sourceId>
         <sourceGroupId>fb49310f-b6ea-1f4a-1978-11febd1f8e26</sourceGroupId>
@@ -10851,8 +10932,10 @@
       <connection>
         <id>01611010-95f7-1f61-21ac-b5274a82f091</id>
         <name/>
-        <bendPoints/>
-        <labelIndex>1</labelIndex>
+        <bendPoints>
+          <bendPoint x="-314.4014892578125" y="1168.9083251953125"/>
+        </bendPoints>
+        <labelIndex>0</labelIndex>
         <zIndex>0</zIndex>
         <sourceId>41a3357a-ce93-1fe3-c755-75751f0b6dd0</sourceId>
         <sourceGroupId>41a33578-ce93-1fe3-6134-73b1cb55d609</sourceGroupId>
@@ -10900,6 +10983,25 @@
         <flowFileExpiration>0 sec</flowFileExpiration>
       </connection>
       <connection>
+        <id>d47ba000-0161-1000-020a-fb9f13bad5ba</id>
+        <name/>
+        <bendPoints>
+          <bendPoint x="217.4384765625" y="1281.4283447265625"/>
+        </bendPoints>
+        <labelIndex>0</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d479da97-0161-1000-f500-b9e516c95949</sourceId>
+        <sourceGroupId>41a335de-ce93-1fe3-7b03-0ddbc4ac2657</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d47229c3-0161-1000-2f03-29029901fed8</destinationId>
+        <destinationGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
         <id>ce931fe4-35c8-11a3-172b-5cc362e56eb2</id>
         <name/>
         <bendPoints/>
@@ -10920,7 +11022,7 @@
     <processGroup>
       <id>767cb8ea-b7b5-3e92-07ff-8a13a3313f40</id>
       <name>NAI Coordination</name>
-      <position x="1036.5155337231015" y="1283.1136416158174"/>
+      <position x="1036.5155337231015" y="1282.5403078127092"/>
       <comment/>
       <processor>
         <id>0161100f-9454-148d-5929-b4a1e1832b84</id>
@@ -11049,6 +11151,20 @@
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
+      <outputPort>
+        <id>d4a9b48c-0161-1000-72f3-b5005c119d4c</id>
+        <name>Get Session</name>
+        <position x="-736.2758912226867" y="229.4148823889857"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </outputPort>
+      <outputPort>
+        <id>d4a9b48d-0161-1000-96e4-03298a87391f</id>
+        <name>Update Session</name>
+        <position x="-736.2758912226867" y="329.4148823889857"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </outputPort>
       <outputPort>
         <id>73a255e6-6f91-349f-c854-d993df5b8494</id>
         <name>HTTP Response</name>
@@ -11345,9 +11461,23 @@
           <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
+          <id>d4aabafb-0161-1000-3dd6-4322e4135fb7</id>
+          <name>Update Session</name>
+          <position x="-1510.5596362030851" y="670.373016621882"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
+          <id>d4aabafa-0161-1000-dcdb-ff6d6cedc156</id>
+          <name>Get Session</name>
+          <position x="-1510.5596362030851" y="117.83823419750769"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
           <id>c47530eb-6ce1-1581-1b27-5cedec82a553</id>
           <name>HTTP Response</name>
-          <position x="-1513.381894367077" y="396.0679323935583"/>
+          <position x="-1510.5596362030851" y="396.0679323935583"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -12142,38 +12272,21 @@
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <funnel>
-            <id>c4753139-6ce1-1581-6b65-0eb3f98b2dc1</id>
-            <position x="983.4506826097859" y="1396.9791493907646"/>
-          </funnel>
+          <outputPort>
+            <id>d4ac68d9-0161-1000-4f9c-76c567d88a23</id>
+            <name>Update Session</name>
+            <position x="1499.7506641053806" y="1399.9685329574952"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
           <funnel>
             <id>c475313f-6ce1-1581-6386-58504d9e4536</id>
             <position x="365.1684137634529" y="353.952306052199"/>
           </funnel>
-          <remoteProcessGroup>
-            <id>c475311f-6ce1-1581-3a4e-e764d9ae9922</id>
-            <name>NiFi Flow</name>
-            <position x="1429.7506641053806" y="1341.9791493907646"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>c4753120-6ce1-1581-a229-310a692a8ef2</id>
-              <name>Update Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
+          <funnel>
+            <id>c4753139-6ce1-1581-6b65-0eb3f98b2dc1</id>
+            <position x="983.4506826097859" y="1400.9685329574952"/>
+          </funnel>
           <connection>
             <id>c475314b-6ce1-1581-d87e-e5ce0130a681</id>
             <name/>
@@ -12293,6 +12406,23 @@
             <destinationGroupId>c4753116-6ce1-1581-ea7c-952bcca62fb8</destinationGroupId>
             <destinationType>FUNNEL</destinationType>
             <relationship>success</relationship>
+            <maxWorkQueueSize>10000</maxWorkQueueSize>
+            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+          </connection>
+          <connection>
+            <id>d4aca787-0161-1000-68a5-c942475d5504</id>
+            <name/>
+            <bendPoints/>
+            <labelIndex>1</labelIndex>
+            <zIndex>0</zIndex>
+            <sourceId>c4753139-6ce1-1581-6b65-0eb3f98b2dc1</sourceId>
+            <sourceGroupId>c4753116-6ce1-1581-ea7c-952bcca62fb8</sourceGroupId>
+            <sourceType>FUNNEL</sourceType>
+            <destinationId>d4ac68d9-0161-1000-4f9c-76c567d88a23</destinationId>
+            <destinationGroupId>c4753116-6ce1-1581-ea7c-952bcca62fb8</destinationGroupId>
+            <destinationType>OUTPUT_PORT</destinationType>
+            <relationship/>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -12470,23 +12600,6 @@
             <destinationGroupId>c4753116-6ce1-1581-ea7c-952bcca62fb8</destinationGroupId>
             <destinationType>PROCESSOR</destinationType>
             <relationship>success</relationship>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
-            <id>c475313d-6ce1-1581-0284-29b403186234</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>c4753139-6ce1-1581-6b65-0eb3f98b2dc1</sourceId>
-            <sourceGroupId>c4753116-6ce1-1581-ea7c-952bcca62fb8</sourceGroupId>
-            <sourceType>FUNNEL</sourceType>
-            <destinationId>c4753120-6ce1-1581-a229-310a692a8ef2</destinationId>
-            <destinationGroupId>c475311f-6ce1-1581-3a4e-e764d9ae9922</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
-            <relationship/>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -12684,16 +12797,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>ee1f38c2-5b17-1abc-4083-214f4af17309</id>
-            <name>Failure</name>
-            <position x="1284.8893127525628" y="1192.9999996547128"/>
+            <id>ee1f38c1-5b17-1abc-8ecb-d7ab93dfa2b7</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>ee1f38c1-5b17-1abc-8ecb-d7ab93dfa2b7</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
+            <id>ee1f38c2-5b17-1abc-4083-214f4af17309</id>
+            <name>Failure</name>
+            <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -13052,43 +13165,19 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>ee1f38a9-5b17-1abc-1058-97f230f6d70a</id>
-            <name>Success</name>
-            <position x="568.3572942412702" y="482.3974879052903"/>
-            <comments/>
-            <scheduledState>RUNNING</scheduledState>
-          </outputPort>
-          <outputPort>
             <id>ee1f38a8-5b17-1abc-06e7-b202b913bd87</id>
             <name>Failure</name>
             <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>ee1f38b0-5b17-1abc-a589-f3a25b07ac73</id>
-            <name>NiFi Flow</name>
-            <position x="1779.497138477061" y="-47.83795293411515"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>ee1f38b2-5b17-1abc-468c-26bd64f60f63</id>
-              <name>Get Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
+          <outputPort>
+            <id>ee1f38a9-5b17-1abc-1058-97f230f6d70a</id>
+            <name>Success</name>
+            <position x="568.3572942412702" y="482.3974879052903"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
           <connection>
             <id>ee1f38b5-5b17-1abc-cfe9-66eab48fb46b</id>
             <name/>
@@ -13153,23 +13242,6 @@
             <destinationGroupId>ee1f38a6-5b17-1abc-8ed8-34af0314a683</destinationGroupId>
             <destinationType>PROCESSOR</destinationType>
             <relationship>success</relationship>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
-            <id>ee1f38b4-5b17-1abc-2669-f6c5452144bd</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>ee1f38a7-5b17-1abc-7341-2547300d8831</sourceId>
-            <sourceGroupId>ee1f38a6-5b17-1abc-8ed8-34af0314a683</sourceGroupId>
-            <sourceType>INPUT_PORT</sourceType>
-            <destinationId>ee1f38b2-5b17-1abc-468c-26bd64f60f63</destinationId>
-            <destinationGroupId>ee1f38b0-5b17-1abc-a589-f3a25b07ac73</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
-            <relationship/>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -13957,6 +14029,13 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
+            <id>d4ab8ee1-0161-1000-d032-16c7caec3e94</id>
+            <name>Update Session</name>
+            <position x="2274.73065702808" y="-43.388236473493265"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
+          <outputPort>
             <id>c4753114-6ce1-1581-2f9f-ae83c0a8384f</id>
             <name>HTTP Request</name>
             <position x="2894.7751570039545" y="195.41684676128222"/>
@@ -14577,30 +14656,6 @@
               <flowFileExpiration>0 sec</flowFileExpiration>
             </connection>
           </processGroup>
-          <remoteProcessGroup>
-            <id>ee1f38d5-5b17-1abc-28e4-866e60a3e820</id>
-            <name>NiFi Flow</name>
-            <position x="2204.73065702808" y="-97.38823647349327"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>ee1f38d6-5b17-1abc-7852-9621d678a9c5</id>
-              <name>Update Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
           <connection>
             <id>9be06e4a-0161-1000-f367-e6d6ac790a00</id>
             <name/>
@@ -14778,23 +14833,6 @@
             <flowFileExpiration>0 sec</flowFileExpiration>
           </connection>
           <connection>
-            <id>c47530e3-6ce1-1581-26ff-5e8f1f63d8ad</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>ee1f38cf-5b17-1abc-18f1-d8daf607569d</sourceId>
-            <sourceGroupId>ee1f38cb-5b17-1abc-0772-759c70ae8604</sourceGroupId>
-            <sourceType>PROCESSOR</sourceType>
-            <destinationId>ee1f38d6-5b17-1abc-7852-9621d678a9c5</destinationId>
-            <destinationGroupId>ee1f38d5-5b17-1abc-28e4-866e60a3e820</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
-            <relationship>success</relationship>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
             <id>c04b3d1b-05cc-19cc-a7f1-172f99131459</id>
             <name/>
             <bendPoints/>
@@ -14841,6 +14879,23 @@
             <destinationGroupId>ee1f38cb-5b17-1abc-0772-759c70ae8604</destinationGroupId>
             <destinationType>OUTPUT_PORT</destinationType>
             <relationship>ok</relationship>
+            <maxWorkQueueSize>10000</maxWorkQueueSize>
+            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+          </connection>
+          <connection>
+            <id>d4abe220-0161-1000-738b-c4b3b3040c9a</id>
+            <name/>
+            <bendPoints/>
+            <labelIndex>1</labelIndex>
+            <zIndex>0</zIndex>
+            <sourceId>ee1f38cf-5b17-1abc-18f1-d8daf607569d</sourceId>
+            <sourceGroupId>ee1f38cb-5b17-1abc-0772-759c70ae8604</sourceGroupId>
+            <sourceType>PROCESSOR</sourceType>
+            <destinationId>d4ab8ee1-0161-1000-d032-16c7caec3e94</destinationId>
+            <destinationGroupId>ee1f38cb-5b17-1abc-0772-759c70ae8604</destinationGroupId>
+            <destinationType>OUTPUT_PORT</destinationType>
+            <relationship>success</relationship>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -15068,6 +15123,57 @@
           <flowFileExpiration>0 sec</flowFileExpiration>
         </connection>
         <connection>
+          <id>d4ac4a63-0161-1000-bf7e-7844eb1fafbb</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>d4ab8ee1-0161-1000-d032-16c7caec3e94</sourceId>
+          <sourceGroupId>ee1f38cb-5b17-1abc-0772-759c70ae8604</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d4aabafb-0161-1000-3dd6-4322e4135fb7</destinationId>
+          <destinationGroupId>7b54ea1f-982d-3d4c-a82a-ed8c3c481348</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
+          <id>d4ad1375-0161-1000-5b45-de532f8bd3e7</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>d4ac68d9-0161-1000-4f9c-76c567d88a23</sourceId>
+          <sourceGroupId>c4753116-6ce1-1581-ea7c-952bcca62fb8</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d4aabafb-0161-1000-3dd6-4322e4135fb7</destinationId>
+          <destinationGroupId>7b54ea1f-982d-3d4c-a82a-ed8c3c481348</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
+          <id>d4ab40f8-0161-1000-4aff-ea791c325acf</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>ee1f38c1-5b17-1abc-8ecb-d7ab93dfa2b7</sourceId>
+          <sourceGroupId>ee1f38bf-5b17-1abc-232e-c827a44a7f2e</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d4aabafa-0161-1000-dcdb-ff6d6cedc156</destinationId>
+          <destinationGroupId>7b54ea1f-982d-3d4c-a82a-ed8c3c481348</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
           <id>01611004-9454-148d-af95-568cadc93652</id>
           <name/>
           <bendPoints/>
@@ -15136,6 +15242,23 @@
           <flowFileExpiration>0 sec</flowFileExpiration>
         </connection>
       </processGroup>
+      <connection>
+        <id>d4ad5106-0161-1000-4543-3ca33c429a4f</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d4aabafb-0161-1000-3dd6-4322e4135fb7</sourceId>
+        <sourceGroupId>7b54ea1f-982d-3d4c-a82a-ed8c3c481348</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d4a9b48d-0161-1000-96e4-03298a87391f</destinationId>
+        <destinationGroupId>767cb8ea-b7b5-3e92-07ff-8a13a3313f40</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
       <connection>
         <id>ee1f38a1-5b17-1abc-318e-7b713112bdd7</id>
         <name/>
@@ -15239,6 +15362,23 @@
         <flowFileExpiration>0 sec</flowFileExpiration>
       </connection>
       <connection>
+        <id>d4ad38c4-0161-1000-35f7-dbdf62fa2737</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d4aabafa-0161-1000-dcdb-ff6d6cedc156</sourceId>
+        <sourceGroupId>7b54ea1f-982d-3d4c-a82a-ed8c3c481348</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d4a9b48c-0161-1000-72f3-b5005c119d4c</destinationId>
+        <destinationGroupId>767cb8ea-b7b5-3e92-07ff-8a13a3313f40</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
         <id>ee1f38a4-5b17-1abc-0668-7d5b7d359c64</id>
         <name/>
         <bendPoints/>
@@ -15276,7 +15416,7 @@
     <processGroup>
       <id>41a3363f-ce93-1fe3-ed1b-fb4f769e9d9c</id>
       <name>Session Management</name>
-      <position x="489.6715168350901" y="2040.3003784248695"/>
+      <position x="-712.735434642497" y="1749.2469727888981"/>
       <comment/>
       <processor>
         <id>41a336d7-ce93-1fe3-fc2f-db46cf5ed518</id>
@@ -15868,13 +16008,6 @@
         </property>
       </processor>
       <inputPort>
-        <id>41a336a5-ce93-1fe3-52cf-7245d7df2f46</id>
-        <name>Get Session</name>
-        <position x="-315.5928929712751" y="518.8819234963241"/>
-        <comments/>
-        <scheduledState>RUNNING</scheduledState>
-      </inputPort>
-      <inputPort>
         <id>41a336ab-ce93-1fe3-20aa-17fc26c0abb3</id>
         <name>Update Session</name>
         <position x="1520.5851345146389" y="1090.4640202844814"/>
@@ -15882,9 +16015,9 @@
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <inputPort>
-        <id>41a336d5-ce93-1fe3-10f4-479576626bbc</id>
-        <name>Unlock Session</name>
-        <position x="1520.5851345146389" y="2118.1729329655464"/>
+        <id>41a336b0-ce93-1fe3-9a9c-2f777ea1130c</id>
+        <name>Lock Session</name>
+        <position x="343.1086481902239" y="1323.053472198275"/>
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
@@ -15896,9 +16029,16 @@
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <inputPort>
-        <id>41a336b0-ce93-1fe3-9a9c-2f777ea1130c</id>
-        <name>Lock Session</name>
-        <position x="343.1086481902239" y="1323.053472198275"/>
+        <id>41a336a5-ce93-1fe3-52cf-7245d7df2f46</id>
+        <name>Get Session</name>
+        <position x="-315.5928929712751" y="518.8819234963241"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </inputPort>
+      <inputPort>
+        <id>41a336d5-ce93-1fe3-10f4-479576626bbc</id>
+        <name>Unlock Session</name>
+        <position x="1520.5851345146389" y="2118.1729329655464"/>
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
@@ -16694,7 +16834,7 @@
     <processGroup>
       <id>01611017-9454-148d-332e-beb28e2723f3</id>
       <name>Search Coordination</name>
-      <position x="1607.24382074786" y="1283.1136416158174"/>
+      <position x="1595.72380121661" y="1282.5403078127092"/>
       <comment/>
       <processor>
         <id>0161102d-9454-148d-a28b-1c2208c598fa</id>
@@ -16835,6 +16975,20 @@
         <id>01611019-9454-148d-574e-6f6085ec7d82</id>
         <name>HTTP Response</name>
         <position x="92.88459863160858" y="1045.4947757615084"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </outputPort>
+      <outputPort>
+        <id>d4b281c2-0161-1000-30f4-b192ed3da975</id>
+        <name>Get Session</name>
+        <position x="1236.7241698124694" y="703.4148823889857"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </outputPort>
+      <outputPort>
+        <id>d4b281c3-0161-1000-7f67-c7d7518217cc</id>
+        <name>Update Session</name>
+        <position x="1236.7241698124694" y="803.4148823889857"/>
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </outputPort>
@@ -17073,9 +17227,23 @@
           <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
+          <id>d4b2b3ae-0161-1000-0370-cb358e483a81</id>
+          <name>Update Session</name>
+          <position x="1921.7241698124694" y="1058.625961568171"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
           <id>56ba3196-a6ea-18f4-9035-49051e2e0361</id>
           <name>HTTP Response</name>
-          <position x="1917.684077554417" y="734.7917940877022"/>
+          <position x="1921.7241698124694" y="734.7917940877022"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
+          <id>d4b2b3ad-0161-1000-f05c-1993376a3bb3</id>
+          <name>Get Session</name>
+          <position x="1921.7241698124694" y="146.33181024731238"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -17426,16 +17594,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>56ba31be-a6ea-18f4-ab47-4718c7293554</id>
-            <name>Failure</name>
-            <position x="674.7252043303891" y="1347.3578557130845"/>
+            <id>56ba31bf-a6ea-18f4-f999-6573b01e1aa0</id>
+            <name>Success</name>
+            <position x="1879.1454559956028" y="623.0868852853786"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>56ba31bf-a6ea-18f4-f999-6573b01e1aa0</id>
-            <name>Success</name>
-            <position x="1879.1454559956028" y="623.0868852853786"/>
+            <id>56ba31be-a6ea-18f4-ab47-4718c7293554</id>
+            <name>Failure</name>
+            <position x="674.7252043303891" y="1347.3578557130845"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -17912,30 +18080,13 @@
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>56ba31a1-a6ea-18f4-ace8-87d20f1e65e6</id>
-            <name>NiFi Flow</name>
-            <position x="2206.194768356205" y="-112.02904457896202"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>56ba31a2-a6ea-18f4-2f11-a9e188bb7693</id>
-              <name>Update Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f77d0-0161-1000-f563-c1d3d42eea11</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
+          <outputPort>
+            <id>d4b3c4fa-0161-1000-dd40-d89199652520</id>
+            <name>Update Session</name>
+            <position x="2276.194768356205" y="-58.029044578962015"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
           <connection>
             <id>56ba31a5-a6ea-18f4-7265-27e3e15cb53a</id>
             <name/>
@@ -18111,7 +18262,7 @@
             <flowFileExpiration>0 sec</flowFileExpiration>
           </connection>
           <connection>
-            <id>56ba31ab-a6ea-18f4-e2f6-4168fa9604c9</id>
+            <id>d4b3eab1-0161-1000-d7c1-71d5505d3a2c</id>
             <name/>
             <bendPoints/>
             <labelIndex>1</labelIndex>
@@ -18119,9 +18270,9 @@
             <sourceId>56ba319b-a6ea-18f4-b331-a5596ed32baa</sourceId>
             <sourceGroupId>56ba3197-a6ea-18f4-031c-b757e0d905c3</sourceGroupId>
             <sourceType>PROCESSOR</sourceType>
-            <destinationId>56ba31a2-a6ea-18f4-2f11-a9e188bb7693</destinationId>
-            <destinationGroupId>56ba31a1-a6ea-18f4-ace8-87d20f1e65e6</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
+            <destinationId>d4b3c4fa-0161-1000-dd40-d89199652520</destinationId>
+            <destinationGroupId>56ba3197-a6ea-18f4-031c-b757e0d905c3</destinationGroupId>
+            <destinationType>OUTPUT_PORT</destinationType>
             <relationship>success</relationship>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
@@ -18396,43 +18547,19 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>56ba31da-a6ea-18f4-c9fd-252de1963067</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
-            <comments/>
-            <scheduledState>RUNNING</scheduledState>
-          </outputPort>
-          <outputPort>
             <id>56ba31db-a6ea-18f4-57f7-8bf683263338</id>
             <name>Success</name>
             <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
-          <remoteProcessGroup>
-            <id>56ba31e2-a6ea-18f4-731d-34263324ab1b</id>
-            <name>NiFi Flow</name>
-            <position x="1779.497138477061" y="-47.83795293411515"/>
-            <comment/>
-            <url>http://localhost:8080/nifi</url>
-            <urls>http://localhost:8080/nifi</urls>
-            <timeout>30 sec</timeout>
-            <yieldPeriod>10 sec</yieldPeriod>
-            <transmitting>true</transmitting>
-            <transportProtocol>HTTP</transportProtocol>
-            <proxyHost/>
-            <proxyUser/>
-            <inputPort>
-              <id>56ba31e4-a6ea-18f4-839e-5d6413127959</id>
-              <name>Get Session</name>
-              <position x="0.0" y="0.0"/>
-              <comments/>
-              <scheduledState>RUNNING</scheduledState>
-              <targetId>4f5f48b8-0161-1000-e517-527ff6173585</targetId>
-              <maxConcurrentTasks>1</maxConcurrentTasks>
-              <useCompression>false</useCompression>
-            </inputPort>
-          </remoteProcessGroup>
+          <outputPort>
+            <id>56ba31da-a6ea-18f4-c9fd-252de1963067</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
+            <comments/>
+            <scheduledState>RUNNING</scheduledState>
+          </outputPort>
           <connection>
             <id>c04b3b94-05cc-19cc-5ed2-fbea2a6b74e0</id>
             <name/>
@@ -18497,23 +18624,6 @@
             <destinationGroupId>56ba31d8-a6ea-18f4-720f-13c325f5252c</destinationGroupId>
             <destinationType>PROCESSOR</destinationType>
             <relationship>success</relationship>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
-            <id>c04b3b92-05cc-19cc-19fb-56c54912a763</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>56ba31d9-a6ea-18f4-a34f-90a496632066</sourceId>
-            <sourceGroupId>56ba31d8-a6ea-18f4-720f-13c325f5252c</sourceGroupId>
-            <sourceType>INPUT_PORT</sourceType>
-            <destinationId>56ba31e4-a6ea-18f4-839e-5d6413127959</destinationId>
-            <destinationGroupId>56ba31e2-a6ea-18f4-731d-34263324ab1b</destinationGroupId>
-            <destinationType>REMOTE_INPUT_PORT</destinationType>
-            <relationship/>
             <maxWorkQueueSize>10000</maxWorkQueueSize>
             <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -18922,6 +19032,23 @@
           <flowFileExpiration>0 sec</flowFileExpiration>
         </connection>
         <connection>
+          <id>d4b44a5c-0161-1000-aa26-a2b0070f6617</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>d4b3c4fa-0161-1000-dd40-d89199652520</sourceId>
+          <sourceGroupId>56ba3197-a6ea-18f4-031c-b757e0d905c3</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d4b2b3ae-0161-1000-0370-cb358e483a81</destinationId>
+          <destinationGroupId>56ba3194-a6ea-18f4-f6cf-7c99bf167082</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
           <id>c04b3ba3-05cc-19cc-1c79-20de12093846</id>
           <name/>
           <bendPoints/>
@@ -19006,6 +19133,23 @@
           <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
           <flowFileExpiration>0 sec</flowFileExpiration>
         </connection>
+        <connection>
+          <id>d4b31759-0161-1000-32a2-eb7795202872</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>56ba31b3-a6ea-18f4-4afe-58ae00db5b89</sourceId>
+          <sourceGroupId>56ba31b0-a6ea-18f4-e735-3bb9e5c3b316</sourceGroupId>
+          <sourceType>OUTPUT_PORT</sourceType>
+          <destinationId>d4b2b3ad-0161-1000-f05c-1993376a3bb3</destinationId>
+          <destinationGroupId>56ba3194-a6ea-18f4-f6cf-7c99bf167082</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
       </processGroup>
       <connection>
         <id>c04b3bfb-05cc-19cc-6257-7dad3fb79e9f</id>
@@ -19017,6 +19161,40 @@
         <sourceGroupId>56ba3194-a6ea-18f4-f6cf-7c99bf167082</sourceGroupId>
         <sourceType>OUTPUT_PORT</sourceType>
         <destinationId>01611019-9454-148d-574e-6f6085ec7d82</destinationId>
+        <destinationGroupId>01611017-9454-148d-332e-beb28e2723f3</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>d4b4746a-0161-1000-2b22-b8691d9cd8f8</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d4b2b3ae-0161-1000-0370-cb358e483a81</sourceId>
+        <sourceGroupId>56ba3194-a6ea-18f4-f6cf-7c99bf167082</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d4b281c3-0161-1000-7f67-c7d7518217cc</destinationId>
+        <destinationGroupId>01611017-9454-148d-332e-beb28e2723f3</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>d4b46427-0161-1000-b6f9-2055fa46369a</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>d4b2b3ad-0161-1000-f05c-1993376a3bb3</sourceId>
+        <sourceGroupId>56ba3194-a6ea-18f4-f6cf-7c99bf167082</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>d4b281c2-0161-1000-30f4-b192ed3da975</destinationId>
         <destinationGroupId>01611017-9454-148d-332e-beb28e2723f3</destinationGroupId>
         <destinationType>OUTPUT_PORT</destinationType>
         <relationship/>
@@ -19145,23 +19323,6 @@
       </connection>
     </processGroup>
     <connection>
-      <id>4f5f56c5-0161-1000-c2b7-7c0e4fce38ac</id>
-      <name/>
-      <bendPoints/>
-      <labelIndex>1</labelIndex>
-      <zIndex>0</zIndex>
-      <sourceId>4f5f48b8-0161-1000-e517-527ff6173585</sourceId>
-      <sourceGroupId>44c8a9d8-0161-1000-5d6c-8623d70e48a5</sourceGroupId>
-      <sourceType>INPUT_PORT</sourceType>
-      <destinationId>41a336a5-ce93-1fe3-52cf-7245d7df2f46</destinationId>
-      <destinationGroupId>41a3363f-ce93-1fe3-ed1b-fb4f769e9d9c</destinationGroupId>
-      <destinationType>INPUT_PORT</destinationType>
-      <relationship/>
-      <maxWorkQueueSize>10000</maxWorkQueueSize>
-      <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-      <flowFileExpiration>0 sec</flowFileExpiration>
-    </connection>
-    <connection>
       <id>b422c9f0-7971-34a1-2e7f-085922433abe</id>
       <name/>
       <bendPoints/>
@@ -19196,23 +19357,6 @@
       <flowFileExpiration>0 sec</flowFileExpiration>
     </connection>
     <connection>
-      <id>4f5f93fd-0161-1000-97b2-c99d4779e091</id>
-      <name/>
-      <bendPoints/>
-      <labelIndex>1</labelIndex>
-      <zIndex>0</zIndex>
-      <sourceId>4f5f77d0-0161-1000-f563-c1d3d42eea11</sourceId>
-      <sourceGroupId>44c8a9d8-0161-1000-5d6c-8623d70e48a5</sourceGroupId>
-      <sourceType>INPUT_PORT</sourceType>
-      <destinationId>41a336ab-ce93-1fe3-20aa-17fc26c0abb3</destinationId>
-      <destinationGroupId>41a3363f-ce93-1fe3-ed1b-fb4f769e9d9c</destinationGroupId>
-      <destinationType>INPUT_PORT</destinationType>
-      <relationship/>
-      <maxWorkQueueSize>10000</maxWorkQueueSize>
-      <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-      <flowFileExpiration>0 sec</flowFileExpiration>
-    </connection>
-    <connection>
       <id>0161101b-9454-148d-3615-3dfcab18aa34</id>
       <name/>
       <bendPoints/>
@@ -19232,8 +19376,10 @@
     <connection>
       <id>ee1f3869-5b17-1abc-2749-6bd3f71c8e77</id>
       <name/>
-      <bendPoints/>
-      <labelIndex>1</labelIndex>
+      <bendPoints>
+        <bendPoint x="1395.29833984375" y="1820.7403564453125"/>
+      </bendPoints>
+      <labelIndex>0</labelIndex>
       <zIndex>0</zIndex>
       <sourceId>ce931fef-35c8-11a3-2c72-bc102bfca210</sourceId>
       <sourceGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</sourceGroupId>
@@ -19241,6 +19387,40 @@
       <destinationId>7257cdc0-ad02-3d0b-b135-381037f8fab3</destinationId>
       <destinationGroupId>44c8a9d8-0161-1000-5d6c-8623d70e48a5</destinationGroupId>
       <destinationType>PROCESSOR</destinationType>
+      <relationship/>
+      <maxWorkQueueSize>10000</maxWorkQueueSize>
+      <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+    </connection>
+    <connection>
+      <id>d46ddf33-0161-1000-9fb0-906393b30830</id>
+      <name/>
+      <bendPoints/>
+      <labelIndex>0</labelIndex>
+      <zIndex>0</zIndex>
+      <sourceId>d46c21bf-0161-1000-03f9-5f4e5a1d515e</sourceId>
+      <sourceGroupId>ce931fec-35c8-11a3-2740-a4823916c5fe</sourceGroupId>
+      <sourceType>OUTPUT_PORT</sourceType>
+      <destinationId>41a33641-ce93-1fe3-0319-13b9dfc7b7dc</destinationId>
+      <destinationGroupId>41a3363f-ce93-1fe3-ed1b-fb4f769e9d9c</destinationGroupId>
+      <destinationType>INPUT_PORT</destinationType>
+      <relationship/>
+      <maxWorkQueueSize>10000</maxWorkQueueSize>
+      <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+    </connection>
+    <connection>
+      <id>d475442c-0161-1000-a539-ea626e945088</id>
+      <name/>
+      <bendPoints/>
+      <labelIndex>1</labelIndex>
+      <zIndex>0</zIndex>
+      <sourceId>d47229c3-0161-1000-2f03-29029901fed8</sourceId>
+      <sourceGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</sourceGroupId>
+      <sourceType>OUTPUT_PORT</sourceType>
+      <destinationId>41a336a5-ce93-1fe3-52cf-7245d7df2f46</destinationId>
+      <destinationGroupId>41a3363f-ce93-1fe3-ed1b-fb4f769e9d9c</destinationGroupId>
+      <destinationType>INPUT_PORT</destinationType>
       <relationship/>
       <maxWorkQueueSize>10000</maxWorkQueueSize>
       <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
@@ -19283,8 +19463,10 @@
     <connection>
       <id>0161101c-9454-148d-22a4-dc454de3503e</id>
       <name/>
-      <bendPoints/>
-      <labelIndex>1</labelIndex>
+      <bendPoints>
+        <bendPoint x="1427.29833984375" y="1671.7403564453125"/>
+      </bendPoints>
+      <labelIndex>0</labelIndex>
       <zIndex>0</zIndex>
       <sourceId>01611014-9454-148d-d59a-7a0f8a6099a3</sourceId>
       <sourceGroupId>01611012-9454-148d-edce-32bf83293542</sourceGroupId>
@@ -19292,6 +19474,25 @@
       <destinationId>7257cdc0-ad02-3d0b-b135-381037f8fab3</destinationId>
       <destinationGroupId>44c8a9d8-0161-1000-5d6c-8623d70e48a5</destinationGroupId>
       <destinationType>PROCESSOR</destinationType>
+      <relationship/>
+      <maxWorkQueueSize>10000</maxWorkQueueSize>
+      <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+    </connection>
+    <connection>
+      <id>d49f2296-0161-1000-cb3e-9ea5bdf5a33e</id>
+      <name/>
+      <bendPoints>
+        <bendPoint x="-3.6783978939056396" y="1769.293212890625"/>
+      </bendPoints>
+      <labelIndex>0</labelIndex>
+      <zIndex>0</zIndex>
+      <sourceId>d49a15b8-0161-1000-8615-d698752d4690</sourceId>
+      <sourceGroupId>01611012-9454-148d-edce-32bf83293542</sourceGroupId>
+      <sourceType>OUTPUT_PORT</sourceType>
+      <destinationId>41a336a5-ce93-1fe3-52cf-7245d7df2f46</destinationId>
+      <destinationGroupId>41a3363f-ce93-1fe3-ed1b-fb4f769e9d9c</destinationGroupId>
+      <destinationType>INPUT_PORT</destinationType>
       <relationship/>
       <maxWorkQueueSize>10000</maxWorkQueueSize>
       <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
@@ -19315,15 +19516,74 @@
       <flowFileExpiration>0 sec</flowFileExpiration>
     </connection>
     <connection>
-      <id>4f5f026c-0161-1000-f3d0-7caee433ba08</id>
+      <id>d4b490ef-0161-1000-edda-2273bc35ba4e</id>
       <name/>
-      <bendPoints/>
-      <labelIndex>1</labelIndex>
+      <bendPoints>
+        <bendPoint x="-81.27903747558594" y="2212.896484375"/>
+      </bendPoints>
+      <labelIndex>0</labelIndex>
       <zIndex>0</zIndex>
-      <sourceId>4f5ee875-0161-1000-8630-510e3f846aef</sourceId>
-      <sourceGroupId>44c8a9d8-0161-1000-5d6c-8623d70e48a5</sourceGroupId>
-      <sourceType>INPUT_PORT</sourceType>
-      <destinationId>41a33641-ce93-1fe3-0319-13b9dfc7b7dc</destinationId>
+      <sourceId>d4b281c2-0161-1000-30f4-b192ed3da975</sourceId>
+      <sourceGroupId>01611017-9454-148d-332e-beb28e2723f3</sourceGroupId>
+      <sourceType>OUTPUT_PORT</sourceType>
+      <destinationId>41a336a5-ce93-1fe3-52cf-7245d7df2f46</destinationId>
+      <destinationGroupId>41a3363f-ce93-1fe3-ed1b-fb4f769e9d9c</destinationGroupId>
+      <destinationType>INPUT_PORT</destinationType>
+      <relationship/>
+      <maxWorkQueueSize>10000</maxWorkQueueSize>
+      <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+    </connection>
+    <connection>
+      <id>d47569f6-0161-1000-d401-9f90f183d10a</id>
+      <name/>
+      <bendPoints>
+        <bendPoint x="-128.91448974609375" y="1680.9356689453125"/>
+      </bendPoints>
+      <labelIndex>0</labelIndex>
+      <zIndex>0</zIndex>
+      <sourceId>d4724043-0161-1000-3800-99b2ef775a5a</sourceId>
+      <sourceGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</sourceGroupId>
+      <sourceType>OUTPUT_PORT</sourceType>
+      <destinationId>41a336ab-ce93-1fe3-20aa-17fc26c0abb3</destinationId>
+      <destinationGroupId>41a3363f-ce93-1fe3-ed1b-fb4f769e9d9c</destinationGroupId>
+      <destinationType>INPUT_PORT</destinationType>
+      <relationship/>
+      <maxWorkQueueSize>10000</maxWorkQueueSize>
+      <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+    </connection>
+    <connection>
+      <id>d49f4219-0161-1000-9179-75d05e8db06e</id>
+      <name/>
+      <bendPoints>
+        <bendPoint x="-9.438397407531738" y="1888.813232421875"/>
+      </bendPoints>
+      <labelIndex>0</labelIndex>
+      <zIndex>0</zIndex>
+      <sourceId>d49a15b9-0161-1000-0e97-6facc80f4436</sourceId>
+      <sourceGroupId>01611012-9454-148d-edce-32bf83293542</sourceGroupId>
+      <sourceType>OUTPUT_PORT</sourceType>
+      <destinationId>41a336ab-ce93-1fe3-20aa-17fc26c0abb3</destinationId>
+      <destinationGroupId>41a3363f-ce93-1fe3-ed1b-fb4f769e9d9c</destinationGroupId>
+      <destinationType>INPUT_PORT</destinationType>
+      <relationship/>
+      <maxWorkQueueSize>10000</maxWorkQueueSize>
+      <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+    </connection>
+    <connection>
+      <id>d4ad7ab0-0161-1000-b413-31a2c3816086</id>
+      <name/>
+      <bendPoints>
+        <bendPoint x="-39.67839431762695" y="1991.05322265625"/>
+      </bendPoints>
+      <labelIndex>0</labelIndex>
+      <zIndex>0</zIndex>
+      <sourceId>d4a9b48c-0161-1000-72f3-b5005c119d4c</sourceId>
+      <sourceGroupId>767cb8ea-b7b5-3e92-07ff-8a13a3313f40</sourceGroupId>
+      <sourceType>OUTPUT_PORT</sourceType>
+      <destinationId>41a336a5-ce93-1fe3-52cf-7245d7df2f46</destinationId>
       <destinationGroupId>41a3363f-ce93-1fe3-ed1b-fb4f769e9d9c</destinationGroupId>
       <destinationType>INPUT_PORT</destinationType>
       <relationship/>
@@ -19334,8 +19594,10 @@
     <connection>
       <id>53cac12f-0161-1000-a67c-392aa341d9b7</id>
       <name/>
-      <bendPoints/>
-      <labelIndex>1</labelIndex>
+      <bendPoints>
+        <bendPoint x="1341.29833984375" y="1738.7403564453125"/>
+      </bendPoints>
+      <labelIndex>0</labelIndex>
       <zIndex>0</zIndex>
       <sourceId>36353400-e638-19ce-6294-5adba35e1553</sourceId>
       <sourceGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</sourceGroupId>
@@ -19395,6 +19657,44 @@
       <destinationGroupId>767cb8ea-b7b5-3e92-07ff-8a13a3313f40</destinationGroupId>
       <destinationType>INPUT_PORT</destinationType>
       <relationship>nai</relationship>
+      <maxWorkQueueSize>10000</maxWorkQueueSize>
+      <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+    </connection>
+    <connection>
+      <id>d4ad95c9-0161-1000-ae6f-e008d345fd44</id>
+      <name/>
+      <bendPoints>
+        <bendPoint x="-58.39839172363281" y="2104.813232421875"/>
+      </bendPoints>
+      <labelIndex>1</labelIndex>
+      <zIndex>0</zIndex>
+      <sourceId>d4a9b48d-0161-1000-96e4-03298a87391f</sourceId>
+      <sourceGroupId>767cb8ea-b7b5-3e92-07ff-8a13a3313f40</sourceGroupId>
+      <sourceType>OUTPUT_PORT</sourceType>
+      <destinationId>41a336ab-ce93-1fe3-20aa-17fc26c0abb3</destinationId>
+      <destinationGroupId>41a3363f-ce93-1fe3-ed1b-fb4f769e9d9c</destinationGroupId>
+      <destinationType>INPUT_PORT</destinationType>
+      <relationship/>
+      <maxWorkQueueSize>10000</maxWorkQueueSize>
+      <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+    </connection>
+    <connection>
+      <id>d4b4b575-0161-1000-54bd-9101df7e16c9</id>
+      <name/>
+      <bendPoints>
+        <bendPoint x="-137.6266632080078" y="2338.7041015625"/>
+      </bendPoints>
+      <labelIndex>1</labelIndex>
+      <zIndex>0</zIndex>
+      <sourceId>d4b281c3-0161-1000-7f67-c7d7518217cc</sourceId>
+      <sourceGroupId>01611017-9454-148d-332e-beb28e2723f3</sourceGroupId>
+      <sourceType>OUTPUT_PORT</sourceType>
+      <destinationId>41a336ab-ce93-1fe3-20aa-17fc26c0abb3</destinationId>
+      <destinationGroupId>41a3363f-ce93-1fe3-ed1b-fb4f769e9d9c</destinationGroupId>
+      <destinationType>INPUT_PORT</destinationType>
+      <relationship/>
       <maxWorkQueueSize>10000</maxWorkQueueSize>
       <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
       <flowFileExpiration>0 sec</flowFileExpiration>
@@ -19486,7 +19786,7 @@
       </property>
       <property>
         <name>Connection String</name>
-        <value>localhost:6379</value>
+        <value>${stellar.store.server}:${stellar.store.port}</value>
       </property>
       <property>
         <name>Database Index</name>
