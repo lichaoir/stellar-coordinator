@@ -3,6 +3,6 @@ env:
 services:
   - docker
 script:
-  - docker/build docker $STELLAR_VERSION
+  - docker/build.sh docker $STELLAR_VERSION
 after_success:
   - docker push data61/stellar-coordinator:$STELLAR_VERSION
