@@ -1,8 +1,4 @@
-env:
-  - STELLAR_VERSION=0.1-SNAPSHOT
 services:
   - docker
 script:
-  - docker/build.sh docker $STELLAR_VERSION
-after_success:
-  - docker push data61/stellar-coordinator:$STELLAR_VERSION
+  - docker/dockerize.sh
