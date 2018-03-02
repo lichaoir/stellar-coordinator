@@ -23,30 +23,41 @@ describe('GET /init', () => {
 });
 
 describe('Sequential execution of modules', () => {
+  let timeout = 0;
   let lastStep = null;
 
-  it('should init a session', () => {
-    lastStep = request
-      .get('/init')
-      .expect(200)
-      .then((res) => {
-        expect(res.body).to.have.property('sessionId');
-        return res.body.sessionId;
-      });
-
-    return lastStep;
-  });
-
-  it('should start ingest', () => {
-    let body = require('./resources/start-ingest.json');
-
-    lastStep = lastStep.then((sessionId) =>
-      request
-        .post('/ingest/start')
-        .send(body)
+  timeout += 2000;
+  it(
+    'should init a session',
+    () => {
+      lastStep = request
+        .get('/init')
         .expect(200)
-    );
+        .then((res) => {
+          expect(res.body).to.have.property('sessionId');
+          return res.body.sessionId;
+        });
 
-    return lastStep;
-  })
+      return lastStep;
+    },
+    timeout
+  );
+
+  timeout += 2000;
+  it(
+    'should start ingest',
+    () => {
+      let body = require('./resources/start-ingest.json');
+
+      lastStep = lastStep.then((sessionId) =>
+        request
+          .post('/ingest/start')
+          .send(body)
+          .expect(200)
+      );
+
+      return lastStep;
+    },
+    timeout
+  )
 });
