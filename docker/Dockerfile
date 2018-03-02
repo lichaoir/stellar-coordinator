@@ -1,20 +1,16 @@
 ARG NIFI_VERSION=1.5.0
 
-FROM apache/nifi:${NIFI_VERSION}
+FROM apache/nifi:$NIFI_VERSION
 
 LABEL maintainer="CSIRO Data61"
 
-ARG BRANCH=master
+COPY flow.xml ${NIFI_HOME}/conf/
+COPY stellar.properties ${NIFI_HOME}/usr/conf/
+COPY stellar-utils.jar ${NIFI_HOME}/usr/bin/
 
-RUN curl -Lo src.zip https://github.com/data61/stellar-coordinator/archive/$BRANCH.zip \
-  && unzip src.zip -d src \
-  && cp ./src/stellar-coordinator-$BRANCH/nifi/conf/stellar.properties ${NIFI_HOME}/conf \
-  && cp ./src/stellar-coordinator-$BRANCH/nifi/conf/flow.xml.gz ${NIFI_HOME}/conf \
-  && rm -rf src.zip src/
+WORKDIR $NIFI_HOME/conf
+RUN gzip flow.xml
+RUN sed -i -r "s@^(nifi.variable.registry.properties=).*@\1.\/usr\/conf\/stellar.properties@" ${NIFI_HOME}/conf/nifi.properties
 
-USER root
-
-RUN sed -i -r "s@^(nifi.variable.registry.properties=).*@\1$NIFI_HOME\/conf\/stellar.properties@" $NIFI_HOME/conf/nifi.properties \
-  && chown -R nifi:nifi ${NIFI_HOME}
-
-USER nifi
+WORKDIR $NIFI_HOME
+EXPOSE 8000 8080
