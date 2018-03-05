@@ -2,7 +2,7 @@ version: '3'
 services:
   coordinator:
     image: $COORDINATOR_REPOSITORY:$COORDINATOR_TAG
-    container_name: stellar-coordinator
+    container_name: coordinator
     ports:
       - "8080:8080"
       - "8000:8000"
