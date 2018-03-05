@@ -12,5 +12,9 @@ WORKDIR $NIFI_HOME/conf
 RUN gzip flow.xml
 RUN sed -i -r "s@^(nifi.variable.registry.properties=).*@\1.\/usr\/conf\/stellar.properties@" ${NIFI_HOME}/conf/nifi.properties
 
+USER root
+RUN chmod -R o+rwx $NIFI_BASE_DIR
+USER nifi
+
 WORKDIR $NIFI_HOME
 EXPOSE 8000 8080
