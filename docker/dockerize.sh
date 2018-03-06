@@ -220,7 +220,12 @@ copy_files() {
 
 # Download stellar-utils executable to the temporary directory for building docker image.
 download_files() {
-    curl -o $tmpdir/stellar-utils.jar 'https://s3-ap-southeast-2.amazonaws.com/serene-maven-repository/snapshots/sh/serene/stellar-utils/0.2.0-SNAPSHOT/stellar-utils-0.2.0-20180222.074603-24-jar-with-dependencies.jar'
+    if [ ! -e ./stellar-utils.jar ]
+    then
+        curl -o stellar-utils.jar 'https://s3-ap-southeast-2.amazonaws.com/serene-maven-repository/snapshots/sh/serene/stellar-utils/0.2.0-SNAPSHOT/stellar-utils-0.2.0-20180222.074603-24-jar-with-dependencies.jar'
+    fi
+
+    cp stellar-utils.jar $tmpdir/
 }
 
 ################################################################################

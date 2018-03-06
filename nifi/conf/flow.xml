@@ -434,13 +434,6 @@
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <outputPort>
-        <id>d49a15b8-0161-1000-8615-d698752d4690</id>
-        <name>Get Session</name>
-        <position x="637.7241087773133" y="807.4149129065638"/>
-        <comments/>
-        <scheduledState>RUNNING</scheduledState>
-      </outputPort>
-      <outputPort>
         <id>d49a15b9-0161-1000-0e97-6facc80f4436</id>
         <name>Update Session</name>
         <position x="637.7241087773133" y="907.4149129065638"/>
@@ -451,6 +444,13 @@
         <id>01611014-9454-148d-d59a-7a0f8a6099a3</id>
         <name>HTTP Response</name>
         <position x="54.77168573631968" y="1133.4149129065638"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </outputPort>
+      <outputPort>
+        <id>d49a15b8-0161-1000-8615-d698752d4690</id>
+        <name>Get Session</name>
+        <position x="637.7241087773133" y="807.4149129065638"/>
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </outputPort>
@@ -774,11 +774,11 @@
             </property>
             <property>
               <name>stellar.session.er.gephi</name>
-              <value>${stellar.store.fsRoot}/${stellar.session.id}/gephi/er.gdf</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/gephi/er.gdf</value>
             </property>
             <property>
               <name>stellar.session.er.output</name>
-              <value>${stellar.store.fsRoot}/${stellar.session.id}/er</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/er</value>
             </property>
           </processor>
           <processor>
@@ -1371,16 +1371,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>d49c5c3d-0161-1000-0043-fb8061620f0d</id>
-            <name>Update Session</name>
-            <position x="2276.194768356205" y="-58.029044578962015"/>
+            <id>c04b3c7a-05cc-19cc-e64e-9c95e59605c3</id>
+            <name>HTTP Response</name>
+            <position x="2276.194768356205" y="834.5947620280349"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>c04b3c7a-05cc-19cc-e64e-9c95e59605c3</id>
-            <name>HTTP Response</name>
-            <position x="2276.194768356205" y="834.5947620280349"/>
+            <id>d49c5c3d-0161-1000-0043-fb8061620f0d</id>
+            <name>Update Session</name>
+            <position x="2276.194768356205" y="-58.029044578962015"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -1721,16 +1721,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>c04b3c93-05cc-19cc-ccae-97b08d083f18</id>
-            <name>Failure</name>
-            <position x="1284.8893127525628" y="1192.9999996547128"/>
+            <id>c04b3c94-05cc-19cc-7863-d41d549fb2a0</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>c04b3c94-05cc-19cc-7863-d41d549fb2a0</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
+            <id>c04b3c93-05cc-19cc-ccae-97b08d083f18</id>
+            <name>Failure</name>
+            <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -2089,16 +2089,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>c04b3cbb-05cc-19cc-deb5-57f79654ae3c</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
+            <id>c04b3cbc-05cc-19cc-0dff-d558e569a6de</id>
+            <name>Success</name>
+            <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>c04b3cbc-05cc-19cc-0dff-d558e569a6de</id>
-            <name>Success</name>
-            <position x="568.3572942412702" y="482.3974879052903"/>
+            <id>c04b3cbb-05cc-19cc-deb5-57f79654ae3c</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -2513,13 +2513,6 @@
           <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
-          <id>d49d55b0-0161-1000-e139-45ca89c643ec</id>
-          <name>Update Session</name>
-          <position x="740.0179093415263" y="1277.6474134026398"/>
-          <comments/>
-          <scheduledState>RUNNING</scheduledState>
-        </outputPort>
-        <outputPort>
           <id>d49d55af-0161-1000-10a4-3073c2fe3be2</id>
           <name>Get Session</name>
           <position x="1440.1763964829504" y="395.3318102473124"/>
@@ -2530,6 +2523,13 @@
           <id>c04b3c25-05cc-19cc-02cb-122a755506ae</id>
           <name>HTTP Response</name>
           <position x="1440.1763964829504" y="692.2471468710974"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
+          <id>d49d55b0-0161-1000-e139-45ca89c643ec</id>
+          <name>Update Session</name>
+          <position x="740.0179093415263" y="1277.6474134026398"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -2851,16 +2851,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>c04b3c34-05cc-19cc-23f6-bdb7a7b7477e</id>
-            <name>HTTP Response</name>
-            <position x="1355.196772078681" y="699.8791248210036"/>
+            <id>d49e147c-0161-1000-8adc-6465a8481046</id>
+            <name>Update Session</name>
+            <position x="1992.018479139012" y="-220.02532620280238"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>d49e147c-0161-1000-8adc-6465a8481046</id>
-            <name>Update Session</name>
-            <position x="1992.018479139012" y="-220.02532620280238"/>
+            <id>c04b3c34-05cc-19cc-23f6-bdb7a7b7477e</id>
+            <name>HTTP Response</name>
+            <position x="1355.196772078681" y="699.8791248210036"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -2882,23 +2882,6 @@
             <flowFileExpiration>0 sec</flowFileExpiration>
           </connection>
           <connection>
-            <id>c04b3c44-05cc-19cc-d633-d19adcdf5ed9</id>
-            <name/>
-            <bendPoints/>
-            <labelIndex>1</labelIndex>
-            <zIndex>0</zIndex>
-            <sourceId>c04b3c38-05cc-19cc-5f60-9af4ee1697ce</sourceId>
-            <sourceGroupId>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</sourceGroupId>
-            <sourceType>PROCESSOR</sourceType>
-            <destinationId>c04b3c35-05cc-19cc-b5ac-12e9f51a3631</destinationId>
-            <destinationGroupId>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</destinationGroupId>
-            <destinationType>PROCESSOR</destinationType>
-            <relationship>success</relationship>
-            <maxWorkQueueSize>10000</maxWorkQueueSize>
-            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-          </connection>
-          <connection>
             <id>c04b3c46-05cc-19cc-77e1-3b4d8de83860</id>
             <name/>
             <bendPoints/>
@@ -2908,6 +2891,23 @@
             <sourceGroupId>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</sourceGroupId>
             <sourceType>PROCESSOR</sourceType>
             <destinationId>c04b3c37-05cc-19cc-267e-0e91884dc226</destinationId>
+            <destinationGroupId>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</destinationGroupId>
+            <destinationType>PROCESSOR</destinationType>
+            <relationship>success</relationship>
+            <maxWorkQueueSize>10000</maxWorkQueueSize>
+            <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+          </connection>
+          <connection>
+            <id>c04b3c44-05cc-19cc-d633-d19adcdf5ed9</id>
+            <name/>
+            <bendPoints/>
+            <labelIndex>1</labelIndex>
+            <zIndex>0</zIndex>
+            <sourceId>c04b3c38-05cc-19cc-5f60-9af4ee1697ce</sourceId>
+            <sourceGroupId>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</sourceGroupId>
+            <sourceType>PROCESSOR</sourceType>
+            <destinationId>c04b3c35-05cc-19cc-b5ac-12e9f51a3631</destinationId>
             <destinationGroupId>c04b3c32-05cc-19cc-b55c-f8dd44e55d76</destinationGroupId>
             <destinationType>PROCESSOR</destinationType>
             <relationship>success</relationship>
@@ -5084,6 +5084,14 @@
 )}</value>
         </property>
         <property>
+          <name>ingest.files</name>
+          <value>${http.request.uri:equals(
+	${stellar.api.ingest.root:append(
+		${stellar.api.ingest.files}
+	)}
+)}</value>
+        </property>
+        <property>
           <name>ingest.start</name>
           <value>${http.request.uri:equals(
 	${stellar.api.ingest.root:append(
@@ -5111,7 +5119,7 @@
       <processor>
         <id>ce931fe3-35c6-11a3-7a1b-a09cda246a7f</id>
         <name>Create Empty Response</name>
-        <position x="-1308.2974507203764" y="803.4478685969218"/>
+        <position x="-1794.517543493814" y="801.2139513605937"/>
         <styles/>
         <comment/>
         <class>org.apache.nifi.processors.standard.ReplaceText</class>
@@ -5159,7 +5167,7 @@
       <processor>
         <id>ce931fe3-35c8-11a3-b755-19f90c06a152</id>
         <name>Set HTTP Status Code</name>
-        <position x="-1308.2974507203764" y="1365.4949910315638"/>
+        <position x="-1794.517543493814" y="1356.2862507971888"/>
         <styles/>
         <comment/>
         <class>org.apache.nifi.processors.attributes.UpdateAttribute</class>
@@ -5201,30 +5209,252 @@
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <outputPort>
-        <id>36353400-e638-19ce-6294-5adba35e1553</id>
-        <name>HTTP Response</name>
-        <position x="-652.8731156477334" y="1405.4949910315638"/>
+        <id>d4724043-0161-1000-3800-99b2ef775a5a</id>
+        <name>Update Session</name>
+        <position x="763.8059046436761" y="1396.2862507971888"/>
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </outputPort>
       <outputPort>
-        <id>d4724043-0161-1000-3800-99b2ef775a5a</id>
-        <name>Update Session</name>
-        <position x="763.8059046436761" y="1405.4949910315638"/>
+        <id>36353400-e638-19ce-6294-5adba35e1553</id>
+        <name>HTTP Response</name>
+        <position x="-652.8731156477334" y="1396.2862507971888"/>
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </outputPort>
       <outputPort>
         <id>d47229c3-0161-1000-2f03-29029901fed8</id>
         <name>Get Session</name>
-        <position x="35.64231291095058" y="1405.4949910315638"/>
+        <position x="35.64231291095058" y="1396.2862507971888"/>
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </outputPort>
       <processGroup>
+        <id>ce931fe3-3623-11a3-380a-e7eb38e1d94f</id>
+        <name>Files Route</name>
+        <position x="-1228.2949906477334" y="780.2139513605937"/>
+        <comment/>
+        <processor>
+          <id>ce931fe3-3627-11a3-77d4-3682e56bb118</id>
+          <name>Set HTTP Status Code</name>
+          <position x="24.90158210588811" y="578.6626266828284"/>
+          <styles/>
+          <comment/>
+          <class>org.apache.nifi.processors.attributes.UpdateAttribute</class>
+          <bundle>
+            <group>org.apache.nifi</group>
+            <artifact>nifi-update-attribute-nar</artifact>
+            <version>1.5.0</version>
+          </bundle>
+          <maxConcurrentTasks>1</maxConcurrentTasks>
+          <schedulingPeriod>0 sec</schedulingPeriod>
+          <penalizationPeriod>30 sec</penalizationPeriod>
+          <yieldPeriod>1 sec</yieldPeriod>
+          <bulletinLevel>WARN</bulletinLevel>
+          <lossTolerant>false</lossTolerant>
+          <scheduledState>RUNNING</scheduledState>
+          <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+          <executionNode>ALL</executionNode>
+          <runDurationNanos>0</runDurationNanos>
+          <property>
+            <name>Delete Attributes Expression</name>
+            <value/>
+          </property>
+          <property>
+            <name>Store State</name>
+            <value>Do not store state</value>
+          </property>
+          <property>
+            <name>Stateful Variables Initial Value</name>
+          </property>
+          <property>
+            <name>http.statusCode</name>
+            <value>${invokehttp.status.code}</value>
+          </property>
+        </processor>
+        <processor>
+          <id>ce931fe4-3627-11a3-3d4f-6afb5778303a</id>
+          <name>InvokeHTTP</name>
+          <position x="24.90158210588811" y="332.26972626606755"/>
+          <styles/>
+          <comment/>
+          <class>org.apache.nifi.processors.standard.InvokeHTTP</class>
+          <bundle>
+            <group>org.apache.nifi</group>
+            <artifact>nifi-standard-nar</artifact>
+            <version>1.5.0</version>
+          </bundle>
+          <maxConcurrentTasks>1</maxConcurrentTasks>
+          <schedulingPeriod>0 sec</schedulingPeriod>
+          <penalizationPeriod>30 sec</penalizationPeriod>
+          <yieldPeriod>1 sec</yieldPeriod>
+          <bulletinLevel>WARN</bulletinLevel>
+          <lossTolerant>false</lossTolerant>
+          <scheduledState>RUNNING</scheduledState>
+          <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+          <executionNode>ALL</executionNode>
+          <runDurationNanos>0</runDurationNanos>
+          <property>
+            <name>HTTP Method</name>
+            <value>GET</value>
+          </property>
+          <property>
+            <name>Remote URL</name>
+            <value>http://${stellar.ingest.http.server}:${stellar.ingest.http.port}${stellar.ingest.api.files}</value>
+          </property>
+          <property>
+            <name>SSL Context Service</name>
+          </property>
+          <property>
+            <name>Connection Timeout</name>
+            <value>5 secs</value>
+          </property>
+          <property>
+            <name>Read Timeout</name>
+            <value>15 secs</value>
+          </property>
+          <property>
+            <name>Include Date Header</name>
+            <value>True</value>
+          </property>
+          <property>
+            <name>Follow Redirects</name>
+            <value>True</value>
+          </property>
+          <property>
+            <name>Attributes to Send</name>
+          </property>
+          <property>
+            <name>Basic Authentication Username</name>
+          </property>
+          <property>
+            <name>Basic Authentication Password</name>
+          </property>
+          <property>
+            <name>Proxy Host</name>
+          </property>
+          <property>
+            <name>Proxy Port</name>
+          </property>
+          <property>
+            <name>invokehttp-proxy-user</name>
+          </property>
+          <property>
+            <name>invokehttp-proxy-password</name>
+          </property>
+          <property>
+            <name>Put Response Body In Attribute</name>
+          </property>
+          <property>
+            <name>Max Length To Put In Attribute</name>
+            <value>256</value>
+          </property>
+          <property>
+            <name>Digest Authentication</name>
+            <value>false</value>
+          </property>
+          <property>
+            <name>Always Output Response</name>
+            <value>false</value>
+          </property>
+          <property>
+            <name>Trusted Hostname</name>
+          </property>
+          <property>
+            <name>Add Response Headers to Request</name>
+            <value>false</value>
+          </property>
+          <property>
+            <name>Content-Type</name>
+            <value>${mime.type}</value>
+          </property>
+          <property>
+            <name>send-message-body</name>
+            <value>true</value>
+          </property>
+          <property>
+            <name>Use Chunked Encoding</name>
+            <value>false</value>
+          </property>
+          <property>
+            <name>Penalize on "No Retry"</name>
+            <value>false</value>
+          </property>
+          <autoTerminatedRelationship>Original</autoTerminatedRelationship>
+        </processor>
+        <inputPort>
+          <id>ce931fe3-3624-11a3-9c6c-41a6aaf677c7</id>
+          <name>HTTP Request</name>
+          <position x="79.90158210588811" y="171.32836579243474"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </inputPort>
+        <outputPort>
+          <id>ce931fe3-3625-11a3-4569-6785a367bd52</id>
+          <name>Success</name>
+          <position x="79.90158210588811" y="828.1072811977082"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <connection>
+          <id>ce931fe3-362a-11a3-c405-5bb1746155bf</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>ce931fe3-3627-11a3-77d4-3682e56bb118</sourceId>
+          <sourceGroupId>ce931fe3-3623-11a3-380a-e7eb38e1d94f</sourceGroupId>
+          <sourceType>PROCESSOR</sourceType>
+          <destinationId>ce931fe3-3625-11a3-4569-6785a367bd52</destinationId>
+          <destinationGroupId>ce931fe3-3623-11a3-380a-e7eb38e1d94f</destinationGroupId>
+          <destinationType>OUTPUT_PORT</destinationType>
+          <relationship>success</relationship>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
+          <id>ce931fe4-362a-11a3-936b-d66fbe223723</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>ce931fe4-3627-11a3-3d4f-6afb5778303a</sourceId>
+          <sourceGroupId>ce931fe3-3623-11a3-380a-e7eb38e1d94f</sourceGroupId>
+          <sourceType>PROCESSOR</sourceType>
+          <destinationId>ce931fe3-3627-11a3-77d4-3682e56bb118</destinationId>
+          <destinationGroupId>ce931fe3-3623-11a3-380a-e7eb38e1d94f</destinationGroupId>
+          <destinationType>PROCESSOR</destinationType>
+          <relationship>Response</relationship>
+          <relationship>No Retry</relationship>
+          <relationship>Retry</relationship>
+          <relationship>Failure</relationship>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+        <connection>
+          <id>ce931fe5-362a-11a3-ff8c-3466a19eb110</id>
+          <name/>
+          <bendPoints/>
+          <labelIndex>1</labelIndex>
+          <zIndex>0</zIndex>
+          <sourceId>ce931fe3-3624-11a3-9c6c-41a6aaf677c7</sourceId>
+          <sourceGroupId>ce931fe3-3623-11a3-380a-e7eb38e1d94f</sourceGroupId>
+          <sourceType>INPUT_PORT</sourceType>
+          <destinationId>ce931fe4-3627-11a3-3d4f-6afb5778303a</destinationId>
+          <destinationGroupId>ce931fe3-3623-11a3-380a-e7eb38e1d94f</destinationGroupId>
+          <destinationType>PROCESSOR</destinationType>
+          <relationship/>
+          <maxWorkQueueSize>10000</maxWorkQueueSize>
+          <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+        </connection>
+      </processGroup>
+      <processGroup>
         <id>41a335de-ce93-1fe3-7b03-0ddbc4ac2657</id>
         <name>Abort Ingest Route</name>
-        <position x="212.87917734875407" y="782.4478685969218"/>
+        <position x="212.87917734875407" y="780.2139513605937"/>
         <comment/>
         <inputPort>
           <id>41a335df-ce93-1fe3-085a-3e6e633f17a7</id>
@@ -5234,9 +5464,9 @@
           <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
-          <id>d479da98-0161-1000-3155-492cbe6d300f</id>
-          <name>Update Session</name>
-          <position x="2005.1002727338441" y="997.1443771711097"/>
+          <id>41a335e0-ce93-1fe3-8586-48cf8c0686fe</id>
+          <name>HTTP Response</name>
+          <position x="2005.100272733844" y="685.8275606894567"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -5248,9 +5478,9 @@
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <outputPort>
-          <id>41a335e0-ce93-1fe3-8586-48cf8c0686fe</id>
-          <name>HTTP Response</name>
-          <position x="2005.100272733844" y="685.8275606894567"/>
+          <id>d479da98-0161-1000-3155-492cbe6d300f</id>
+          <name>Update Session</name>
+          <position x="2005.1002727338441" y="997.1443771711097"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -5399,16 +5629,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>41a33614-ce93-1fe3-c88b-32c356e92235</id>
-            <name>Failure</name>
-            <position x="1284.8893127525628" y="1192.9999996547128"/>
+            <id>41a33613-ce93-1fe3-8742-5870b57deeca</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>41a33613-ce93-1fe3-8742-5870b57deeca</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
+            <id>41a33614-ce93-1fe3-c88b-32c356e92235</id>
+            <name>Failure</name>
+            <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -6283,16 +6513,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>41a335fe-ce93-1fe3-f443-ede8b8b20e9a</id>
-            <name>Success</name>
-            <position x="568.3572942412702" y="482.3974879052903"/>
+            <id>41a335ff-ce93-1fe3-e62f-946f29718e76</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>41a335ff-ce93-1fe3-e62f-946f29718e76</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
+            <id>41a335fe-ce93-1fe3-f443-ede8b8b20e9a</id>
+            <name>Success</name>
+            <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -6611,7 +6841,7 @@
       <processGroup>
         <id>41a33623-ce93-1fe3-ff97-2c67c889826d</id>
         <name>Sampling Route</name>
-        <position x="-722.8731156477334" y="782.4478685969218"/>
+        <position x="-722.8731156477334" y="780.2139513605937"/>
         <comment/>
         <processor>
           <id>41a33627-ce93-1fe3-9618-2446d4343b18</id>
@@ -6679,7 +6909,7 @@
           </property>
           <property>
             <name>Remote URL</name>
-            <value>http://${stellar.ingest.http.server}:${stellar.ingest.http.port}${stellar.ingest.api.sampler}${stellar.ingest.api.getSample}?file=${http.query.param.source}&amp;samples=${http.query.param.samples}</value>
+            <value>http://${stellar.ingest.http.server}:${stellar.ingest.http.port}${stellar.ingest.api.sample}?file=${http.query.param.source}&amp;samples=${http.query.param.samples}</value>
           </property>
           <property>
             <name>SSL Context Service</name>
@@ -6833,7 +7063,7 @@
       <processGroup>
         <id>41a33578-ce93-1fe3-6134-73b1cb55d609</id>
         <name>Start Ingest Route</name>
-        <position x="-261.98827825293813" y="782.4478685969218"/>
+        <position x="-261.98827825293813" y="780.2139513605937"/>
         <comment/>
         <inputPort>
           <id>41a33579-ce93-1fe3-d9f0-d4d23b1ef21d</id>
@@ -6850,16 +7080,16 @@
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <outputPort>
-          <id>d4718bf4-0161-1000-d8bf-9ad63c79aa52</id>
-          <name>Update Session</name>
-          <position x="1909.671016916399" y="1058.625961568171"/>
+          <id>41a3357a-ce93-1fe3-c755-75751f0b6dd0</id>
+          <name>HTTP Response</name>
+          <position x="1909.671016916399" y="734.7917940877022"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <outputPort>
-          <id>41a3357a-ce93-1fe3-c755-75751f0b6dd0</id>
-          <name>HTTP Response</name>
-          <position x="1909.671016916399" y="734.7917940877022"/>
+          <id>d4718bf4-0161-1000-d8bf-9ad63c79aa52</id>
+          <name>Update Session</name>
+          <position x="1909.671016916399" y="1058.625961568171"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -7720,7 +7950,7 @@
             </property>
             <property>
               <name>stellar.session.ingest.output</name>
-              <value>${stellar.store.fsRoot}/${stellar.session.id}/ingest</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/ingest</value>
             </property>
             <property>
               <name>filename</name>
@@ -7728,7 +7958,7 @@
             </property>
             <property>
               <name>stellar.session.ingest.gephi</name>
-              <value>${stellar.store.fsRoot}/${stellar.session.id}/gephi/ingest.gdf</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/gephi/ingest.gdf</value>
             </property>
           </processor>
           <processor>
@@ -8140,7 +8370,7 @@
             <runDurationNanos>0</runDurationNanos>
             <property>
               <name>Directory</name>
-              <value>${stellar.store.fsRoot}/${stellar.session.id}/config</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/config</value>
             </property>
             <property>
               <name>Conflict Resolution Strategy</name>
@@ -8174,16 +8404,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>41a3357e-ce93-1fe3-4a51-122cd4596ea4</id>
-            <name>Success</name>
-            <position x="1956.1631561909153" y="612.2754850726196"/>
+            <id>41a3357d-ce93-1fe3-a4aa-ecfcf9fbf0b8</id>
+            <name>Failure</name>
+            <position x="1328.8711215076248" y="1327.992499267772"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>41a3357d-ce93-1fe3-a4aa-ecfcf9fbf0b8</id>
-            <name>Failure</name>
-            <position x="1328.8711215076248" y="1327.992499267772"/>
+            <id>41a3357e-ce93-1fe3-4a51-122cd4596ea4</id>
+            <name>Success</name>
+            <position x="1956.1631561909153" y="612.2754850726196"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -8696,16 +8926,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>ee1f3878-5b17-1abc-e403-2e1d930659ee</id>
-            <name>Success</name>
-            <position x="568.3572942412702" y="482.3974879052903"/>
+            <id>ee1f3877-5b17-1abc-cd99-fea76385aee5</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>ee1f3877-5b17-1abc-cd99-fea76385aee5</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
+            <id>ee1f3878-5b17-1abc-e403-2e1d930659ee</id>
+            <name>Success</name>
+            <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -9058,7 +9288,7 @@
       <processGroup>
         <id>fb49310f-b6ea-1f4a-1978-11febd1f8e26</id>
         <name>Complete Ingest Route</name>
-        <position x="693.8059046436761" y="782.4478685969218"/>
+        <position x="693.8059046436761" y="780.2139513605937"/>
         <comment/>
         <processor>
           <id>95f71f8c-1051-1161-1b58-78529c242fa3</id>
@@ -9120,13 +9350,6 @@
           <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
-          <id>fb493111-b6ea-1f4a-ecd7-b8534406cb71</id>
-          <name>HTTP Response</name>
-          <position x="1421.856450193888" y="692.2471468710974"/>
-          <comments/>
-          <scheduledState>RUNNING</scheduledState>
-        </outputPort>
-        <outputPort>
           <id>d47e25b2-0161-1000-332c-42194fdd419f</id>
           <name>Update Session</name>
           <position x="747.7181759297223" y="1292.4170688864174"/>
@@ -9137,6 +9360,13 @@
           <id>d47dc708-0161-1000-f864-c33675de38f2</id>
           <name>Get Session</name>
           <position x="1421.856450193888" y="395.3318102473124"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
+          <id>fb493111-b6ea-1f4a-ecd7-b8534406cb71</id>
+          <name>HTTP Response</name>
+          <position x="1421.856450193888" y="692.2471468710974"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -9281,16 +9511,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>01611070-95f7-1f61-c6aa-8373db3ce4bc</id>
-            <name>Failure</name>
-            <position x="1284.8893127525628" y="1192.9999996547128"/>
+            <id>01611071-95f7-1f61-60a2-d73a11a0ea77</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>01611071-95f7-1f61-60a2-d73a11a0ea77</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
+            <id>01611070-95f7-1f61-c6aa-8373db3ce4bc</id>
+            <name>Failure</name>
+            <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -9692,16 +9922,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>d47f2765-0161-1000-af66-43c47ead989c</id>
-            <name>Update Session</name>
-            <position x="1992.0184791390118" y="-220.02532620280238"/>
+            <id>01611044-95f7-1f61-b758-9c2e7bfdeae0</id>
+            <name>HTTP Response</name>
+            <position x="1350.6312875072322" y="649.8791248210036"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>01611044-95f7-1f61-b758-9c2e7bfdeae0</id>
-            <name>HTTP Response</name>
-            <position x="1350.6312875072322" y="649.8791248210036"/>
+            <id>d47f2765-0161-1000-af66-43c47ead989c</id>
+            <name>Update Session</name>
+            <position x="1992.0184791390118" y="-220.02532620280238"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -10845,6 +11075,23 @@
         </connection>
       </processGroup>
       <connection>
+        <id>ce931fe6-362a-11a3-fb59-be3ac4bbd116</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>ce931fe3-3625-11a3-4569-6785a367bd52</sourceId>
+        <sourceGroupId>ce931fe3-3623-11a3-380a-e7eb38e1d94f</sourceGroupId>
+        <sourceType>OUTPUT_PORT</sourceType>
+        <destinationId>36353400-e638-19ce-6294-5adba35e1553</destinationId>
+        <destinationGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</destinationGroupId>
+        <destinationType>OUTPUT_PORT</destinationType>
+        <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
         <id>4f60fd0a-0161-1000-3ade-2d9419d74e28</id>
         <name/>
         <bendPoints/>
@@ -10946,6 +11193,23 @@
         <destinationGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</destinationGroupId>
         <destinationType>OUTPUT_PORT</destinationType>
         <relationship/>
+        <maxWorkQueueSize>10000</maxWorkQueueSize>
+        <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
+        <flowFileExpiration>0 sec</flowFileExpiration>
+      </connection>
+      <connection>
+        <id>ce931fe7-362a-11a3-6945-a60871c7ddc2</id>
+        <name/>
+        <bendPoints/>
+        <labelIndex>1</labelIndex>
+        <zIndex>0</zIndex>
+        <sourceId>36353404-e638-19ce-55b3-8a856f13b706</sourceId>
+        <sourceGroupId>363533fd-e638-19ce-efe0-ca0c502664d1</sourceGroupId>
+        <sourceType>PROCESSOR</sourceType>
+        <destinationId>ce931fe3-3624-11a3-9c6c-41a6aaf677c7</destinationId>
+        <destinationGroupId>ce931fe3-3623-11a3-380a-e7eb38e1d94f</destinationGroupId>
+        <destinationType>INPUT_PORT</destinationType>
+        <relationship>ingest.files</relationship>
         <maxWorkQueueSize>10000</maxWorkQueueSize>
         <maxWorkQueueDataSize>1 GB</maxWorkQueueDataSize>
         <flowFileExpiration>0 sec</flowFileExpiration>
@@ -11298,13 +11562,6 @@
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <outputPort>
-        <id>d4a9b48d-0161-1000-96e4-03298a87391f</id>
-        <name>Update Session</name>
-        <position x="-736.2758912226867" y="329.4148823889857"/>
-        <comments/>
-        <scheduledState>RUNNING</scheduledState>
-      </outputPort>
-      <outputPort>
         <id>73a255e6-6f91-349f-c854-d993df5b8494</id>
         <name>HTTP Response</name>
         <position x="-1315.0841624376676" y="566.3136617372744"/>
@@ -11315,6 +11572,13 @@
         <id>d4a9b48c-0161-1000-72f3-b5005c119d4c</id>
         <name>Get Session</name>
         <position x="-736.2758912226867" y="229.4148823889857"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </outputPort>
+      <outputPort>
+        <id>d4a9b48d-0161-1000-96e4-03298a87391f</id>
+        <name>Update Session</name>
+        <position x="-736.2758912226867" y="329.4148823889857"/>
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </outputPort>
@@ -11607,16 +11871,16 @@
           <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
-          <id>d4aabafa-0161-1000-dcdb-ff6d6cedc156</id>
-          <name>Get Session</name>
-          <position x="-1510.5596362030851" y="117.83823419750769"/>
+          <id>d4aabafb-0161-1000-3dd6-4322e4135fb7</id>
+          <name>Update Session</name>
+          <position x="-1510.5596362030851" y="670.373016621882"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
         <outputPort>
-          <id>d4aabafb-0161-1000-3dd6-4322e4135fb7</id>
-          <name>Update Session</name>
-          <position x="-1510.5596362030851" y="670.373016621882"/>
+          <id>d4aabafa-0161-1000-dcdb-ff6d6cedc156</id>
+          <name>Get Session</name>
+          <position x="-1510.5596362030851" y="117.83823419750769"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -11824,7 +12088,7 @@
             <runDurationNanos>0</runDurationNanos>
             <property>
               <name>File to Fetch</name>
-              <value>${stellar.store.fsRoot}/${stellar.session.id}/config/ingest.json</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/config/ingest.json</value>
             </property>
             <property>
               <name>Completion Strategy</name>
@@ -12464,16 +12728,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>01611001-9454-148d-87cb-c78f3e5c0d01</id>
-            <name>Auto</name>
-            <position x="1499.7506641053806" y="2067.7837028255663"/>
+            <id>d4ac68d9-0161-1000-4f9c-76c567d88a23</id>
+            <name>Update Session</name>
+            <position x="1499.7506641053806" y="1399.9685329574952"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>d4ac68d9-0161-1000-4f9c-76c567d88a23</id>
-            <name>Update Session</name>
-            <position x="1499.7506641053806" y="1399.9685329574952"/>
+            <id>01611001-9454-148d-87cb-c78f3e5c0d01</id>
+            <name>Auto</name>
+            <position x="1499.7506641053806" y="2067.7837028255663"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -13016,16 +13280,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>ee1f38c1-5b17-1abc-8ecb-d7ab93dfa2b7</id>
-            <name>Success</name>
-            <position x="1865.99998730779" y="427.1404373448944"/>
+            <id>ee1f38c2-5b17-1abc-4083-214f4af17309</id>
+            <name>Failure</name>
+            <position x="1284.8893127525628" y="1192.9999996547128"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>ee1f38c2-5b17-1abc-4083-214f4af17309</id>
-            <name>Failure</name>
-            <position x="1284.8893127525628" y="1192.9999996547128"/>
+            <id>ee1f38c1-5b17-1abc-8ecb-d7ab93dfa2b7</id>
+            <name>Success</name>
+            <position x="1865.99998730779" y="427.1404373448944"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -13822,7 +14086,7 @@
 	"spec": {
 		"inputs": {
 			"in_data": {
-				"pipeline_filename": "${stellar.store.fsRoot}/${stellar.session.id}/config/pipeline.json"
+				"pipeline_filename": "${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/config/pipeline.json"
 			}
 		},
 		"output": "${stellar.session.nai.output}"
@@ -14148,11 +14412,11 @@
             </property>
             <property>
               <name>stellar.session.nai.output</name>
-              <value>${stellar.store.fsRoot}/${stellar.session.id}/nai</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/nai</value>
             </property>
             <property>
               <name>stellar.session.nai.gephi</name>
-              <value>${stellar.store.fsRoot}/${stellar.session.id}/gephi/nai.gdf</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/gephi/nai.gdf</value>
             </property>
           </processor>
           <processor>
@@ -14259,16 +14523,16 @@
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>d4ab8ee1-0161-1000-d032-16c7caec3e94</id>
-            <name>Update Session</name>
-            <position x="2274.73065702808" y="-43.388236473493265"/>
+            <id>ee1f38cd-5b17-1abc-1ac8-e88057ac618d</id>
+            <name>HTTP Response</name>
+            <position x="966.6221169986866" y="918.9817859538161"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>ee1f38cd-5b17-1abc-1ac8-e88057ac618d</id>
-            <name>HTTP Response</name>
-            <position x="966.6221169986866" y="918.9817859538161"/>
+            <id>d4ab8ee1-0161-1000-d032-16c7caec3e94</id>
+            <name>Update Session</name>
+            <position x="2274.73065702808" y="-43.388236473493265"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -14473,7 +14737,7 @@
               <runDurationNanos>0</runDurationNanos>
               <property>
                 <name>File to Fetch</name>
-                <value>${stellar.store.fsRoot}/${stellar.session.id}/config/nai.json</value>
+                <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/config/nai.json</value>
               </property>
               <property>
                 <name>Completion Strategy</name>
@@ -14519,7 +14783,7 @@
               <runDurationNanos>0</runDurationNanos>
               <property>
                 <name>Directory</name>
-                <value>${stellar.store.fsRoot}/${stellar.session.id}/config</value>
+                <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/config</value>
               </property>
               <property>
                 <name>Conflict Resolution Strategy</name>
@@ -14606,7 +14870,7 @@
               <runDurationNanos>0</runDurationNanos>
               <property>
                 <name>Directory</name>
-                <value>${stellar.store.fsRoot}/${stellar.session.id}/config</value>
+                <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/config</value>
               </property>
               <property>
                 <name>Conflict Resolution Strategy</name>
@@ -14640,16 +14904,16 @@
               <scheduledState>RUNNING</scheduledState>
             </inputPort>
             <outputPort>
-              <id>c04b3cfb-05cc-19cc-ba6b-b5274afe8df1</id>
-              <name>HTTP Response</name>
-              <position x="1052.7752126921423" y="618.8471574239713"/>
+              <id>c04b3d10-05cc-19cc-2911-17e4a6ec8aca</id>
+              <name>HTTP Request</name>
+              <position x="1748.2219837678676" y="618.8471574239713"/>
               <comments/>
               <scheduledState>RUNNING</scheduledState>
             </outputPort>
             <outputPort>
-              <id>c04b3d10-05cc-19cc-2911-17e4a6ec8aca</id>
-              <name>HTTP Request</name>
-              <position x="1748.2219837678676" y="618.8471574239713"/>
+              <id>c04b3cfb-05cc-19cc-ba6b-b5274afe8df1</id>
+              <name>HTTP Response</name>
+              <position x="1052.7752126921423" y="618.8471574239713"/>
               <comments/>
               <scheduledState>RUNNING</scheduledState>
             </outputPort>
@@ -16247,20 +16511,6 @@
         </property>
       </processor>
       <inputPort>
-        <id>41a336ab-ce93-1fe3-20aa-17fc26c0abb3</id>
-        <name>Update Session</name>
-        <position x="1520.5851345146389" y="1090.4640202844814"/>
-        <comments/>
-        <scheduledState>RUNNING</scheduledState>
-      </inputPort>
-      <inputPort>
-        <id>41a336d5-ce93-1fe3-10f4-479576626bbc</id>
-        <name>Unlock Session</name>
-        <position x="1520.5851345146389" y="2118.1729329655464"/>
-        <comments/>
-        <scheduledState>RUNNING</scheduledState>
-      </inputPort>
-      <inputPort>
         <id>41a33641-ce93-1fe3-0319-13b9dfc7b7dc</id>
         <name>Init Session</name>
         <position x="894.1766815294452" y="518.8819234963241"/>
@@ -16278,6 +16528,20 @@
         <id>41a336b0-ce93-1fe3-9a9c-2f777ea1130c</id>
         <name>Lock Session</name>
         <position x="343.1086481902239" y="1323.053472198275"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </inputPort>
+      <inputPort>
+        <id>41a336d5-ce93-1fe3-10f4-479576626bbc</id>
+        <name>Unlock Session</name>
+        <position x="1520.5851345146389" y="2118.1729329655464"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </inputPort>
+      <inputPort>
+        <id>41a336ab-ce93-1fe3-20aa-17fc26c0abb3</id>
+        <name>Update Session</name>
+        <position x="1520.5851345146389" y="1090.4640202844814"/>
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
@@ -17215,13 +17479,6 @@
         <scheduledState>RUNNING</scheduledState>
       </inputPort>
       <outputPort>
-        <id>01611019-9454-148d-574e-6f6085ec7d82</id>
-        <name>HTTP Response</name>
-        <position x="92.88459863160858" y="1045.4947757615084"/>
-        <comments/>
-        <scheduledState>RUNNING</scheduledState>
-      </outputPort>
-      <outputPort>
         <id>d4b281c2-0161-1000-30f4-b192ed3da975</id>
         <name>Get Session</name>
         <position x="1236.7241698124694" y="703.4148823889857"/>
@@ -17232,6 +17489,13 @@
         <id>d4b281c3-0161-1000-7f67-c7d7518217cc</id>
         <name>Update Session</name>
         <position x="1236.7241698124694" y="803.4148823889857"/>
+        <comments/>
+        <scheduledState>RUNNING</scheduledState>
+      </outputPort>
+      <outputPort>
+        <id>01611019-9454-148d-574e-6f6085ec7d82</id>
+        <name>HTTP Response</name>
+        <position x="92.88459863160858" y="1045.4947757615084"/>
         <comments/>
         <scheduledState>RUNNING</scheduledState>
       </outputPort>
@@ -17470,6 +17734,13 @@
           <scheduledState>RUNNING</scheduledState>
         </inputPort>
         <outputPort>
+          <id>d4b2b3ad-0161-1000-f05c-1993376a3bb3</id>
+          <name>Get Session</name>
+          <position x="1921.7241698124694" y="146.33181024731238"/>
+          <comments/>
+          <scheduledState>RUNNING</scheduledState>
+        </outputPort>
+        <outputPort>
           <id>56ba3196-a6ea-18f4-9035-49051e2e0361</id>
           <name>HTTP Response</name>
           <position x="1921.7241698124694" y="734.7917940877022"/>
@@ -17480,13 +17751,6 @@
           <id>d4b2b3ae-0161-1000-0370-cb358e483a81</id>
           <name>Update Session</name>
           <position x="1921.7241698124694" y="1058.625961568171"/>
-          <comments/>
-          <scheduledState>RUNNING</scheduledState>
-        </outputPort>
-        <outputPort>
-          <id>d4b2b3ad-0161-1000-f05c-1993376a3bb3</id>
-          <name>Get Session</name>
-          <position x="1921.7241698124694" y="146.33181024731238"/>
           <comments/>
           <scheduledState>RUNNING</scheduledState>
         </outputPort>
@@ -18317,16 +18581,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>56ba3199-a6ea-18f4-a269-208e56e255f4</id>
-            <name>HTTP Response</name>
-            <position x="2276.194768356205" y="834.5947620280349"/>
+            <id>d4b3c4fa-0161-1000-dd40-d89199652520</id>
+            <name>Update Session</name>
+            <position x="2276.194768356205" y="-58.029044578962015"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>d4b3c4fa-0161-1000-dd40-d89199652520</id>
-            <name>Update Session</name>
-            <position x="2276.194768356205" y="-58.029044578962015"/>
+            <id>56ba3199-a6ea-18f4-a269-208e56e255f4</id>
+            <name>HTTP Response</name>
+            <position x="2276.194768356205" y="834.5947620280349"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
@@ -18790,16 +19054,16 @@
             <scheduledState>RUNNING</scheduledState>
           </inputPort>
           <outputPort>
-            <id>56ba31da-a6ea-18f4-c9fd-252de1963067</id>
-            <name>Failure</name>
-            <position x="1849.497138477061" y="988.5751861930044"/>
+            <id>56ba31db-a6ea-18f4-57f7-8bf683263338</id>
+            <name>Success</name>
+            <position x="568.3572942412702" y="482.3974879052903"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
           <outputPort>
-            <id>56ba31db-a6ea-18f4-57f7-8bf683263338</id>
-            <name>Success</name>
-            <position x="568.3572942412702" y="482.3974879052903"/>
+            <id>56ba31da-a6ea-18f4-c9fd-252de1963067</id>
+            <name>Failure</name>
+            <position x="1849.497138477061" y="988.5751861930044"/>
             <comments/>
             <scheduledState>RUNNING</scheduledState>
           </outputPort>
