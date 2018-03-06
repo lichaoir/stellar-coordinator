@@ -774,11 +774,11 @@
             </property>
             <property>
               <name>stellar.session.er.gephi</name>
-              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/gephi/er.gdf</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.session.id}/gephi/er.gdf</value>
             </property>
             <property>
               <name>stellar.session.er.output</name>
-              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/er</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.session.id}/er</value>
             </property>
           </processor>
           <processor>
@@ -7950,7 +7950,7 @@
             </property>
             <property>
               <name>stellar.session.ingest.output</name>
-              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/ingest</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.session.id}/ingest</value>
             </property>
             <property>
               <name>filename</name>
@@ -7958,7 +7958,7 @@
             </property>
             <property>
               <name>stellar.session.ingest.gephi</name>
-              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/gephi/ingest.gdf</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.session.id}/gephi/ingest.gdf</value>
             </property>
           </processor>
           <processor>
@@ -8370,7 +8370,7 @@
             <runDurationNanos>0</runDurationNanos>
             <property>
               <name>Directory</name>
-              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/config</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.session.id}/config</value>
             </property>
             <property>
               <name>Conflict Resolution Strategy</name>
@@ -12088,7 +12088,7 @@
             <runDurationNanos>0</runDurationNanos>
             <property>
               <name>File to Fetch</name>
-              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/config/ingest.json</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.session.id}/config/ingest.json</value>
             </property>
             <property>
               <name>Completion Strategy</name>
@@ -14086,7 +14086,7 @@
 	"spec": {
 		"inputs": {
 			"in_data": {
-				"pipeline_filename": "${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/config/pipeline.json"
+				"pipeline_filename": "${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.session.id}/config/pipeline.json"
 			}
 		},
 		"output": "${stellar.session.nai.output}"
@@ -14412,11 +14412,11 @@
             </property>
             <property>
               <name>stellar.session.nai.output</name>
-              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/nai</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.session.id}/nai</value>
             </property>
             <property>
               <name>stellar.session.nai.gephi</name>
-              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/gephi/nai.gdf</value>
+              <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.session.id}/gephi/nai.gdf</value>
             </property>
           </processor>
           <processor>
@@ -14737,7 +14737,7 @@
               <runDurationNanos>0</runDurationNanos>
               <property>
                 <name>File to Fetch</name>
-                <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/config/nai.json</value>
+                <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.session.id}/config/nai.json</value>
               </property>
               <property>
                 <name>Completion Strategy</name>
@@ -14783,7 +14783,7 @@
               <runDurationNanos>0</runDurationNanos>
               <property>
                 <name>Directory</name>
-                <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/config</value>
+                <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.session.id}/config</value>
               </property>
               <property>
                 <name>Conflict Resolution Strategy</name>
@@ -14870,7 +14870,7 @@
               <runDurationNanos>0</runDurationNanos>
               <property>
                 <name>Directory</name>
-                <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.store.sessionDir}/config</value>
+                <value>${stellar.store.fsRoot}/${stellar.store.sessionDir}/${stellar.session.id}/config</value>
               </property>
               <property>
                 <name>Conflict Resolution Strategy</name>
