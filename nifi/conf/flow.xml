@@ -723,7 +723,7 @@
               <name>jolt-spec</name>
               <value>{
 	"prefix": "datasets/Cora_Terror",
-	"dataformat": "epgm",
+	"dataFormat": "epgm",
 	"fileSources": {
 		"[0]": "${stellar.session.params.input}"
 	},
@@ -12508,7 +12508,7 @@
             </property>
             <property>
               <name>Return Type</name>
-              <value>auto-detect</value>
+              <value>json</value>
             </property>
             <property>
               <name>Path Not Found Behavior</name>
@@ -12517,6 +12517,14 @@
             <property>
               <name>Null Value Representation</name>
               <value>empty string</value>
+            </property>
+            <property>
+              <name>stellar.session.nai.error</name>
+              <value>$.status</value>
+            </property>
+            <property>
+              <name>stellar.session.nai.trace</name>
+              <value>$.error</value>
             </property>
             <property>
               <name>stellar.session.nai.taskState</name>
@@ -16310,6 +16318,10 @@
           <value>$.er.gephi</value>
         </property>
         <property>
+          <name>stellar.session.nai.trace</name>
+          <value>$.nai.trace</value>
+        </property>
+        <property>
           <name>stellar.session.status</name>
           <value>$.status</value>
         </property>
@@ -16616,6 +16628,7 @@
 		"output": "${stellar.session.nai.output}",
 		"gephi": "${stellar.session.nai.gephi}",
 		"error": "${stellar.session.nai.error}",
+		"trace": "${stellar.session.nai.trace}",
 		"taskLocation": "${stellar.session.nai.taskLocation}",
 		"nodeType": "${stellar.session.nai.nodeType}",
 		"targetAttribute": "${stellar.session.nai.targetAttribute}",
