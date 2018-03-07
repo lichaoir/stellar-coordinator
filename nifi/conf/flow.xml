@@ -722,7 +722,7 @@
             <property>
               <name>jolt-spec</name>
               <value>{
-	"prefix": "datasets/Cora_Terror",
+	"prefix": "",
 	"dataFormat": "epgm",
 	"fileSources": {
 		"[0]": "${stellar.session.params.input}"
