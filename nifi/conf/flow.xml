@@ -724,7 +724,9 @@
               <value>{
 	"prefix": "datasets/Cora_Terror",
 	"dataformat": "epgm",
-	"fileSources": ["${stellar.session.params.input}"],
+	"fileSources": {
+		"[0]": "${stellar.session.params.input}"
+	},
 	"outputFile": "${stellar.session.er.output}",
 	"attributes": {
 		"address": 0.6,
@@ -5621,7 +5623,7 @@
               <value>$.sessionId</value>
             </property>
             <property>
-              <name>stellar.session.ingest.error</name>
+              <name>stellar.session.params.error</name>
               <value>$.reason</value>
             </property>
           </processor>
@@ -5804,6 +5806,10 @@
             <property>
               <name>stellar.session.status</name>
               <value>ingest-aborted</value>
+            </property>
+            <property>
+              <name>stellar.session.ingest.error</name>
+              <value>${stellar.session.params.error}</value>
             </property>
           </processor>
           <processor>
@@ -13268,7 +13274,7 @@
               <value>empty string</value>
             </property>
             <property>
-              <name>stellar.session.nai.pipelineFilename</name>
+              <name>stellar.session.params.pipelineFilename</name>
               <value>$.pipelineFilename</value>
             </property>
             <property>
@@ -14413,6 +14419,10 @@
             </property>
             <property>
               <name>Stateful Variables Initial Value</name>
+            </property>
+            <property>
+              <name>stellar.session.nai.pipelineFilename</name>
+              <value>${stellar.session.params.pipelineFilename}</value>
             </property>
             <property>
               <name>stellar.session.nai.output</name>
