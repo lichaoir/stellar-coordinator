@@ -735,9 +735,9 @@
 	"sessionId": "${stellar.session.id}",
 	"resultUrl": "http://${stellar.http.server}:${stellar.http.port}${stellar.api.er.root}${stellar.api.er.finish}",
 	"options": {
-		"bucketsize": 1,
-		"similarity": 0.9,
-		"seed": 1234
+		"bucketsize": 100,
+		"similarity": 0.8,
+		"seed": 99990
 	}
 }</value>
             </property>
@@ -12508,7 +12508,7 @@
             </property>
             <property>
               <name>Return Type</name>
-              <value>json</value>
+              <value>auto-detect</value>
             </property>
             <property>
               <name>Path Not Found Behavior</name>
@@ -12521,10 +12521,6 @@
             <property>
               <name>stellar.session.nai.error</name>
               <value>$.status</value>
-            </property>
-            <property>
-              <name>stellar.session.nai.trace</name>
-              <value>$.error</value>
             </property>
             <property>
               <name>stellar.session.nai.taskState</name>
@@ -16318,10 +16314,6 @@
           <value>$.er.gephi</value>
         </property>
         <property>
-          <name>stellar.session.nai.trace</name>
-          <value>$.nai.trace</value>
-        </property>
-        <property>
           <name>stellar.session.status</name>
           <value>$.status</value>
         </property>
@@ -16628,7 +16620,6 @@
 		"output": "${stellar.session.nai.output}",
 		"gephi": "${stellar.session.nai.gephi}",
 		"error": "${stellar.session.nai.error}",
-		"trace": "${stellar.session.nai.trace}",
 		"taskLocation": "${stellar.session.nai.taskLocation}",
 		"nodeType": "${stellar.session.nai.nodeType}",
 		"targetAttribute": "${stellar.session.nai.targetAttribute}",
