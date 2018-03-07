@@ -735,9 +735,9 @@
 	"sessionId": "${stellar.session.id}",
 	"resultUrl": "http://${stellar.http.server}:${stellar.http.port}${stellar.api.er.root}${stellar.api.er.finish}",
 	"options": {
-		"bucketsize": 1,
-		"similarity": 0.9,
-		"seed": 1234
+		"bucketsize": 100,
+		"similarity": 0.8,
+		"seed": 99990
 	}
 }</value>
             </property>
