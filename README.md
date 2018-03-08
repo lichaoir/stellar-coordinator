@@ -5,7 +5,7 @@ The coordination module of Stellar project.
 
 ### Apache NiFi
 
-This project is being developed on Apache NiFi 1.4.0. Please visit [Apache NiFi Downloads](https://nifi.apache.org/download.html) to get the binaries for setting up development environment.
+This project is being developed on Apache NiFi 1.5.0. Please visit [Apache NiFi Downloads](https://nifi.apache.org/download.html) to get the binaries for setting up development environment.
 
 ### Configuration
 
@@ -21,6 +21,4 @@ To run the NiFi Instance: `bin/nifi.sh run`. For other ways of starting NiFi ins
 
 ### Setting Up Data Flow
 
-The data flow of the coordinator is persisted to a template file at `nifi/templates/stellar-coordinator.xml`. By importing this template, adding it the the canvas and starting all components, a coordinator data flow will be ready to use.
-
-On how to use the template and start the components, please refer to [User Guide](http://nifi.apache.org/docs/nifi-docs/html/user-guide.html#building-dataflow).
+The data flow of the coordinator is persisted in this repository at `nifi/conf/flow.xml`. To update a NiFi instance's data flow, first stop the NiFi instance. Then copy the `flow.xml` file to the NiFi instance's `conf/` directory and gzip it to replace the existing `flow.xml.gz` file there. Finally start the NiFi instance and it should pick up the new data flow automatically.
