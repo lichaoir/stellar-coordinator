@@ -17890,7 +17890,7 @@
             </property>
             <property>
               <name>Remote URL</name>
-              <value>http://${stellar.search.http.server}:${stellar.search.http.port}${stellar.search.api.index}</value>
+              <value>http://${stellar.search.http.server}:${stellar.search.http.port}${stellar.search.api.index}/${stellar.session.id}</value>
             </property>
             <property>
               <name>SSL Context Service</name>
@@ -18015,9 +18015,9 @@
 }, {
 	"operation": "modify-overwrite-beta",
 	"spec": {
-		"graphs": "${stellar.session.params.input}/graphs.json",
-		"vertices": "${stellar.session.params.input}/vertices.json",
-		"edges": "${stellar.session.params.input}/edges.json"
+		"graphs": "file://${stellar.session.params.input}/graphs.json",
+		"vertices": "file://${stellar.session.params.input}/vertices.json",
+		"edges": "file://${stellar.session.params.input}/edges.json"
 	}
 }]</value>
             </property>
