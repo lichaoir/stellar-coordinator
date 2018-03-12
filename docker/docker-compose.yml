@@ -1,0 +1,21 @@
+version: '3'
+services:
+  coordinator:
+    image: $COORDINATOR_REPOSITORY:$COORDINATOR_TAG
+    container_name: coordinator
+    ports:
+      - "8080:8080"
+      - "8000:8000"
+    networks:
+      - stellar
+    volumes:
+      - /opt/stellar:/opt/stellar
+  redis:
+    image: redis:4.0.6-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - stellar
+networks:
+  stellar:
