@@ -1,0 +1,98 @@
+{
+  "sessionId": null,
+  "label": "papers",
+  "nodeType": "Paper",
+  "targetAttribute": "venue",
+  "sources": [
+    "/opt/stellar/user/papers.csv",
+    "/opt/stellar/user/paperlinks.csv"
+  ],
+  "graphSchema": {
+    "classes": [
+      {
+        "name": "Paper",
+        "props": {
+          "dataset": "string",
+          "title": "string",
+          "venue": "string",
+          "year": "integer"
+        }
+      }
+    ],
+    "classLinks": [
+      {
+        "name": "SharesAuthor",
+        "source": "Paper",
+        "target": "Paper",
+        "props": {
+          "author": "string"
+        }
+      }
+    ]
+  },
+  "mapping": {
+    "nodes": [
+      {
+        "dataset": {
+          "column": "dataset",
+          "source": "papers.csv"
+        },
+        "title": {
+          "column": "title",
+          "source": "papers.csv"
+        },
+        "venue": {
+          "column": "venue",
+          "source": "papers.csv"
+        },
+        "year": {
+          "column": "year",
+          "source": "papers.csv"
+        },
+        "@id": {
+          "column": "Id",
+          "source": "papers.csv"
+        },
+        "@type": "Paper"
+      }
+    ],
+    "links": [
+      {
+        "author": {
+          "column": "Id",
+          "source": "papers.csv"
+        },
+        "@src": {
+          "column": "Id",
+          "source": "papers.csv"
+        },
+        "@dest": {
+          "column": "Id",
+          "source": "papers.csv"
+        },
+        "@type": {
+          "name": "SharesAuthor",
+          "source": "Paper"
+        }
+      },
+      {
+        "author": {
+          "column": "Author",
+          "source": "paperlinks.csv"
+        },
+        "@src": {
+          "column": "Source",
+          "source": "paperlinks.csv"
+        },
+        "@dest": {
+          "column": "Target",
+          "source": "paperlinks.csv"
+        },
+        "@type": {
+          "name": "SharesAuthor",
+          "source": "Paper"
+        }
+      }
+    ]
+  }
+}
